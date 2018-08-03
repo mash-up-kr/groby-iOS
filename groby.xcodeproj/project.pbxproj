@@ -13,6 +13,7 @@
 		EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */; };
 		EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9D5211486E60013F360 /* Assets.xcassets */; };
 		EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */; };
+		EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EFAAA9D5211486E60013F360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFAAA9D8211486E60013F360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFAAA9DA211486E60013F360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Styleguide.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				EFAAA9E021148B430013F360 /* Extensions */,
 				EFAAA9CB211486E50013F360 /* AppDelegate.swift */,
 				EFAAA9CD211486E50013F360 /* ViewController.swift */,
 				EFAAA9CF211486E50013F360 /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */,
 			);
 			path = groby;
+			sourceTree = "<group>";
+		};
+		EFAAA9E021148B430013F360 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
+				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
