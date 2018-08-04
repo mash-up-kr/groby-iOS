@@ -15,6 +15,12 @@
 		EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9D5211486E60013F360 /* Assets.xcassets */; };
 		EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */; };
 		EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */; };
+		EFAAA9E421148DC80013F360 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9E321148DC80013F360 /* Login.storyboard */; };
+		EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9E721148E800013F360 /* LoginTextField.swift */; };
+		EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9E9211491E00013F360 /* LoginMainViewController.swift */; };
+		EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EB2114978B0013F360 /* BlueButton.swift */; };
+		EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */; };
+		EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		EFAAA9D8211486E60013F360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFAAA9DA211486E60013F360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Styleguide.swift"; sourceTree = "<group>"; };
+		EFAAA9E321148DC80013F360 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EFAAA9E721148E800013F360 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		EFAAA9E9211491E00013F360 /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
+		EFAAA9EB2114978B0013F360 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFirstViewController.swift; sourceTree = "<group>"; };
+		EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				EFAAA9E621148E080013F360 /* Support */,
+				EFAAA9E521148DF00013F360 /* Login */,
 				EFAAA9E021148B430013F360 /* Extensions */,
 				EFAAA9CB211486E50013F360 /* AppDelegate.swift */,
 				EFAAA9CD211486E50013F360 /* ViewController.swift */,
@@ -79,6 +93,30 @@
 				EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EFAAA9E521148DF00013F360 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAA9E321148DC80013F360 /* Login.storyboard */,
+				EFAAA9E9211491E00013F360 /* LoginMainViewController.swift */,
+				EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */,
+				EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */,
+				EFAAA9E721148E800013F360 /* LoginTextField.swift */,
+				EFAAA9EB2114978B0013F360 /* BlueButton.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EFAAA9E621148E080013F360 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */,
+				EFAAA9D5211486E60013F360 /* Assets.xcassets */,
+				EFAAA9DA211486E60013F360 /* Info.plist */,
+				EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAAA9E421148DC80013F360 /* Login.storyboard in Resources */,
 				EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
@@ -153,10 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
+				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,
 				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
+				EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */,
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
+				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
+				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
