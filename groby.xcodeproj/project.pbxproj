@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C249B79721149A6E00B20767 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C249B79621149A6E00B20767 /* Post.swift */; };
+		C29251FC211491D6001529EB /* MyPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29251FB211491D6001529EB /* MyPostTableViewCell.swift */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
-		EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* ViewController.swift */; };
+		EFAAA9CE211486E50013F360 /* MyPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* MyPostTableViewController.swift */; };
 		EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9CF211486E50013F360 /* Main.storyboard */; };
 		EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */; };
 		EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9D5211486E60013F360 /* Assets.xcassets */; };
@@ -17,9 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C249B79621149A6E00B20767 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C29251FB211491D6001529EB /* MyPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostTableViewCell.swift; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFAAA9CD211486E50013F360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFAAA9CD211486E50013F360 /* MyPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostTableViewController.swift; sourceTree = "<group>"; };
 		EFAAA9D0211486E50013F360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFAAA9D3211486E50013F360 /* groby.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = groby.xcdatamodel; sourceTree = "<group>"; };
 		EFAAA9D5211486E60013F360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C249B79521149A2A00B20767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C249B79621149A6E00B20767 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EFAAA9BF211486E40013F360 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +70,11 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				C249B79521149A2A00B20767 /* Model */,
 				EFAAA9E021148B430013F360 /* Extensions */,
 				EFAAA9CB211486E50013F360 /* AppDelegate.swift */,
-				EFAAA9CD211486E50013F360 /* ViewController.swift */,
+				EFAAA9CD211486E50013F360 /* MyPostTableViewController.swift */,
+				C29251FB211491D6001529EB /* MyPostTableViewCell.swift */,
 				EFAAA9CF211486E50013F360 /* Main.storyboard */,
 				EFAAA9D5211486E60013F360 /* Assets.xcassets */,
 				EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */,
@@ -149,10 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
+				EFAAA9CE211486E50013F360 /* MyPostTableViewController.swift in Sources */,
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
+				C249B79721149A6E00B20767 /* Post.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
+				C29251FC211491D6001529EB /* MyPostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
