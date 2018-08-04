@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C249B79721149A6E00B20767 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C249B79621149A6E00B20767 /* Post.swift */; };
 		C29251FC211491D6001529EB /* MyPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29251FB211491D6001529EB /* MyPostTableViewCell.swift */; };
+		82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C30FEA21148F6F000D70B4 /* MyPage.storyboard */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
 		EFAAA9CE211486E50013F360 /* MyPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* MyPostTableViewController.swift */; };
 		EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9CF211486E50013F360 /* Main.storyboard */; };
@@ -16,11 +17,18 @@
 		EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9D5211486E60013F360 /* Assets.xcassets */; };
 		EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */; };
 		EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */; };
+		EFAAA9E421148DC80013F360 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9E321148DC80013F360 /* Login.storyboard */; };
+		EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9E721148E800013F360 /* LoginTextField.swift */; };
+		EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9E9211491E00013F360 /* LoginMainViewController.swift */; };
+		EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EB2114978B0013F360 /* BlueButton.swift */; };
+		EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */; };
+		EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C249B79621149A6E00B20767 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C29251FB211491D6001529EB /* MyPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostTableViewCell.swift; sourceTree = "<group>"; };
+		82C30FEA21148F6F000D70B4 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAAA9CD211486E50013F360 /* MyPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostTableViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +38,12 @@
 		EFAAA9D8211486E60013F360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFAAA9DA211486E60013F360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Styleguide.swift"; sourceTree = "<group>"; };
+		EFAAA9E321148DC80013F360 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EFAAA9E721148E800013F360 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		EFAAA9E9211491E00013F360 /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
+		EFAAA9EB2114978B0013F360 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFirstViewController.swift; sourceTree = "<group>"; };
+		EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +85,14 @@
 			isa = PBXGroup;
 			children = (
 				C249B79521149A2A00B20767 /* Model */,
+				EFAAA9E621148E080013F360 /* Support */,
+				EFAAA9E521148DF00013F360 /* Login */,
 				EFAAA9E021148B430013F360 /* Extensions */,
 				EFAAA9CB211486E50013F360 /* AppDelegate.swift */,
 				EFAAA9CD211486E50013F360 /* MyPostTableViewController.swift */,
 				C29251FB211491D6001529EB /* MyPostTableViewCell.swift */,
 				EFAAA9CF211486E50013F360 /* Main.storyboard */,
+				82C30FEA21148F6F000D70B4 /* MyPage.storyboard */,
 				EFAAA9D5211486E60013F360 /* Assets.xcassets */,
 				EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */,
 				EFAAA9DA211486E60013F360 /* Info.plist */,
@@ -90,6 +107,30 @@
 				EFAAA9E121148B640013F360 /* UIColor+Styleguide.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EFAAA9E521148DF00013F360 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAA9E321148DC80013F360 /* Login.storyboard */,
+				EFAAA9E9211491E00013F360 /* LoginMainViewController.swift */,
+				EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */,
+				EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */,
+				EFAAA9E721148E800013F360 /* LoginTextField.swift */,
+				EFAAA9EB2114978B0013F360 /* BlueButton.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EFAAA9E621148E080013F360 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */,
+				EFAAA9D5211486E60013F360 /* Assets.xcassets */,
+				EFAAA9DA211486E60013F360 /* Info.plist */,
+				EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +191,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAAA9E421148DC80013F360 /* Login.storyboard in Resources */,
 				EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
+				82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,11 +207,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFAAA9CE211486E50013F360 /* MyPostTableViewController.swift in Sources */,
+				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
+				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,
+				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
+				EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */,
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				C249B79721149A6E00B20767 /* Post.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
 				C29251FC211491D6001529EB /* MyPostTableViewCell.swift in Sources */,
+				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
+				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
