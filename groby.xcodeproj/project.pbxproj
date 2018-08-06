@@ -53,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D8669D821183BC300862B9A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAA9CD211486E50013F360 /* ViewController.swift */,
+				EFAAA9CF211486E50013F360 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		EFAAA9BF211486E40013F360 = {
 			isa = PBXGroup;
 			children = (
@@ -72,17 +81,11 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				4D8669D821183BC300862B9A /* Main */,
 				EFAAA9E621148E080013F360 /* Support */,
 				EFAAA9E521148DF00013F360 /* Login */,
 				EFAAA9E021148B430013F360 /* Extensions */,
-				EFAAA9CB211486E50013F360 /* AppDelegate.swift */,
-				EFAAA9CD211486E50013F360 /* ViewController.swift */,
-				EFAAA9CF211486E50013F360 /* Main.storyboard */,
 				82C30FEA21148F6F000D70B4 /* MyPage.storyboard */,
-				EFAAA9D5211486E60013F360 /* Assets.xcassets */,
-				EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */,
-				EFAAA9DA211486E60013F360 /* Info.plist */,
-				EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */,
 			);
 			path = groby;
 			sourceTree = "<group>";
@@ -111,9 +114,10 @@
 		EFAAA9E621148E080013F360 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				EFAAA9CB211486E50013F360 /* AppDelegate.swift */,
+				EFAAA9DA211486E60013F360 /* Info.plist */,
 				EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */,
 				EFAAA9D5211486E60013F360 /* Assets.xcassets */,
-				EFAAA9DA211486E60013F360 /* Info.plist */,
 				EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */,
 			);
 			name = Support;
