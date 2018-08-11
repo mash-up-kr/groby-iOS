@@ -94,6 +94,9 @@
                     <navigationItem key="navigationItem" title="알림" id="kEa-L9-WRm">
                         <barButtonItem key="rightBarButtonItem" image="xButton" id="O5g-P6-Bdo">
                             <color key="tintColor" name="black"/>
+                            <connections>
+                                <action selector="actionClose:" destination="uPt-iL-TXk" id="RxD-yb-KT6"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>

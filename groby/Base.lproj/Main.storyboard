@@ -71,6 +71,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI4-LO-JkK">
                                                 <rect key="frame" x="325" y="0.0" width="44" height="44"/>
                                                 <state key="normal" image="searchIcon"/>
+                                                <connections>
+                                                    <action selector="actionSearch:" destination="j09-pZ-vdL" eventType="touchUpInside" id="kYz-dU-JTu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7om-G0-113">
                                                 <rect key="frame" x="6" y="0.0" width="44" height="44"/>
@@ -262,12 +265,21 @@
                         <outlet property="menu" destination="7om-G0-113" id="RNW-sH-6Qy"/>
                         <outlet property="menuView" destination="fFs-wu-eaT" id="U9a-uv-orW"/>
                         <outlet property="viewForDimed" destination="WZ6-dd-iZU" id="VW9-jb-GhX"/>
-                        <segue destination="DXF-2u-9UD" kind="show" identifier="SegueShowAlarm" id="rwB-Sj-Qs1"/>
+                        <segue destination="DXF-2u-9UD" kind="presentation" identifier="SegueShowAlarm" id="rwB-Sj-Qs1"/>
+                        <segue destination="Mre-3X-AHZ" kind="presentation" identifier="SegueSearch" id="Sjp-pF-WMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptv-zu-JVA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1172" y="791"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="NZc-UR-dSH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="Mre-3X-AHZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hxh-Sq-cws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="730"/>
         </scene>
         <!--Alarm-->
         <scene sceneID="h5B-1w-ehx">
@@ -275,7 +287,7 @@
                 <viewControllerPlaceholder storyboardName="Alarm" id="DXF-2u-9UD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9MR-sR-l3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="680"/>
+            <point key="canvasLocation" x="1712" y="942"/>
         </scene>
     </scenes>
     <resources>

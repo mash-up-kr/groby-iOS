@@ -15,6 +15,8 @@
 		AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9A105D211F38E400B4A222 /* Alarm.storyboard */; };
 		AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A105F211F390300B4A222 /* AlarmViewController.swift */; };
 		AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */; };
+		AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9A1065211F4FC700B4A222 /* Search.storyboard */; };
+		AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1067211F4FD900B4A222 /* SearchViewController.swift */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
 		EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* ViewController.swift */; };
 		EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9CF211486E50013F360 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		AA9A105D211F38E400B4A222 /* Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
 		AA9A105F211F390300B4A222 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewCell.swift; sourceTree = "<group>"; };
+		AA9A1065211F4FC700B4A222 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		AA9A1067211F4FD900B4A222 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAAA9CD211486E50013F360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		AA9A1064211F4FB500B4A222 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AA9A1065211F4FC700B4A222 /* Search.storyboard */,
+				AA9A1067211F4FD900B4A222 /* SearchViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
 		EFAAA9BF211486E40013F360 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +145,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				AA9A1064211F4FB500B4A222 /* Search */,
 				AA9A105C211F36E100B4A222 /* Alarm */,
 				AA16A568211DE1EF00A1A4DD /* Menu */,
 				4D8669D821183BC300862B9A /* Main */,
@@ -241,6 +255,7 @@
 				AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */,
 				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
+				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
 				82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */,
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,

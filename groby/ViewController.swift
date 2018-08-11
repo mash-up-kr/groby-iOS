@@ -58,6 +58,10 @@ class ViewController: UIViewController {
     @IBAction func actionShowAlarmView(_ sender: UIButton) {
         performSegue(withIdentifier: "SegueShowAlarm", sender: nil)
     }
+    
+    @IBAction func actionSearch(_ sender: UIButton) {
+        performSegue(withIdentifier: "SegueSearch", sender: nil)
+    }
 }
 
 // MARK: - Table View Delegate
