@@ -36,6 +36,12 @@ class ViewController: UIViewController {
         present(loginViewController, animated: true, completion: nil)
     }
     
+    @IBAction func fabButtonAction(_ sender: UIButton) {
+        let makeTap1RootViewController = UIStoryboard.init(name: "MakeTap1", bundle: nil)
+        let makeTap1ViewController = makeTap1RootViewController.instantiateViewController(withIdentifier: "MakeTap1RootViewController")
+        present(makeTap1ViewController, animated: true, completion: nil)
+    }
+    
     @objc @IBAction func actionMenu(_ sender: UIButton) {
         UIView.animate(withDuration: 0.1) {
             if !self.isShownMenu {

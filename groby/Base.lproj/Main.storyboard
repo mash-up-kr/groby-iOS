@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BBL-GQ-4C0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BBL-GQ-4C0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -201,6 +201,13 @@
                                             <outlet property="delegate" destination="j09-pZ-vdL" id="6XN-gj-4wj"/>
                                         </connections>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1W-p2-c3Y">
+                                        <rect key="frame" x="303" y="575" width="40" height="40"/>
+                                        <state key="normal" image="fab"/>
+                                        <connections>
+                                            <action selector="fabButtonAction:" destination="j09-pZ-vdL" eventType="touchUpInside" id="YBL-Pm-Yzz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -208,7 +215,9 @@
                                     <constraint firstItem="tMq-Gw-63h" firstAttribute="trailing" secondItem="eQc-m9-PYT" secondAttribute="trailing" id="ApJ-86-o4i"/>
                                     <constraint firstItem="6YA-DE-8JT" firstAttribute="trailing" secondItem="gI3-mQ-1h4" secondAttribute="trailing" id="E3p-Pi-hGN"/>
                                     <constraint firstAttribute="bottom" secondItem="tMq-Gw-63h" secondAttribute="bottom" id="WAW-qe-eN2"/>
+                                    <constraint firstItem="6YA-DE-8JT" firstAttribute="bottom" secondItem="L1W-p2-c3Y" secondAttribute="bottom" constant="32" id="YNe-Od-VHe"/>
                                     <constraint firstItem="gI3-mQ-1h4" firstAttribute="leading" secondItem="6YA-DE-8JT" secondAttribute="leading" id="ZgH-6Y-9ki"/>
+                                    <constraint firstItem="6YA-DE-8JT" firstAttribute="trailing" secondItem="L1W-p2-c3Y" secondAttribute="trailing" constant="32" id="ge1-O9-SDY"/>
                                     <constraint firstItem="tMq-Gw-63h" firstAttribute="top" secondItem="gI3-mQ-1h4" secondAttribute="bottom" id="pRM-6T-TpL"/>
                                     <constraint firstItem="gI3-mQ-1h4" firstAttribute="top" secondItem="6YA-DE-8JT" secondAttribute="top" id="vgT-Tr-lyR"/>
                                 </constraints>
@@ -292,6 +301,7 @@
     </scenes>
     <resources>
         <image name="alarmIcon" width="44" height="44"/>
+        <image name="fab" width="40" height="40"/>
         <image name="hamburgerButton" width="44" height="44"/>
         <image name="hamburgerIcon" width="20" height="20"/>
         <image name="searchIcon" width="44" height="44"/>
