@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var menu: UIButton?
     @IBOutlet weak var menuView: UIView?
     @IBOutlet weak var viewForDimed: UIView?
@@ -52,6 +53,10 @@ class ViewController: UIViewController {
             }
             self.view.layoutIfNeeded()
         }
+    }
+    
+    @IBAction func actionShowAlarmView(_ sender: UIButton) {
+        performSegue(withIdentifier: "SegueShowAlarm", sender: nil)
     }
 }
 

@@ -94,6 +94,9 @@
                     <navigationItem key="navigationItem" title="알림" id="kEa-L9-WRm">
                         <barButtonItem key="rightBarButtonItem" image="xButton" id="O5g-P6-Bdo">
                             <color key="tintColor" name="black"/>
+                            <connections>
+                                <action selector="actionClose:" destination="uPt-iL-TXk" id="S9g-cQ-OGJ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -124,18 +127,6 @@
         <image name="xButton" width="44" height="44"/>
         <namedColor name="black">
             <color red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="black">
-            <color red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="black">
-            <color red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="black">
-            <color red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="black">
-            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

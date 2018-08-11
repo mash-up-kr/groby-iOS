@@ -10,8 +10,13 @@ import UIKit
 
 class AlarmViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func actionClose(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
 }
 

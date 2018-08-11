@@ -64,6 +64,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjh-7i-eOS">
                                                 <rect key="frame" x="281" y="0.0" width="44" height="44"/>
                                                 <state key="normal" image="alarmIcon"/>
+                                                <connections>
+                                                    <action selector="actionShowAlarmView:" destination="j09-pZ-vdL" eventType="touchUpInside" id="PRj-Bi-ydV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI4-LO-JkK">
                                                 <rect key="frame" x="325" y="0.0" width="44" height="44"/>
@@ -259,11 +262,20 @@
                         <outlet property="menu" destination="7om-G0-113" id="RNW-sH-6Qy"/>
                         <outlet property="menuView" destination="fFs-wu-eaT" id="U9a-uv-orW"/>
                         <outlet property="viewForDimed" destination="WZ6-dd-iZU" id="VW9-jb-GhX"/>
+                        <segue destination="DXF-2u-9UD" kind="show" identifier="SegueShowAlarm" id="rwB-Sj-Qs1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptv-zu-JVA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1172" y="791"/>
+        </scene>
+        <!--Alarm-->
+        <scene sceneID="h5B-1w-ehx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Alarm" id="DXF-2u-9UD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9MR-sR-l3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="680"/>
         </scene>
     </scenes>
     <resources>
