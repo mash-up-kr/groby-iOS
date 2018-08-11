@@ -138,7 +138,7 @@
                         <color key="separatorColor" name="whiteThree"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
-                            <tableViewSection id="cqb-jT-m8Z">
+                            <tableViewSection footerTitle=" " id="cqb-jT-m8Z">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="CiA-jA-s7R">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
