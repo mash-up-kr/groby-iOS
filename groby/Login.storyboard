@@ -48,7 +48,6 @@
                                 <state key="normal" title="로그인"/>
                                 <connections>
                                     <action selector="loginButtonAction:" destination="sf2-g9-3tw" eventType="touchUpInside" id="lis-Bg-KXI"/>
-                                    <segue destination="bJa-be-ZCk" kind="presentation" modalTransitionStyle="crossDissolve" id="Y6D-3f-2b2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVg-a4-hYE">
@@ -93,14 +92,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrD-we-Rls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1280.8" y="-233.43328335832086"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="l0Y-k0-WYe">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="bJa-be-ZCk" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hzl-59-ZrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1280" y="277"/>
         </scene>
         <!--Groby-->
         <scene sceneID="cIv-Xq-GKa">

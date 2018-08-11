@@ -25,6 +25,9 @@ class LoginMainViewController: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainRootViewController")
+        present(mainViewController, animated: true, completion: nil)
     }
     
     private func setDelegate() {
