@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C30FEA21148F6F000D70B4 /* MyPage.storyboard */; };
+		AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA16A569211DE20C00A1A4DD /* Menu.storyboard */; };
+		AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */; };
+		AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */; };
+		AA16A57C211E0B0200A1A4DD /* DummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A57B211E0B0200A1A4DD /* DummyCollectionViewCell.swift */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
 		EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* ViewController.swift */; };
 		EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9CF211486E50013F360 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		82C30FEA21148F6F000D70B4 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		AA16A569211DE20C00A1A4DD /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewCell.swift; sourceTree = "<group>"; };
+		AA16A57B211E0B0200A1A4DD /* DummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAAA9CD211486E50013F360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +64,29 @@
 		4D8669D821183BC300862B9A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AA16A578211E0AD700A1A4DD /* Dummy */,
 				EFAAA9CD211486E50013F360 /* ViewController.swift */,
 				EFAAA9CF211486E50013F360 /* Main.storyboard */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		AA16A568211DE1EF00A1A4DD /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				AA16A569211DE20C00A1A4DD /* Menu.storyboard */,
+				AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		AA16A578211E0AD700A1A4DD /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */,
+				AA16A57B211E0B0200A1A4DD /* DummyCollectionViewCell.swift */,
+			);
+			name = Dummy;
 			sourceTree = "<group>";
 		};
 		EFAAA9BF211486E40013F360 = {
@@ -81,6 +108,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				AA16A568211DE1EF00A1A4DD /* Menu */,
 				4D8669D821183BC300862B9A /* Main */,
 				EFAAA9E621148E080013F360 /* Support */,
 				EFAAA9E521148DF00013F360 /* Login */,
@@ -155,6 +183,7 @@
 				TargetAttributes = {
 					EFAAA9C7211486E50013F360 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -184,6 +213,7 @@
 				EFAAA9E421148DC80013F360 /* Login.storyboard in Resources */,
 				EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
+				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
 				82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */,
 			);
@@ -197,6 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
+				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
+				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
 				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,
 				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
 				EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */,
@@ -205,6 +237,7 @@
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
 				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
+				AA16A57C211E0B0200A1A4DD /* DummyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +381,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TA757FA6NR;
+				DEVELOPMENT_TEAM = 74Z28YUL8J;
 				INFOPLIST_FILE = groby/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +392,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup.groby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -367,8 +402,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TA757FA6NR;
+				DEVELOPMENT_TEAM = 74Z28YUL8J;
 				INFOPLIST_FILE = groby/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -27,6 +27,7 @@ class JoinSecondViewController: UIViewController {
     }
     
     @IBAction func signUpButtonAction(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
     }
     
     private func setDelegate() {
