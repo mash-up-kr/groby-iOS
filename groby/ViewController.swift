@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     @objc @IBAction func actionMenu(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.1) {
+        UIView.animate(withDuration: 0.3) {
             if !self.isShownMenu {
                 self.viewForDimed?.isHidden = false
                 self.contentViewTrailing?.constant = -(self.menuView!.bounds.width)
