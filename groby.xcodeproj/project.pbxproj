@@ -18,6 +18,7 @@
 		AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */; };
 		AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9A1065211F4FC700B4A222 /* Search.storyboard */; };
 		AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1067211F4FD900B4A222 /* SearchViewController.swift */; };
+		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
 		EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* ViewController.swift */; };
 		EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9CF211486E50013F360 /* Main.storyboard */; };
@@ -46,13 +47,14 @@
 		AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewCell.swift; sourceTree = "<group>"; };
 		AA16A57B211E0B0200A1A4DD /* DummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCollectionViewCell.swift; sourceTree = "<group>"; };
-		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
-		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
 		AA9A105D211F38E400B4A222 /* Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
 		AA9A105F211F390300B4A222 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewCell.swift; sourceTree = "<group>"; };
 		AA9A1065211F4FC700B4A222 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		AA9A1067211F4FD900B4A222 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
+		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
+		EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAAA9CD211486E50013F360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,16 @@
 			name = Search;
 			sourceTree = "<group>";
 		};
+		EF476947211F5F6F00561AD4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EFAAA9E721148E800013F360 /* LoginTextField.swift */,
+				EFAAA9EB2114978B0013F360 /* BlueButton.swift */,
+				EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		EFAAA9BF211486E40013F360 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +193,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				EF476947211F5F6F00561AD4 /* Common */,
 				EFE7D360211F378000C909FD /* MakeTap1 */,
 				AA9A1064211F4FB500B4A222 /* Search */,
 				AA9A105C211F36E100B4A222 /* Alarm */,
@@ -209,8 +222,6 @@
 				EFAAA9E9211491E00013F360 /* LoginMainViewController.swift */,
 				EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */,
 				EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */,
-				EFAAA9E721148E800013F360 /* LoginTextField.swift */,
-				EFAAA9EB2114978B0013F360 /* BlueButton.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -374,6 +385,7 @@
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
+				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
 				EFE7D368211F404000C909FD /* MakeTab1SecondViewController.swift in Sources */,
 				EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */,

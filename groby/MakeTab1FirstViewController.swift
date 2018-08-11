@@ -11,6 +11,8 @@ import UIKit
 class MakeTab1FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.setCustomTitle("카테고리")
     }
 
     override func didReceiveMemoryWarning() {

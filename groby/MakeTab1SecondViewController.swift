@@ -12,6 +12,8 @@ class MakeTab1SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.setCustomTitle("내용 작성")
     }
 
     override func didReceiveMemoryWarning() {

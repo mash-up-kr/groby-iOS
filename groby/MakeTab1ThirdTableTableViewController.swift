@@ -12,6 +12,8 @@ class MakeTab1ThirdTableTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.setCustomTitle("세부 설정")
     }
 
     override func didReceiveMemoryWarning() {
