@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        presentLoginView()
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(actionMenu))
         viewForDimed?.addGestureRecognizer(tapGestureRecognizer)
     }
@@ -26,6 +27,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func presentLoginView() {
+        let loginStoryBoard = UIStoryboard.init(name: "Login", bundle: nil)
+        let loginViewController = loginStoryBoard.instantiateViewController(withIdentifier: "LoginRootViewController")
+        present(loginViewController, animated: true, completion: nil)
     }
     
     @objc @IBAction func actionMenu(_ sender: UIButton) {
