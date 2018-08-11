@@ -18,6 +18,10 @@ class MakeTab1FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func closeButtonAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension MakeTab1FirstViewController: UITableViewDelegate, UITableViewDataSource {
