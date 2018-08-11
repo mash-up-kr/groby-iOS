@@ -64,10 +64,11 @@
                     <navigationItem key="navigationItem" title="카테고리" id="Bbv-pn-Oal">
                         <barButtonItem key="backBarButtonItem" title=" " id="6Dx-GT-tPt"/>
                         <barButtonItem key="leftBarButtonItem" style="plain" id="WOM-1j-EVG">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Nz-Gq-frP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="4Nz-Gq-frP">
                                 <rect key="frame" x="16" y="11" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="xButtonGray"/>
+                                <color key="tintColor" name="black"/>
+                                <state key="normal" backgroundImage="xIcon"/>
                                 <connections>
                                     <action selector="closeButtonAction:" destination="NxK-MQ-uu2" eventType="touchUpInside" id="dNH-PZ-RDY"/>
                                 </connections>
@@ -614,7 +615,7 @@
         <image name="backButton" width="44" height="44"/>
         <image name="backIcon" width="10.5" height="16"/>
         <image name="dropdownButton" width="9.5" height="6"/>
-        <image name="xButtonGray" width="20" height="20"/>
+        <image name="xIcon" width="20" height="20"/>
         <namedColor name="black">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
