@@ -19,6 +19,7 @@
 		AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9A1065211F4FC700B4A222 /* Search.storyboard */; };
 		AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1067211F4FD900B4A222 /* SearchViewController.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
+		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
 		EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* ViewController.swift */; };
 		EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9CF211486E50013F360 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
 		EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
+		EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAssets+Extension.swift"; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAAA9CD211486E50013F360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				EFAAA9E721148E800013F360 /* LoginTextField.swift */,
 				EFAAA9EB2114978B0013F360 /* BlueButton.swift */,
 				EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */,
+				EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -334,11 +337,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-groby/Pods-groby-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RichEditorView/RichEditorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TLPhotoPicker/TLPhotoPicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RichEditorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TLPhotoPicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -374,6 +381,7 @@
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
+				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
 				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,

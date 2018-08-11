@@ -1,16 +1,24 @@
 PODS:
+  - RichEditorView (5.0.0)
   - SnapKit (4.0.0)
+  - TLPhotoPicker (1.7.2)
 
 DEPENDENCIES:
+  - RichEditorView
   - SnapKit (~> 4.0.0)
+  - TLPhotoPicker
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - RichEditorView
     - SnapKit
+    - TLPhotoPicker
 
 SPEC CHECKSUMS:
+  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TLPhotoPicker: 5008b848b6a136c124daff3858967a08a6d0c9b8
 
-PODFILE CHECKSUM: d9994936ddab2ba3e2b5b9844d962ad40352fbf9
+PODFILE CHECKSUM: 901e088bbb5cc121c7f367ecc6671c0688f286be
 
 COCOAPODS: 1.5.3

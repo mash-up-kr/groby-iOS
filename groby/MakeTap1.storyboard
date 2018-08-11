@@ -104,14 +104,22 @@
                                     <constraint firstAttribute="height" constant="1" id="OdM-oJ-9dy"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rB-zD-UC3" customClass="RichEditorView" customModule="RichEditorView">
+                                <rect key="frame" x="24" y="57" width="327" height="546"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SMn-WN-1g4" firstAttribute="top" secondItem="EoL-n4-8rk" secondAttribute="bottom" id="4SU-6q-OMF"/>
+                            <constraint firstItem="4rB-zD-UC3" firstAttribute="top" secondItem="SMn-WN-1g4" secondAttribute="bottom" constant="8" id="Gkp-JW-4Mm"/>
                             <constraint firstItem="Pg5-bf-6tn" firstAttribute="trailing" secondItem="EoL-n4-8rk" secondAttribute="trailing" constant="24" id="NXP-uq-GE4"/>
+                            <constraint firstItem="Pg5-bf-6tn" firstAttribute="trailing" secondItem="4rB-zD-UC3" secondAttribute="trailing" constant="24" id="PUO-7p-Tzj"/>
                             <constraint firstItem="EoL-n4-8rk" firstAttribute="leading" secondItem="Pg5-bf-6tn" secondAttribute="leading" constant="24" id="e64-VW-hMX"/>
                             <constraint firstItem="EoL-n4-8rk" firstAttribute="top" secondItem="Pg5-bf-6tn" secondAttribute="top" id="mMb-n1-kKx"/>
                             <constraint firstItem="SMn-WN-1g4" firstAttribute="leading" secondItem="Pg5-bf-6tn" secondAttribute="leading" id="qL4-ro-lJ8"/>
+                            <constraint firstItem="4rB-zD-UC3" firstAttribute="leading" secondItem="Pg5-bf-6tn" secondAttribute="leading" constant="24" id="sMJ-e7-tXK"/>
+                            <constraint firstItem="Pg5-bf-6tn" firstAttribute="bottom" secondItem="4rB-zD-UC3" secondAttribute="bottom" id="ucP-Mz-M0c"/>
                             <constraint firstItem="Pg5-bf-6tn" firstAttribute="trailing" secondItem="SMn-WN-1g4" secondAttribute="trailing" id="y3X-L3-YF0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pg5-bf-6tn"/>
@@ -133,6 +141,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="editor" destination="4rB-zD-UC3" id="LNN-gR-rKw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adr-wT-TWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
