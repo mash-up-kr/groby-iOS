@@ -25,6 +25,7 @@ class LoginMainViewController: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     private func setDelegate() {
