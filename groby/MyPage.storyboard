@@ -166,8 +166,8 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUO-y8-Irs">
-                                                    <rect key="frame" x="345" y="15" width="60" height="22"/>
-                                                    <state key="normal" title="Button" image="dropdownIcon"/>
+                                                    <rect key="frame" x="345" y="15" width="6" height="22"/>
+                                                    <state key="normal" image="dropdownIcon"/>
                                                 </button>
                                             </subviews>
                                             <constraints>

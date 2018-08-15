@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		674B38AD990C56437589766B /* Pods_groby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DAA172196E4371D37432EA /* Pods_groby.framework */; };
 		82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C30FEA21148F6F000D70B4 /* MyPage.storyboard */; };
+		8322A7F5211F64E00028504D /* tap4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8322A7F4211F64E00028504D /* tap4.storyboard */; };
 		AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA16A569211DE20C00A1A4DD /* Menu.storyboard */; };
 		AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */; };
 		AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		60DAA172196E4371D37432EA /* Pods_groby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_groby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C30FEA21148F6F000D70B4 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		8322A7F4211F64E00028504D /* tap4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tap4.storyboard; sourceTree = "<group>"; };
 		AA16A569211DE20C00A1A4DD /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewCell.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 				DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8322A7F3211F64C10028504D /* tap4 */ = {
+			isa = PBXGroup;
+			children = (
+				8322A7F4211F64E00028504D /* tap4.storyboard */,
+			);
+			name = tap4;
 			sourceTree = "<group>";
 		};
 		93F4BDCC8BBB338D11A4ACC2 /* Frameworks */ = {
@@ -193,6 +203,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				8322A7F3211F64C10028504D /* tap4 */,
 				EF476947211F5F6F00561AD4 /* Common */,
 				EFE7D360211F378000C909FD /* MakeTap1 */,
 				AA9A1064211F4FB500B4A222 /* Search */,
@@ -317,6 +328,7 @@
 				EFE7D364211F3C0F00C909FD /* MakeTap1.storyboard in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
 				AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */,
+				8322A7F5211F64E00028504D /* tap4.storyboard in Resources */,
 				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
 				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
