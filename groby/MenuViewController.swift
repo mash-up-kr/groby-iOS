@@ -13,6 +13,18 @@ class MenuViewController: UITableViewController {
     @IBOutlet weak var wroteButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
     
+    @IBAction func tappedMyPost(_ sender: UIButton) {
+        let menuStoryBoard = UIStoryboard.init(name: "Menu", bundle: nil)
+        let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "MyPostTableViewController")
+        
+        self.present(menuViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func tappedJoinedPost(_ sender: UIButton) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
