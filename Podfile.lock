@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Kingfisher (4.8.1)
+  - RichEditorView (5.0.0)
+  - SnapKit (4.0.0)
+  - TLPhotoPicker (1.7.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Kingfisher (~> 4.0)
+  - RichEditorView
+  - SnapKit (~> 4.0.0)
+  - TLPhotoPicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - RichEditorView
+    - SnapKit
+    - TLPhotoPicker
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TLPhotoPicker: 5008b848b6a136c124daff3858967a08a6d0c9b8
+
+PODFILE CHECKSUM: 537ee76e12b371e517ce2613f3c01f86dee01d46
+
+COCOAPODS: 1.5.3

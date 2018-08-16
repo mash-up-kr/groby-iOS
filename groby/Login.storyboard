@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5I-fb-JFH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Groby-->
+        <scene sceneID="g93-k1-ADJ">
+            <objects>
+                <viewController id="sf2-g9-3tw" customClass="LoginMainViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FHn-sL-tnr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="학교 이메일 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WUJ-M1-BvC" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="89" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Dgy-cX-vMO"/>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="zgK-6E-4fI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpL-KZ-2b4" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="145" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="48f-UR-yvp"/>
+                                    <constraint firstAttribute="height" constant="48" id="mGi-Jn-XNH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFq-Ea-0tr" customClass="BlueButton" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="223" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="mzu-n9-u0E"/>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="rEB-XJ-BHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="로그인"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="sf2-g9-3tw" eventType="touchUpInside" id="lis-Bg-KXI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVg-a4-hYE">
+                                <rect key="frame" x="136.5" y="321" width="101" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="회원으로 가입하기">
+                                    <color key="titleColor" name="iris"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bT8-TS-S60" kind="show" id="Crs-iZ-IAU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FcT-bL-hqq" firstAttribute="trailing" secondItem="kFq-Ea-0tr" secondAttribute="trailing" constant="24" id="3d4-2V-37D"/>
+                            <constraint firstItem="qpL-KZ-2b4" firstAttribute="top" secondItem="WUJ-M1-BvC" secondAttribute="bottom" constant="8" id="3vh-Iz-xjS"/>
+                            <constraint firstItem="kFq-Ea-0tr" firstAttribute="centerX" secondItem="FHn-sL-tnr" secondAttribute="centerX" id="Csn-CD-Qwq"/>
+                            <constraint firstItem="kFq-Ea-0tr" firstAttribute="top" secondItem="qpL-KZ-2b4" secondAttribute="bottom" constant="30" id="Ft2-Wf-xCR"/>
+                            <constraint firstItem="kFq-Ea-0tr" firstAttribute="leading" secondItem="FcT-bL-hqq" secondAttribute="leading" constant="24" id="NLc-Cx-aSt"/>
+                            <constraint firstItem="CVg-a4-hYE" firstAttribute="centerX" secondItem="FHn-sL-tnr" secondAttribute="centerX" id="TKW-U8-yhA"/>
+                            <constraint firstItem="qpL-KZ-2b4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FcT-bL-hqq" secondAttribute="leading" constant="24" id="V58-Tn-4Qu"/>
+                            <constraint firstItem="WUJ-M1-BvC" firstAttribute="top" secondItem="FcT-bL-hqq" secondAttribute="top" constant="89" id="Vex-M6-hEo"/>
+                            <constraint firstItem="CVg-a4-hYE" firstAttribute="top" secondItem="kFq-Ea-0tr" secondAttribute="bottom" constant="50" id="Y4Z-FD-Auf"/>
+                            <constraint firstItem="FcT-bL-hqq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WUJ-M1-BvC" secondAttribute="trailing" constant="24" id="doa-Gt-O3D"/>
+                            <constraint firstItem="qpL-KZ-2b4" firstAttribute="centerX" secondItem="FHn-sL-tnr" secondAttribute="centerX" id="j2X-tM-6dl"/>
+                            <constraint firstItem="FcT-bL-hqq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qpL-KZ-2b4" secondAttribute="trailing" constant="24" id="niE-kn-ZyT"/>
+                            <constraint firstItem="WUJ-M1-BvC" firstAttribute="centerX" secondItem="FHn-sL-tnr" secondAttribute="centerX" id="tAY-vg-qsR"/>
+                            <constraint firstItem="WUJ-M1-BvC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FcT-bL-hqq" secondAttribute="leading" constant="24" id="uTL-aL-ZRN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FcT-bL-hqq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Groby" id="Weq-yf-chx">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nae-bG-LOE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="WUJ-M1-BvC" id="1RI-1I-P50"/>
+                        <outlet property="loginButton" destination="kFq-Ea-0tr" id="XRb-m8-Fv0"/>
+                        <outlet property="passwordTextField" destination="qpL-KZ-2b4" id="qhh-0i-QnD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrD-we-Rls" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280.8" y="-233.43328335832086"/>
+        </scene>
+        <!--Groby-->
+        <scene sceneID="cIv-Xq-GKa">
+            <objects>
+                <viewController title="Groby" id="bT8-TS-S60" customClass="JoinFirstViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SsA-lX-zGS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-iJ-iW8" customClass="BlueButton" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="223" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="7Iq-qA-fM0"/>
+                                    <constraint firstAttribute="height" constant="48" id="F7V-rf-13s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="인증번호 발송"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="sf2-g9-3tw" eventType="touchUpInside" id="Bwr-Yl-EZ3"/>
+                                    <action selector="sendNumButtonAction:" destination="bT8-TS-S60" eventType="touchUpInside" id="og8-1f-OD7"/>
+                                    <segue destination="1s7-kC-0pY" kind="show" id="VWY-oW-bmw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="인증번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2CL-9O-leM" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="145" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="6c6-mQ-1HV"/>
+                                    <constraint firstAttribute="height" constant="48" id="PH2-OD-Ndh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="학교 이메일 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEr-YH-AZk" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="89" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="HWK-fD-iQy"/>
+                                    <constraint firstAttribute="height" constant="48" id="aTT-7s-Grw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l9i-iJ-iW8" firstAttribute="top" secondItem="2CL-9O-leM" secondAttribute="bottom" constant="30" id="0fd-lT-dwC"/>
+                            <constraint firstItem="gEr-YH-AZk" firstAttribute="top" secondItem="W4H-g4-8wD" secondAttribute="top" constant="89" id="6Fa-xY-Y5x"/>
+                            <constraint firstItem="l9i-iJ-iW8" firstAttribute="centerX" secondItem="SsA-lX-zGS" secondAttribute="centerX" id="6aJ-HT-m3J"/>
+                            <constraint firstItem="l9i-iJ-iW8" firstAttribute="leading" secondItem="W4H-g4-8wD" secondAttribute="leading" constant="24" id="IR9-ps-Pqt"/>
+                            <constraint firstItem="W4H-g4-8wD" firstAttribute="trailing" secondItem="2CL-9O-leM" secondAttribute="trailing" constant="24" id="KO0-sc-hzf"/>
+                            <constraint firstItem="gEr-YH-AZk" firstAttribute="leading" secondItem="W4H-g4-8wD" secondAttribute="leading" constant="24" id="Q3I-oC-IHB"/>
+                            <constraint firstItem="W4H-g4-8wD" firstAttribute="trailing" secondItem="l9i-iJ-iW8" secondAttribute="trailing" constant="24" id="YHL-6c-4JK"/>
+                            <constraint firstItem="W4H-g4-8wD" firstAttribute="trailing" secondItem="gEr-YH-AZk" secondAttribute="trailing" constant="24" id="grB-P8-0Yf"/>
+                            <constraint firstItem="2CL-9O-leM" firstAttribute="top" secondItem="gEr-YH-AZk" secondAttribute="bottom" constant="8" id="inc-XK-M1r"/>
+                            <constraint firstItem="gEr-YH-AZk" firstAttribute="centerX" secondItem="SsA-lX-zGS" secondAttribute="centerX" id="nTf-jU-A55"/>
+                            <constraint firstItem="2CL-9O-leM" firstAttribute="leading" secondItem="W4H-g4-8wD" secondAttribute="leading" constant="24" id="pzC-Ml-vlE"/>
+                            <constraint firstItem="2CL-9O-leM" firstAttribute="centerX" secondItem="SsA-lX-zGS" secondAttribute="centerX" id="sGM-3a-PIi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W4H-g4-8wD"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkNumTextField" destination="2CL-9O-leM" id="V9i-mO-Nxr"/>
+                        <outlet property="emailTextField" destination="gEr-YH-AZk" id="Kfe-Jp-lbe"/>
+                        <outlet property="sendCheckNumButton" destination="l9i-iJ-iW8" id="hRw-TQ-ZfG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNh-f8-81R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998" y="-233"/>
+        </scene>
+        <!--Groby-->
+        <scene sceneID="9ML-oS-Kjd">
+            <objects>
+                <viewController title="Groby" id="1s7-kC-0pY" customClass="JoinSecondViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="snX-5A-qin">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="학교 이메일 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7J-VU-DSt" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="89" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="IPk-4a-3st"/>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="aUa-Pw-Qcs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVO-pH-zaL" customClass="BlueButton" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="335" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="b5S-59-NY6"/>
+                                    <constraint firstAttribute="height" constant="48" id="wrB-aC-Fkd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="회원가입 완료"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="sf2-g9-3tw" eventType="touchUpInside" id="4uw-dB-ceA"/>
+                                    <action selector="signUpButtonAction:" destination="1s7-kC-0pY" eventType="touchUpInside" id="Aj3-CN-E4W"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5r-En-hQU" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="145" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Ur1-Pa-U56"/>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="XAm-oa-ZDO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-99-oSs" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="201" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="ZmR-Ri-fO4"/>
+                                    <constraint firstAttribute="height" constant="48" id="mCm-Ae-lTO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yp4-rA-kNA" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                <rect key="frame" x="24" y="257" width="327" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="qJC-LY-VNU"/>
+                                    <constraint firstAttribute="width" priority="999" constant="327" id="tDv-tq-dcT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F7J-VU-DSt" firstAttribute="top" secondItem="jev-Mo-Sb6" secondAttribute="top" constant="89" id="51U-zK-U8j"/>
+                            <constraint firstItem="F7J-VU-DSt" firstAttribute="centerX" secondItem="snX-5A-qin" secondAttribute="centerX" id="5I8-kq-6Ax"/>
+                            <constraint firstItem="TVO-pH-zaL" firstAttribute="leading" secondItem="jev-Mo-Sb6" secondAttribute="leading" constant="24" id="9AK-Fi-cSX"/>
+                            <constraint firstItem="Wxb-99-oSs" firstAttribute="top" secondItem="C5r-En-hQU" secondAttribute="bottom" constant="8" id="BSz-ZD-XI2"/>
+                            <constraint firstItem="Wxb-99-oSs" firstAttribute="leading" secondItem="jev-Mo-Sb6" secondAttribute="leading" constant="24" id="LWC-xD-TJH"/>
+                            <constraint firstItem="C5r-En-hQU" firstAttribute="centerX" secondItem="snX-5A-qin" secondAttribute="centerX" id="NMm-39-E43"/>
+                            <constraint firstItem="yp4-rA-kNA" firstAttribute="centerX" secondItem="snX-5A-qin" secondAttribute="centerX" id="Ory-98-m1z"/>
+                            <constraint firstItem="jev-Mo-Sb6" firstAttribute="trailing" secondItem="TVO-pH-zaL" secondAttribute="trailing" constant="24" id="Pfz-ys-46f"/>
+                            <constraint firstItem="jev-Mo-Sb6" firstAttribute="trailing" secondItem="yp4-rA-kNA" secondAttribute="trailing" constant="24" id="QUR-5I-prL"/>
+                            <constraint firstItem="TVO-pH-zaL" firstAttribute="top" secondItem="yp4-rA-kNA" secondAttribute="bottom" constant="30" id="bPQ-uc-fod"/>
+                            <constraint firstItem="jev-Mo-Sb6" firstAttribute="trailing" secondItem="Wxb-99-oSs" secondAttribute="trailing" constant="24" id="d5F-ym-jri"/>
+                            <constraint firstItem="Wxb-99-oSs" firstAttribute="centerX" secondItem="snX-5A-qin" secondAttribute="centerX" id="et8-h6-nBi"/>
+                            <constraint firstItem="yp4-rA-kNA" firstAttribute="top" secondItem="Wxb-99-oSs" secondAttribute="bottom" constant="8" id="o1x-a6-gge"/>
+                            <constraint firstItem="C5r-En-hQU" firstAttribute="top" secondItem="F7J-VU-DSt" secondAttribute="bottom" constant="8" id="vDT-cS-cAm"/>
+                            <constraint firstItem="yp4-rA-kNA" firstAttribute="leading" secondItem="jev-Mo-Sb6" secondAttribute="leading" constant="24" id="vuo-jw-9Rl"/>
+                            <constraint firstItem="TVO-pH-zaL" firstAttribute="centerX" secondItem="snX-5A-qin" secondAttribute="centerX" id="xc6-Zw-z2C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jev-Mo-Sb6"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="checkPasswordTextField" destination="yp4-rA-kNA" id="Q0n-AF-HWS"/>
+                        <outlet property="emailTextField" destination="F7J-VU-DSt" id="zHh-wD-aVU"/>
+                        <outlet property="nickNameTextField" destination="C5r-En-hQU" id="eS0-l2-iJG"/>
+                        <outlet property="passwordTextField" destination="Wxb-99-oSs" id="MmV-ao-bE4"/>
+                        <outlet property="signUpButton" destination="TVO-pH-zaL" id="3Xa-Ox-zOj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujO-4f-3Bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2729" y="-233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wu7-mm-eUD">
+            <objects>
+                <navigationController storyboardIdentifier="LoginRootViewController" automaticallyAdjustsScrollViewInsets="NO" id="U5I-fb-JFH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="bDs-ml-e9o">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sf2-g9-3tw" kind="relationship" relationship="rootViewController" id="S3e-c3-f37"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8f-PR-9z5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.60000000000002" y="-233.43328335832086"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="iris">
+            <color red="0.31764705882352939" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
