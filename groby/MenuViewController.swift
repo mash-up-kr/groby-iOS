@@ -16,14 +16,18 @@ class MenuViewController: UITableViewController {
     @IBAction func tappedMyPost(_ sender: UIButton) {
         let menuStoryBoard = UIStoryboard.init(name: "Menu", bundle: nil)
         let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "MyPostTableViewController")
-        
-        self.present(menuViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(menuViewController, animated: true)
     }
     
     @IBAction func tappedJoinedPost(_ sender: UIButton) {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

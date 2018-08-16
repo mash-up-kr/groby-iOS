@@ -8,27 +8,15 @@
 
 import UIKit
 
-class MyPostTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class MyPostTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var posts: [Post] = []
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: MyPostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "my_post_cell", for: indexPath) as! MyPostTableViewCell
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        let post = posts[indexPath.row]
-        
-        cell.postTitle.text = post.postTitle
-        cell.postDate.text = post.postDate
-        cell.postLikeOrProgress.text = post.postLike
-        cell.postInProgress.setProgress(0.5, animated: false)
-        
-        return cell
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
     override func viewDidLoad() {
@@ -43,9 +31,23 @@ class MyPostTableViewController: UIViewController, UITableViewDelegate, UITableV
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+extension MyPostTableViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell: MyPostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "my_post_cell", for: indexPath) as? MyPostTableViewCell else { return UITableViewCell() }
+        let post = posts[indexPath.row]
+        
+        cell.postTitle.text = post.postTitle
+        cell.postDate.text = post.postDate
+        cell.postLikeOrProgress.text = post.postLike
+        cell.postInProgress.setProgress(0.5, animated: false)
+        
+        return cell
+    }
+}
