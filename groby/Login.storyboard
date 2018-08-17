@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5I-fb-JFH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5I-fb-JFH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVg-a4-hYE">
-                                <rect key="frame" x="136.5" y="321" width="101" height="29"/>
+                                <rect key="frame" x="137" y="321" width="101" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="회원으로 가입하기">
                                     <color key="titleColor" name="iris"/>
@@ -153,6 +154,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W4H-g4-8wD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="lYC-8T-OHT">
+                        <barButtonItem key="backBarButtonItem" title=" " id="PEt-yi-s8P"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="checkNumTextField" destination="2CL-9O-leM" id="V9i-mO-Nxr"/>
                         <outlet property="emailTextField" destination="gEr-YH-AZk" id="Kfe-Jp-lbe"/>
@@ -168,11 +172,11 @@
             <objects>
                 <viewController title="Groby" id="1s7-kC-0pY" customClass="JoinSecondViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snX-5A-qin">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="학교 이메일 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7J-VU-DSt" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
-                                <rect key="frame" x="24" y="89" width="327" height="48"/>
+                                <rect key="frame" x="24" y="153" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="IPk-4a-3st"/>
                                     <constraint firstAttribute="width" priority="999" constant="327" id="aUa-Pw-Qcs"/>
@@ -182,7 +186,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVO-pH-zaL" customClass="BlueButton" customModule="groby" customModuleProvider="target">
-                                <rect key="frame" x="24" y="335" width="327" height="48"/>
+                                <rect key="frame" x="24" y="399" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="999" constant="327" id="b5S-59-NY6"/>
                                     <constraint firstAttribute="height" constant="48" id="wrB-aC-Fkd"/>
@@ -195,7 +199,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5r-En-hQU" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
-                                <rect key="frame" x="24" y="145" width="327" height="48"/>
+                                <rect key="frame" x="24" y="209" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Ur1-Pa-U56"/>
                                     <constraint firstAttribute="width" priority="999" constant="327" id="XAm-oa-ZDO"/>
@@ -205,7 +209,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-99-oSs" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
-                                <rect key="frame" x="24" y="201" width="327" height="48"/>
+                                <rect key="frame" x="24" y="265" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="999" constant="327" id="ZmR-Ri-fO4"/>
                                     <constraint firstAttribute="height" constant="48" id="mCm-Ae-lTO"/>
@@ -215,7 +219,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yp4-rA-kNA" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
-                                <rect key="frame" x="24" y="257" width="327" height="48"/>
+                                <rect key="frame" x="24" y="321" width="327" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="qJC-LY-VNU"/>
                                     <constraint firstAttribute="width" priority="999" constant="327" id="tDv-tq-dcT"/>
@@ -246,7 +250,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jev-Mo-Sb6"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <navigationItem key="navigationItem" title="Title" id="3VT-I0-x1q">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Hzt-ZB-LYn"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="checkPasswordTextField" destination="yp4-rA-kNA" id="Q0n-AF-HWS"/>
                         <outlet property="emailTextField" destination="F7J-VU-DSt" id="zHh-wD-aVU"/>
@@ -264,9 +271,10 @@
             <objects>
                 <navigationController storyboardIdentifier="LoginRootViewController" automaticallyAdjustsScrollViewInsets="NO" id="U5I-fb-JFH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="bDs-ml-e9o">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="backButton" backIndicatorTransitionMaskImage="backButton" id="bDs-ml-e9o">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="black"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -279,6 +287,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="44" height="16"/>
+        <namedColor name="black">
+            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="iris">
             <color red="0.31764705882352939" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

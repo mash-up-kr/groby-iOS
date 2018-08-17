@@ -16,6 +16,7 @@ class LoginMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.setCustomTitle("Groby")
         setDelegate()
         loginButton.activeButton(false)
     }

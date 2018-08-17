@@ -24,8 +24,9 @@
             <objects>
                 <navigationController storyboardIdentifier="MainRootViewController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="BBL-GQ-4C0" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="DIh-bB-tPM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="backButton" backIndicatorTransitionMaskImage="backButton" id="DIh-bB-tPM">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="black"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -300,6 +301,7 @@
     </scenes>
     <resources>
         <image name="alarmIcon" width="44" height="44"/>
+        <image name="backButton" width="44" height="16"/>
         <image name="fab" width="40" height="40"/>
         <image name="hamburgerButton" width="44" height="44"/>
         <image name="hamburgerIcon" width="20" height="20"/>

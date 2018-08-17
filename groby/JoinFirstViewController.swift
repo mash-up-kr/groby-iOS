@@ -16,6 +16,7 @@ class JoinFirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.setCustomTitle("Groby")
         setDelegate()
         sendCheckNumButton.activeButton(false)
     }

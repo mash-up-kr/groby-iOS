@@ -18,6 +18,7 @@ class JoinSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.setCustomTitle("Groby")
         setDelegate()
         signUpButton.activeButton(false)
     }

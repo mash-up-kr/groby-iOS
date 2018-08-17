@@ -22,6 +22,11 @@ class MyPostTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.setCustomTitle("내가 쓴 글")
+        let newBackButton = UIBarButtonItem(title: " ",
+                                            style: .plain, target: self, action: nil)
+        
+        navigationController?.navigationBar.topItem?.backBarButtonItem = newBackButton
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postLike: "63"))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postLike: "63"))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postLike: "63"))

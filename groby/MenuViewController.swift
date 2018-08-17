@@ -32,6 +32,7 @@ class MenuViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.setCustomTitle("Groby")
         setProperties()
     }
     

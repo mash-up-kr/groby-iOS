@@ -11,6 +11,8 @@ import UIKit
 class AlarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.setCustomTitle("알림")
     }
     
     @IBAction func actionClose(_ sender: UIBarButtonItem) {
