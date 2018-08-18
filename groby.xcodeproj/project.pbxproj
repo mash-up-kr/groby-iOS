@@ -10,6 +10,7 @@
 		674B38AD990C56437589766B /* Pods_groby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DAA172196E4371D37432EA /* Pods_groby.framework */; };
 		82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C30FEA21148F6F000D70B4 /* MyPage.storyboard */; };
 		8322A7F5211F64E00028504D /* tap4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8322A7F4211F64E00028504D /* tap4.storyboard */; };
+		83A47E6E2127F185006B70EC /* myPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A47E6D2127F185006B70EC /* myPageTableViewController.swift */; };
 		AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA16A569211DE20C00A1A4DD /* Menu.storyboard */; };
 		AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */; };
 		AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */; };
@@ -50,6 +51,7 @@
 		60DAA172196E4371D37432EA /* Pods_groby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_groby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C30FEA21148F6F000D70B4 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		8322A7F4211F64E00028504D /* tap4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tap4.storyboard; sourceTree = "<group>"; };
+		83A47E6D2127F185006B70EC /* myPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPageTableViewController.swift; sourceTree = "<group>"; };
 		AA16A569211DE20C00A1A4DD /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AA16A579211E0AEE00A1A4DD /* DummyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewCell.swift; sourceTree = "<group>"; };
@@ -127,6 +129,15 @@
 				8322A7F4211F64E00028504D /* tap4.storyboard */,
 			);
 			name = tap4;
+			sourceTree = "<group>";
+		};
+		83F4A5D92127F03A008C50C1 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				82C30FEA21148F6F000D70B4 /* MyPage.storyboard */,
+				83A47E6D2127F185006B70EC /* myPageTableViewController.swift */,
+			);
+			name = MyPage;
 			sourceTree = "<group>";
 		};
 		93F4BDCC8BBB338D11A4ACC2 /* Frameworks */ = {
@@ -227,7 +238,7 @@
 				EFAAA9E621148E080013F360 /* Support */,
 				EFAAA9E521148DF00013F360 /* Login */,
 				EFAAA9E021148B430013F360 /* Extensions */,
-				82C30FEA21148F6F000D70B4 /* MyPage.storyboard */,
+				83F4A5D92127F03A008C50C1 /* MyPage */,
 			);
 			path = groby;
 			sourceTree = "<group>";
@@ -414,6 +425,7 @@
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
 				C2388E7D212446E40010AAD1 /* Post.swift in Sources */,
+				83A47E6E2127F185006B70EC /* myPageTableViewController.swift in Sources */,
 				C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,

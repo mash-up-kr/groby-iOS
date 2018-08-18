@@ -14,7 +14,7 @@
         <!--개인정보 관리-->
         <scene sceneID="mvV-Re-17d">
             <objects>
-                <tableViewController id="r9C-5o-o5b" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MyPageViewController" id="r9C-5o-o5b" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="szJ-Jj-bk5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,25 +270,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZG-ES-St1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="-658.02098950524737"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Err-so-6Uf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qAX-Ig-ezu" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QQ3-Qx-H83">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="r9C-5o-o5b" kind="relationship" relationship="rootViewController" id="Cnf-kF-YVc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c8T-nE-CkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-127.2" y="-658.02098950524737"/>
+            <point key="canvasLocation" x="588" y="-671"/>
         </scene>
         <!--비밀번호 확인-->
         <scene sceneID="1Qr-So-fTL">
@@ -488,6 +470,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ACF-qM-gxp"/>
         <segue reference="6Be-Pi-xhB"/>
     </inferredMetricsTieBreakers>
 </document>
