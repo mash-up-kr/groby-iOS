@@ -398,7 +398,6 @@
 				EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */,
 				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
 				EF5E1D1521270876004A9A42 /* Bank.storyboard in Resources */,
-				82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
