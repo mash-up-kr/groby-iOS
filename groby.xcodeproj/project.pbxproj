@@ -24,6 +24,8 @@
 		C2388E7E212446E40010AAD1 /* MyPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* MyPostTableViewCell.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
+		EF5E1D1521270876004A9A42 /* Bank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5E1D1421270876004A9A42 /* Bank.storyboard */; };
+		EF5E1D1721270AE6004A9A42 /* BankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5E1D1621270AE6004A9A42 /* BankViewController.swift */; };
 		EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF5E1D182127EB59004A9A42 /* GoogleService-Info.plist */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
 		EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* ViewController.swift */; };
@@ -66,6 +68,8 @@
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
 		EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAssets+Extension.swift"; sourceTree = "<group>"; };
+		EF5E1D1421270876004A9A42 /* Bank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bank.storyboard; sourceTree = "<group>"; };
+		EF5E1D1621270AE6004A9A42 /* BankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewController.swift; sourceTree = "<group>"; };
 		EF5E1D182127EB59004A9A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		8322A7F3211F64C10028504D /* tap4 */ = {
 			isa = PBXGroup;
 			children = (
+				EF0C971621270831003F63F9 /* MakeTap2 */,
 				8322A7F4211F64E00028504D /* tap4.storyboard */,
 			);
 			name = tap4;
@@ -185,6 +190,13 @@
 			name = Search;
 			sourceTree = "<group>";
 		};
+		EF0C971621270831003F63F9 /* MakeTap2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MakeTap2;
+			sourceTree = "<group>";
+		};
 		EF476947211F5F6F00561AD4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +206,15 @@
 				EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		EF5E1D1321270861004A9A42 /* MakeTap2 */ = {
+			isa = PBXGroup;
+			children = (
+				EF5E1D1421270876004A9A42 /* Bank.storyboard */,
+				EF5E1D1621270AE6004A9A42 /* BankViewController.swift */,
+			);
+			name = MakeTap2;
 			sourceTree = "<group>";
 		};
 		EFAAA9BF211486E40013F360 = {
@@ -217,9 +238,10 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
-				8322A7F3211F64C10028504D /* tap4 */,
 				EF476947211F5F6F00561AD4 /* Common */,
 				EFE7D360211F378000C909FD /* MakeTap1 */,
+				EF5E1D1321270861004A9A42 /* MakeTap2 */,
+				8322A7F3211F64C10028504D /* tap4 */,
 				AA9A1064211F4FB500B4A222 /* Search */,
 				AA9A105C211F36E100B4A222 /* Alarm */,
 				AA16A568211DE1EF00A1A4DD /* Menu */,
@@ -348,6 +370,7 @@
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
 				EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */,
 				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
+				EF5E1D1521270876004A9A42 /* Bank.storyboard in Resources */,
 				82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +435,7 @@
 			files = (
 				AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */,
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
+				EF5E1D1721270AE6004A9A42 /* BankViewController.swift in Sources */,
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
 				C2388E7D212446E40010AAD1 /* Post.swift in Sources */,
 				C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */,

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LGR-XB-nhG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bank View Controller-->
+        <scene sceneID="rhP-9r-6Rf">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="LGR-XB-nhG" customClass="BankViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.40000000000000002" contentMode="scaleToFill" id="T1S-mx-4OM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxd-jm-urA">
+                                <rect key="frame" x="20" y="40" width="20" height="22"/>
+                                <state key="normal" image="xButtonGray"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="LGR-XB-nhG" eventType="touchUpInside" id="otx-hE-CDX"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvQ-YN-QKz">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="black"/>
+                        <constraints>
+                            <constraint firstItem="oYr-kS-XjN" firstAttribute="bottom" secondItem="xvQ-YN-QKz" secondAttribute="bottom" id="8sa-bq-Pvs"/>
+                            <constraint firstItem="oYr-kS-XjN" firstAttribute="trailing" secondItem="xvQ-YN-QKz" secondAttribute="trailing" id="KkZ-aw-LZU"/>
+                            <constraint firstItem="xvQ-YN-QKz" firstAttribute="leading" secondItem="oYr-kS-XjN" secondAttribute="leading" id="fwe-7a-fRg"/>
+                            <constraint firstItem="Lxd-jm-urA" firstAttribute="leading" secondItem="oYr-kS-XjN" secondAttribute="leading" constant="20" id="jTN-GV-Sb0"/>
+                            <constraint firstItem="xvQ-YN-QKz" firstAttribute="top" secondItem="Lxd-jm-urA" secondAttribute="bottom" constant="8" id="xM1-y8-ox7"/>
+                            <constraint firstItem="Lxd-jm-urA" firstAttribute="top" secondItem="oYr-kS-XjN" secondAttribute="top" constant="20" id="xey-49-lfc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oYr-kS-XjN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0T1-ah-KUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559.20000000000005" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xButtonGray" width="20" height="20"/>
+        <namedColor name="black">
+            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
