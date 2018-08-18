@@ -520,7 +520,7 @@
         <!--ㅎㅇㄹㄴㅎㄴㅇㅎ호ㅗㄹ-->
         <scene sceneID="OOr-45-La1">
             <objects>
-                <viewController id="eoH-XA-Ebi" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eoH-XA-Ebi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t8x-2j-gJj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -877,7 +877,7 @@
         <!--글 미리보기-->
         <scene sceneID="q8y-4o-MPg">
             <objects>
-                <viewController id="p1J-Vn-9Pd" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="p1J-Vn-9Pd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Wg-5o-FEw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1242,12 +1242,6 @@
         <namedColor name="black">
             <color red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="black">
-            <color red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="brownishGrey">
-            <color red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="brownishGrey">
             <color red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -1257,26 +1251,11 @@
         <namedColor name="iris">
             <color red="0.31764705879999999" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="iris">
-            <color red="0.31764705879999999" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="iris">
-            <color red="0.31764705879999999" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="irisTwo">
-            <color red="0.32156862749999998" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="irisTwo">
             <color red="0.32156862749999998" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="whiteOne">
             <color red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="whiteOne">
-            <color red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="whiteTwo">
-            <color red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="whiteTwo">
             <color red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
