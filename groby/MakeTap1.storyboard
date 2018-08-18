@@ -64,10 +64,11 @@
                     <navigationItem key="navigationItem" title="카테고리" id="Bbv-pn-Oal">
                         <barButtonItem key="backBarButtonItem" title=" " id="6Dx-GT-tPt"/>
                         <barButtonItem key="leftBarButtonItem" style="plain" id="WOM-1j-EVG">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Nz-Gq-frP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="4Nz-Gq-frP">
                                 <rect key="frame" x="16" y="11" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="xButtonGray"/>
+                                <color key="tintColor" name="black"/>
+                                <state key="normal" backgroundImage="xIcon"/>
                                 <connections>
                                     <action selector="closeButtonAction:" destination="NxK-MQ-uu2" eventType="touchUpInside" id="dNH-PZ-RDY"/>
                                 </connections>
@@ -103,14 +104,22 @@
                                     <constraint firstAttribute="height" constant="1" id="OdM-oJ-9dy"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rB-zD-UC3" customClass="RichEditorView" customModule="RichEditorView">
+                                <rect key="frame" x="24" y="57" width="327" height="546"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SMn-WN-1g4" firstAttribute="top" secondItem="EoL-n4-8rk" secondAttribute="bottom" id="4SU-6q-OMF"/>
+                            <constraint firstItem="4rB-zD-UC3" firstAttribute="top" secondItem="SMn-WN-1g4" secondAttribute="bottom" constant="8" id="Gkp-JW-4Mm"/>
                             <constraint firstItem="Pg5-bf-6tn" firstAttribute="trailing" secondItem="EoL-n4-8rk" secondAttribute="trailing" constant="24" id="NXP-uq-GE4"/>
+                            <constraint firstItem="Pg5-bf-6tn" firstAttribute="trailing" secondItem="4rB-zD-UC3" secondAttribute="trailing" constant="24" id="PUO-7p-Tzj"/>
                             <constraint firstItem="EoL-n4-8rk" firstAttribute="leading" secondItem="Pg5-bf-6tn" secondAttribute="leading" constant="24" id="e64-VW-hMX"/>
                             <constraint firstItem="EoL-n4-8rk" firstAttribute="top" secondItem="Pg5-bf-6tn" secondAttribute="top" id="mMb-n1-kKx"/>
                             <constraint firstItem="SMn-WN-1g4" firstAttribute="leading" secondItem="Pg5-bf-6tn" secondAttribute="leading" id="qL4-ro-lJ8"/>
+                            <constraint firstItem="4rB-zD-UC3" firstAttribute="leading" secondItem="Pg5-bf-6tn" secondAttribute="leading" constant="24" id="sMJ-e7-tXK"/>
+                            <constraint firstItem="Pg5-bf-6tn" firstAttribute="bottom" secondItem="4rB-zD-UC3" secondAttribute="bottom" id="ucP-Mz-M0c"/>
                             <constraint firstItem="Pg5-bf-6tn" firstAttribute="trailing" secondItem="SMn-WN-1g4" secondAttribute="trailing" id="y3X-L3-YF0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pg5-bf-6tn"/>
@@ -132,6 +141,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="editor" destination="4rB-zD-UC3" id="LNN-gR-rKw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adr-wT-TWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -614,7 +626,7 @@
         <image name="backButton" width="44" height="44"/>
         <image name="backIcon" width="10.5" height="16"/>
         <image name="dropdownButton" width="9.5" height="6"/>
-        <image name="xButtonGray" width="20" height="20"/>
+        <image name="xIcon" width="20" height="20"/>
         <namedColor name="black">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

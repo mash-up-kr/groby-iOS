@@ -13,6 +13,22 @@ class MenuViewController: UITableViewController {
     @IBOutlet weak var wroteButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
     
+    @IBAction func tappedMyPost(_ sender: UIButton) {
+        let menuStoryBoard = UIStoryboard.init(name: "Menu", bundle: nil)
+        let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "MyPostTableViewController")
+        navigationController?.pushViewController(menuViewController, animated: true)
+    }
+    
+    @IBAction func tappedJoinedPost(_ sender: UIButton) {
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
