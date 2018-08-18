@@ -8,4 +8,5 @@ target 'groby' do
   pod "TLPhotoPicker"
   pod 'Kingfisher', '~> 4.0'
   pod 'Alamofire', '~> 4.7'
+  pod 'Firebase/Core'
 end

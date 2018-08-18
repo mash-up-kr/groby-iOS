@@ -24,6 +24,7 @@
 		C2388E7E212446E40010AAD1 /* MyPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* MyPostTableViewCell.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
+		EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF5E1D182127EB59004A9A42 /* GoogleService-Info.plist */; };
 		EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CB211486E50013F360 /* AppDelegate.swift */; };
 		EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9CD211486E50013F360 /* ViewController.swift */; };
 		EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAAA9CF211486E50013F360 /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
 		EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAssets+Extension.swift"; sourceTree = "<group>"; };
+		EF5E1D182127EB59004A9A42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFAAA9C8211486E50013F360 /* groby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAAA9CB211486E50013F360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAAA9CD211486E50013F360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 		EFAAA9E621148E080013F360 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				EF5E1D182127EB59004A9A42 /* GoogleService-Info.plist */,
 				EFAAA9CB211486E50013F360 /* AppDelegate.swift */,
 				EFAAA9DA211486E60013F360 /* Info.plist */,
 				EFAAA9D7211486E60013F360 /* LaunchScreen.storyboard */,
@@ -343,6 +346,7 @@
 				8322A7F5211F64E00028504D /* tap4.storyboard in Resources */,
 				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
+				EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */,
 				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
 				82C30FEB21148F6F000D70B4 /* MyPage.storyboard in Resources */,
 			);
@@ -359,18 +363,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-groby/Pods-groby-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RichEditorView/RichEditorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TLPhotoPicker/TLPhotoPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RichEditorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TLPhotoPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
