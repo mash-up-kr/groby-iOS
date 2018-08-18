@@ -84,13 +84,109 @@
         <scene sceneID="rgX-87-F49">
             <objects>
                 <viewController storyboardIdentifier="MakeTap1SecondViewController" title="내용 작성" id="lWx-Qh-O9k" customClass="MakeTab1SecondViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
-                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sRy-od-hHo">
+                    <view key="view" contentMode="scaleToFill" id="6W6-JN-Yqd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7a-Xo-lRP">
+                                <rect key="frame" x="24" y="16" width="327" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="coolGrey"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VzZ-mD-vzK">
+                                <rect key="frame" x="0.0" y="49" width="375" height="120"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bwI-9J-DJk" customClass="Image">
+                                        <rect key="frame" x="114" y="12" width="261" height="96"/>
+                                        <color key="backgroundColor" name="whiteThree"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2TE-yF-jkg">
+                                            <size key="itemSize" width="96" height="96"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="image_cell" id="c7R-Ry-EbJ" customClass="ImageCollectionViewCell" customModule="groby" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="za8-bj-PYw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="za8-bj-PYw" secondAttribute="height" multiplier="96:96" id="utT-Xv-dv6"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="za8-bj-PYw" secondAttribute="bottom" id="4Uw-Vr-b73"/>
+                                                    <constraint firstItem="za8-bj-PYw" firstAttribute="top" secondItem="c7R-Ry-EbJ" secondAttribute="top" id="5VP-qB-ky7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="za8-bj-PYw" secondAttribute="trailing" id="VAZ-wN-zB2"/>
+                                                    <constraint firstItem="za8-bj-PYw" firstAttribute="leading" secondItem="c7R-Ry-EbJ" secondAttribute="leading" id="veZ-wg-qX2"/>
+                                                </constraints>
+                                                <size key="customSize" width="96" height="96"/>
+                                                <connections>
+                                                    <outlet property="imageView" destination="za8-bj-PYw" id="VUh-T1-B7B"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="lWx-Qh-O9k" id="NGF-KL-RCy"/>
+                                            <outlet property="delegate" destination="lWx-Qh-O9k" id="SE0-VG-4gn"/>
+                                        </connections>
+                                    </collectionView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrb-ad-KTc">
+                                        <rect key="frame" x="12" y="12" width="96" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Vrb-ad-KTc" secondAttribute="height" multiplier="96:96" id="sBe-dU-F94"/>
+                                        </constraints>
+                                        <state key="normal" image="plusIcon-1">
+                                            <color key="titleColor" name="whiteTwo"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedImgaeFetch:" destination="lWx-Qh-O9k" eventType="touchUpInside" id="rYC-qZ-sjr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="whiteThree"/>
+                                <constraints>
+                                    <constraint firstItem="bwI-9J-DJk" firstAttribute="leading" secondItem="Vrb-ad-KTc" secondAttribute="trailing" constant="6" id="2c0-wg-9A5"/>
+                                    <constraint firstItem="bwI-9J-DJk" firstAttribute="top" secondItem="VzZ-mD-vzK" secondAttribute="top" constant="12" id="K1V-ux-vaP"/>
+                                    <constraint firstItem="Vrb-ad-KTc" firstAttribute="leading" secondItem="VzZ-mD-vzK" secondAttribute="leading" constant="12" id="Kp7-xq-uaR"/>
+                                    <constraint firstAttribute="height" constant="120" id="Qbh-Nv-nLk"/>
+                                    <constraint firstAttribute="bottom" secondItem="bwI-9J-DJk" secondAttribute="bottom" constant="12" id="TW7-UU-ctn"/>
+                                    <constraint firstItem="Vrb-ad-KTc" firstAttribute="top" secondItem="VzZ-mD-vzK" secondAttribute="top" constant="12" id="bAB-Ip-HoG"/>
+                                    <constraint firstAttribute="trailing" secondItem="bwI-9J-DJk" secondAttribute="trailing" id="efg-ei-U4Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vrb-ad-KTc" secondAttribute="bottom" constant="12" id="iGe-ft-SmF"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" placeholder="내용     ex) 물품 상세 정보, 배부 위치" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Xl-Qp-MQi">
+                                <rect key="frame" x="24" y="185" width="327" height="394"/>
+                                <color key="textColor" name="coolGrey"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Xl-Qp-MQi" firstAttribute="leading" secondItem="tXb-5V-HM7" secondAttribute="leading" constant="24" id="586-hn-Wav"/>
+                            <constraint firstItem="k7a-Xo-lRP" firstAttribute="leading" secondItem="tXb-5V-HM7" secondAttribute="leading" constant="24" id="7ou-hw-xNh"/>
+                            <constraint firstItem="tXb-5V-HM7" firstAttribute="bottom" secondItem="7Xl-Qp-MQi" secondAttribute="bottom" constant="24" id="DMM-ya-Ye3"/>
+                            <constraint firstItem="VzZ-mD-vzK" firstAttribute="top" secondItem="k7a-Xo-lRP" secondAttribute="bottom" constant="16" id="NLL-vW-Gmg"/>
+                            <constraint firstItem="k7a-Xo-lRP" firstAttribute="top" secondItem="tXb-5V-HM7" secondAttribute="top" constant="16" id="Qic-cV-ohE"/>
+                            <constraint firstItem="VzZ-mD-vzK" firstAttribute="leading" secondItem="tXb-5V-HM7" secondAttribute="leading" id="aqh-T3-Ylo"/>
+                            <constraint firstItem="tXb-5V-HM7" firstAttribute="trailing" secondItem="7Xl-Qp-MQi" secondAttribute="trailing" constant="24" id="e7d-zi-wZp"/>
+                            <constraint firstItem="7Xl-Qp-MQi" firstAttribute="top" secondItem="VzZ-mD-vzK" secondAttribute="bottom" constant="16" id="f7O-fO-Ajy"/>
+                            <constraint firstItem="tXb-5V-HM7" firstAttribute="trailing" secondItem="k7a-Xo-lRP" secondAttribute="trailing" constant="24" id="o8J-GL-mBT"/>
+                            <constraint firstItem="tXb-5V-HM7" firstAttribute="trailing" secondItem="VzZ-mD-vzK" secondAttribute="trailing" id="ykZ-nk-LIQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tXb-5V-HM7"/>
+                    </view>
                     <navigationItem key="navigationItem" title="내용 작성" id="2OT-wj-PaP">
                         <barButtonItem key="backBarButtonItem" title=" " id="aI8-ZJ-Ovb"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="tzh-P9-JhM">
@@ -108,6 +204,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="bwI-9J-DJk" id="NlQ-eK-bbb"/>
+                        <outlet property="imageAddButton" destination="Vrb-ad-KTc" id="cah-bL-kf8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adr-wT-TWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -589,12 +689,16 @@
     <resources>
         <image name="backButton" width="44" height="16"/>
         <image name="dropdownButton" width="9" height="6"/>
+        <image name="plusIcon-1" width="40" height="40"/>
         <image name="xIcon" width="20" height="20"/>
         <namedColor name="black">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brownishGrey">
             <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="coolGrey">
+            <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="coolGrey">
             <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -610,6 +714,12 @@
         </namedColor>
         <namedColor name="whiteThree">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteThree">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteTwo">
+            <color red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
