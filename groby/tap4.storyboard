@@ -31,7 +31,7 @@
         <!--내용 작성-->
         <scene sceneID="wzg-sG-94W">
             <objects>
-                <viewController id="Wea-bB-VIY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="내용작성ViewController" id="Wea-bB-VIY" customClass="내용작성ViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wF-SF-BN4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,11 +147,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="내용 작성" id="wDP-WN-m6l">
-                        <barButtonItem key="rightBarButtonItem" title="다음" id="2J8-ki-Euy">
-                            <connections>
-                                <segue destination="p1J-Vn-9Pd" kind="show" id="aWY-Zm-Zqd"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="다음" id="2J8-ki-Euy"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -515,10 +511,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V2-sW-w1h">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1392"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWs-4b-zid">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1392"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1436"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-qY-D2K">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
@@ -761,7 +757,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5R-fY-4nf">
-                                                <rect key="frame" x="0.0" y="545.5" width="375" height="846.5"/>
+                                                <rect key="frame" x="0.0" y="545.5" width="375" height="890.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[수량조사] 사쿠라 키링 공구 주문 영수증 입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyw-NO-0Qi">
                                                         <rect key="frame" x="24" y="47" width="317.5" height="20.5"/>
@@ -770,7 +766,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-dU-Akk">
-                                                        <rect key="frame" x="24" y="313" width="326" height="523.5"/>
+                                                        <rect key="frame" x="24" y="313" width="326" height="567.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -866,16 +862,16 @@
         <!--글 미리보기-->
         <scene sceneID="q8y-4o-MPg">
             <objects>
-                <viewController id="p1J-Vn-9Pd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="미리보기ViewController" id="p1J-Vn-9Pd" customClass="미리보기ViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Wg-5o-FEw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjw-7b-f5M">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1392"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-FJ-EIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1392"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1436"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="DIS-He-p3X">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
@@ -1118,7 +1114,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9L-tj-jVW">
-                                                <rect key="frame" x="0.0" y="545.5" width="375" height="846.5"/>
+                                                <rect key="frame" x="0.0" y="545.5" width="375" height="890.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[수량조사] 사쿠라 키링 공구 주문 영수증 입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbE-I3-wHn">
                                                         <rect key="frame" x="24" y="47" width="317.5" height="20.5"/>
@@ -1237,9 +1233,6 @@
                                 <state key="normal" title="등록">
                                     <color key="titleColor" name="iris"/>
                                 </state>
-                                <connections>
-                                    <segue destination="eoH-XA-Ebi" kind="show" id="4Sd-2T-PSp"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>

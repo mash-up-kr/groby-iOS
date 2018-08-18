@@ -1,5 +1,5 @@
 //
-//  myPageTableViewController.swift
+//  미리보기ViewController.swift
 //  groby
 //
 //  Created by YunHee Lee on 2018. 8. 18..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class myPageTableViewController: UIViewController {
+class 미리보기ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
