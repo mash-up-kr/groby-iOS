@@ -340,7 +340,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LVf-Oo-kz0" kind="show" id="V7b-d1-7ZL"/>
+                                    <segue destination="owD-YK-2U9" kind="show" id="SKk-UR-uNb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -379,95 +379,10 @@
             </objects>
             <point key="canvasLocation" x="1825" y="-658"/>
         </scene>
-        <!--비밀번호 확인-->
-        <scene sceneID="nRX-nL-piC">
-            <objects>
-                <viewController id="LVf-Oo-kz0" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ELb-b0-RaD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0W3-Ny-gMQ">
-                                <rect key="frame" x="24" y="149" width="327" height="48"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh24442@hongik.ac.kr" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Uq-qQ-XCP" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
-                                        <rect key="frame" x="34" y="24" width="176.5" height="17"/>
-                                        <color key="textColor" name="coolGrey"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="heY-Zf-LKX"/>
-                                    <constraint firstItem="2Uq-qQ-XCP" firstAttribute="leading" secondItem="0W3-Ny-gMQ" secondAttribute="leadingMargin" constant="26.199999999999999" id="hnL-vY-bDt"/>
-                                    <constraint firstItem="2Uq-qQ-XCP" firstAttribute="top" secondItem="0W3-Ny-gMQ" secondAttribute="topMargin" constant="16" id="ogW-HN-VvZ"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wF7-79-Lug">
-                                <rect key="frame" x="24" y="205" width="327" height="48"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="기존 비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGF-tj-rbg" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
-                                        <rect key="frame" x="34" y="24" width="108" height="17"/>
-                                        <color key="textColor" name="coolGrey"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Oxj-fh-csa"/>
-                                    <constraint firstItem="cGF-tj-rbg" firstAttribute="leading" secondItem="wF7-79-Lug" secondAttribute="leadingMargin" constant="26.199999999999999" id="aAR-bX-gAS"/>
-                                    <constraint firstItem="cGF-tj-rbg" firstAttribute="top" secondItem="wF7-79-Lug" secondAttribute="topMargin" constant="16" id="kGp-do-0qq"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frZ-3H-Czs">
-                                <rect key="frame" x="24" y="283" width="327" height="30"/>
-                                <color key="backgroundColor" name="iris"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="다음">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="0Gc-XL-2Jy" firstAttribute="trailing" secondItem="wF7-79-Lug" secondAttribute="trailing" constant="24" id="CDH-rn-KX7"/>
-                            <constraint firstItem="0Gc-XL-2Jy" firstAttribute="trailing" secondItem="frZ-3H-Czs" secondAttribute="trailing" constant="24" id="Jlr-ek-JK9"/>
-                            <constraint firstItem="0W3-Ny-gMQ" firstAttribute="leading" secondItem="0Gc-XL-2Jy" secondAttribute="leading" constant="24" id="OyB-Vi-eYK"/>
-                            <constraint firstItem="frZ-3H-Czs" firstAttribute="leading" secondItem="0Gc-XL-2Jy" secondAttribute="leading" constant="24" id="Syv-3a-sdC"/>
-                            <constraint firstItem="frZ-3H-Czs" firstAttribute="top" secondItem="wF7-79-Lug" secondAttribute="bottom" constant="30" id="nA3-qQ-rZb"/>
-                            <constraint firstItem="0W3-Ny-gMQ" firstAttribute="top" secondItem="0Gc-XL-2Jy" secondAttribute="top" constant="85" id="t6i-SU-37T"/>
-                            <constraint firstItem="wF7-79-Lug" firstAttribute="leading" secondItem="0Gc-XL-2Jy" secondAttribute="leading" constant="24" id="uOr-du-STg"/>
-                            <constraint firstItem="0Gc-XL-2Jy" firstAttribute="trailing" secondItem="0W3-Ny-gMQ" secondAttribute="trailing" constant="24" id="utz-SU-C1g"/>
-                            <constraint firstItem="wF7-79-Lug" firstAttribute="top" secondItem="0W3-Ny-gMQ" secondAttribute="bottom" constant="8" id="wAF-aw-Oqx"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Gc-XL-2Jy"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="비밀번호 확인" id="CHZ-V8-xug">
-                        <barButtonItem key="backBarButtonItem" title=" " id="G3M-7L-jWX"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="cJG-la-s30">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MJo-8M-Fn2">
-                                <rect key="frame" x="325" y="5" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="xIcon">
-                                    <color key="titleColor" name="iris"/>
-                                </state>
-                            </button>
-                            <connections>
-                                <segue destination="r9C-5o-o5b" kind="show" id="kU1-0l-O4c"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dX8-81-LqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2655" y="-639"/>
-        </scene>
-        <!--비밀번호 확인-->
+        <!--비밀번호 재설정-->
         <scene sceneID="Mj4-xx-DJe">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCX-xj-raj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="owD-YK-2U9" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QCH-bb-8Pc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -538,7 +453,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AH1-we-bTR"/>
                     </view>
-                    <navigationItem key="navigationItem" title="비밀번호 확인" id="hYM-Be-WPV">
+                    <navigationItem key="navigationItem" title="비밀번호 재설정" id="hYM-Be-WPV">
                         <barButtonItem key="backBarButtonItem" title=" " id="P6g-XU-Nhq"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="bse-h7-QLB">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fwH-y7-pgT">
@@ -548,13 +463,15 @@
                                     <color key="titleColor" name="iris"/>
                                 </state>
                             </button>
+                            <connections>
+                                <segue destination="r9C-5o-o5b" kind="show" id="6Be-Pi-xhB"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RCX-xj-raj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2654" y="-658"/>
+            <point key="canvasLocation" x="2679" y="-670"/>
         </scene>
     </scenes>
     <resources>
@@ -571,6 +488,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kU1-0l-O4c"/>
+        <segue reference="6Be-Pi-xhB"/>
     </inferredMetricsTieBreakers>
 </document>
