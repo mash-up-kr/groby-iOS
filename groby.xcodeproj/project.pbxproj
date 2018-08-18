@@ -21,7 +21,8 @@
 		AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1067211F4FD900B4A222 /* SearchViewController.swift */; };
 		C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */; };
 		C2388E7D212446E40010AAD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7A212446E30010AAD1 /* Post.swift */; };
-		C2388E7E212446E40010AAD1 /* MyPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* MyPostTableViewCell.swift */; };
+		C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */; };
+		C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* JoinedPostTableViewController.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
 		EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF5E1D182127EB59004A9A42 /* GoogleService-Info.plist */; };
@@ -61,7 +62,8 @@
 		AA9A1067211F4FD900B4A222 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostTableViewController.swift; sourceTree = "<group>"; };
 		C2388E7A212446E30010AAD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		C2388E7B212446E30010AAD1 /* MyPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostTableViewCell.swift; sourceTree = "<group>"; };
+		C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C24A4A222128021500406733 /* JoinedPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedPostTableViewController.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
 		EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
@@ -143,7 +145,8 @@
 				AA16A569211DE20C00A1A4DD /* Menu.storyboard */,
 				AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */,
 				C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */,
-				C2388E7B212446E30010AAD1 /* MyPostTableViewCell.swift */,
+				C24A4A222128021500406733 /* JoinedPostTableViewController.swift */,
+				C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */,
 				C2388E7A212446E30010AAD1 /* Post.swift */,
 			);
 			name = Menu;
@@ -419,8 +422,9 @@
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
-				C2388E7E212446E40010AAD1 /* MyPostTableViewCell.swift in Sources */,
+				C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */,
 				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,
+				C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */,
 				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
 				EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */,
 				EFE7D36A211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift in Sources */,

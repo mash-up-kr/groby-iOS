@@ -8,10 +8,10 @@
 
 import UIKit
 
-class MyPostTableViewCell: UITableViewCell {
+class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postTitle: UILabel!
     @IBOutlet weak var postDate: UILabel!
     @IBOutlet weak var postLikeOrProgress: UILabel!
-    @IBOutlet weak var postInProgress: UIProgressView!
+    @IBOutlet weak var postLikeOrProgressCount: UILabel!
 }
