@@ -137,7 +137,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8322A7F3211F64C10028504D /* tap4 */ = {
+		8322A7F3211F64C10028504D /* Tap4 */ = {
 			isa = PBXGroup;
 			children = (
 				EF0C971621270831003F63F9 /* MakeTap2 */,
@@ -145,7 +145,7 @@
 				8382CADD21280DD10051ECCE /* 내용작성ViewController.swift */,
 				8382CADF21280FBD0051ECCE /* 미리보기ViewController.swift */,
 			);
-			name = tap4;
+			name = Tap4;
 			sourceTree = "<group>";
 		};
 		83F4A5D92127F03A008C50C1 /* MyPage */ = {
@@ -234,13 +234,13 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
-		EF5E1D1321270861004A9A42 /* MakeTap2 */ = {
+		EF5E1D1321270861004A9A42 /* Tap2 */ = {
 			isa = PBXGroup;
 			children = (
 				EF5E1D1421270876004A9A42 /* Bank.storyboard */,
 				EF5E1D1621270AE6004A9A42 /* BankViewController.swift */,
 			);
-			name = MakeTap2;
+			name = Tap2;
 			sourceTree = "<group>";
 		};
 		EFAAA9BF211486E40013F360 = {
@@ -265,9 +265,9 @@
 			isa = PBXGroup;
 			children = (
 				EF476947211F5F6F00561AD4 /* Common */,
-				EFE7D360211F378000C909FD /* MakeTap1 */,
-				EF5E1D1321270861004A9A42 /* MakeTap2 */,
-				8322A7F3211F64C10028504D /* tap4 */,
+				EFE7D360211F378000C909FD /* Tap1 */,
+				EF5E1D1321270861004A9A42 /* Tap2 */,
+				8322A7F3211F64C10028504D /* Tap4 */,
 				AA9A1064211F4FB500B4A222 /* Search */,
 				AA9A105C211F36E100B4A222 /* Alarm */,
 				AA16A568211DE1EF00A1A4DD /* Menu */,
@@ -312,7 +312,7 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
-		EFE7D360211F378000C909FD /* MakeTap1 */ = {
+		EFE7D360211F378000C909FD /* Tap1 */ = {
 			isa = PBXGroup;
 			children = (
 				EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */,
@@ -322,7 +322,7 @@
 				EFE7D36B211F4DEA00C909FD /* MakeTab1FourthViewController.swift */,
 				EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */,
 			);
-			name = MakeTap1;
+			name = Tap1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
