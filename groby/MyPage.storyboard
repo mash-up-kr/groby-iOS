@@ -5,7 +5,9 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,14 +31,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학교 이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-Mu-UEP">
-                                                    <rect key="frame" x="24" y="13.5" width="78" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="24" y="15.5" width="64.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7so-cp-SfH">
-                                                    <rect key="frame" x="110" y="14.5" width="230" height="17"/>
-                                                    <nil key="textColor"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh2442@hongik.ac.kr" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7so-cp-SfH">
+                                                    <rect key="frame" x="96.5" y="14.5" width="243.5" height="17"/>
+                                                    <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -58,14 +60,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgU-1a-E7y">
-                                                    <rect key="frame" x="24" y="13" width="45" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="24" y="15.5" width="36.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-yB-sIf">
-                                                    <rect key="frame" x="77" y="15.5" width="263" height="17"/>
-                                                    <nil key="textColor"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh24442" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-yB-sIf">
+                                                    <rect key="frame" x="68.5" y="15.5" width="271.5" height="17"/>
+                                                    <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -87,14 +89,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqj-TG-gQb">
-                                                    <rect key="frame" x="24" y="13.5" width="59" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="24" y="16" width="48.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-os-JZL">
-                                                    <rect key="frame" x="91" y="14.5" width="249" height="17"/>
-                                                    <nil key="textColor"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="010-1234-5678" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-os-JZL">
+                                                    <rect key="frame" x="80.5" y="14.5" width="259.5" height="17"/>
+                                                    <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -125,14 +127,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예금주명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSb-3c-6AN">
-                                                    <rect key="frame" x="24" y="13.5" width="59" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="24" y="16" width="48.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X1Z-Ve-GqV">
-                                                    <rect key="frame" x="91" y="14.5" width="249" height="17"/>
-                                                    <nil key="textColor"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="박다희" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X1Z-Ve-GqV">
+                                                    <rect key="frame" x="80.5" y="14.5" width="259.5" height="17"/>
+                                                    <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -154,14 +156,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="은행명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTa-kL-F3L">
-                                                    <rect key="frame" x="24" y="13.5" width="45" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="24" y="16" width="36.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKB-td-shj">
-                                                    <rect key="frame" x="77" y="14.5" width="263" height="17"/>
-                                                    <nil key="textColor"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="신한은행" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKB-td-shj">
+                                                    <rect key="frame" x="68.5" y="14.5" width="271.5" height="17"/>
+                                                    <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -188,15 +190,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계좌번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46I-yk-8eg">
-                                                    <rect key="frame" x="24" y="13.5" width="59" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="24" y="16" width="48.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Un8-Al-yvB">
-                                                    <rect key="frame" x="91" y="14.5" width="249" height="17"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="110-0103331133" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Un8-Al-yvB">
+                                                    <rect key="frame" x="80.5" y="14.5" width="259.5" height="17"/>
+                                                    <color key="textColor" name="coolGrey"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
@@ -226,16 +228,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보안 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDO-9u-Z98">
-                                                    <rect key="frame" x="24" y="13.5" width="64" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="24" y="16" width="52" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpp-b2-E03">
-                                                    <rect key="frame" x="255.5" y="9" width="96" height="30"/>
+                                                    <rect key="frame" x="261.5" y="9.5" width="90" height="29"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <state key="normal" title="비밀번호 변경 &gt;">
-                                                        <color key="titleColor" name="black"/>
+                                                        <color key="titleColor" name="coolGrey"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="mUH-vt-sNG" kind="show" id="ACF-qM-gxp"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -284,14 +290,287 @@
             </objects>
             <point key="canvasLocation" x="-127.2" y="-658.02098950524737"/>
         </scene>
+        <!--비밀번호 확인-->
+        <scene sceneID="1Qr-So-fTL">
+            <objects>
+                <viewController id="mUH-vt-sNG" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J6Q-aj-mVd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeH-KG-UMk">
+                                <rect key="frame" x="24" y="149" width="327" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh24442@hongik.ac.kr" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFB-g8-l0L" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                        <rect key="frame" x="34" y="24" width="176.5" height="17"/>
+                                        <color key="textColor" name="coolGrey"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AFB-g8-l0L" firstAttribute="leading" secondItem="JeH-KG-UMk" secondAttribute="leadingMargin" constant="26.199999999999999" id="2hi-57-eQb"/>
+                                    <constraint firstAttribute="height" constant="48" id="NNj-0i-f44"/>
+                                    <constraint firstItem="AFB-g8-l0L" firstAttribute="top" secondItem="JeH-KG-UMk" secondAttribute="topMargin" constant="16" id="XRQ-p0-lve"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aO1-2w-bTC">
+                                <rect key="frame" x="24" y="205" width="327" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="기존 비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-vt-oTX" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                        <rect key="frame" x="34" y="24" width="108" height="17"/>
+                                        <color key="textColor" name="coolGrey"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YYA-vt-oTX" firstAttribute="top" secondItem="aO1-2w-bTC" secondAttribute="topMargin" constant="16" id="cN0-Fd-Hoj"/>
+                                    <constraint firstItem="YYA-vt-oTX" firstAttribute="leading" secondItem="aO1-2w-bTC" secondAttribute="leadingMargin" constant="26.199999999999999" id="lGU-hf-ZHz"/>
+                                    <constraint firstAttribute="height" constant="48" id="pz9-TR-rGc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIO-pE-AuP">
+                                <rect key="frame" x="24" y="283" width="327" height="30"/>
+                                <color key="backgroundColor" name="iris"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="다음">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVf-Oo-kz0" kind="show" id="V7b-d1-7ZL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aO1-2w-bTC" firstAttribute="leading" secondItem="QcD-RQ-1yx" secondAttribute="leading" constant="24" id="DnS-Kd-HJw"/>
+                            <constraint firstItem="QcD-RQ-1yx" firstAttribute="trailing" secondItem="jIO-pE-AuP" secondAttribute="trailing" constant="24" id="Foc-dR-mia"/>
+                            <constraint firstItem="QcD-RQ-1yx" firstAttribute="trailing" secondItem="aO1-2w-bTC" secondAttribute="trailing" constant="24" id="Tbm-Ki-YXt"/>
+                            <constraint firstItem="QcD-RQ-1yx" firstAttribute="trailing" secondItem="JeH-KG-UMk" secondAttribute="trailing" constant="24" id="Uaa-sW-nFJ"/>
+                            <constraint firstItem="aO1-2w-bTC" firstAttribute="top" secondItem="JeH-KG-UMk" secondAttribute="bottom" constant="8" id="ecr-3l-rST"/>
+                            <constraint firstItem="jIO-pE-AuP" firstAttribute="top" secondItem="aO1-2w-bTC" secondAttribute="bottom" constant="30" id="h7S-rJ-lQd"/>
+                            <constraint firstItem="jIO-pE-AuP" firstAttribute="leading" secondItem="QcD-RQ-1yx" secondAttribute="leading" constant="24" id="icj-4l-bFS"/>
+                            <constraint firstItem="JeH-KG-UMk" firstAttribute="leading" secondItem="QcD-RQ-1yx" secondAttribute="leading" constant="24" id="l5k-Gx-dNa"/>
+                            <constraint firstItem="JeH-KG-UMk" firstAttribute="top" secondItem="QcD-RQ-1yx" secondAttribute="top" constant="85" id="ozQ-ob-q45"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QcD-RQ-1yx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="비밀번호 확인" id="ZR2-xh-i39">
+                        <barButtonItem key="backBarButtonItem" title=" " id="CWl-vi-u6v"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Vum-oX-56p">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3e5-dd-mQL">
+                                <rect key="frame" x="325" y="5" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="xIcon">
+                                    <color key="titleColor" name="iris"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <segue destination="r9C-5o-o5b" kind="show" id="2E4-Cg-Xjl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rz0-Qq-Hhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-658"/>
+        </scene>
+        <!--비밀번호 확인-->
+        <scene sceneID="nRX-nL-piC">
+            <objects>
+                <viewController id="LVf-Oo-kz0" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ELb-b0-RaD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0W3-Ny-gMQ">
+                                <rect key="frame" x="24" y="149" width="327" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh24442@hongik.ac.kr" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Uq-qQ-XCP" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                        <rect key="frame" x="34" y="24" width="176.5" height="17"/>
+                                        <color key="textColor" name="coolGrey"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="heY-Zf-LKX"/>
+                                    <constraint firstItem="2Uq-qQ-XCP" firstAttribute="leading" secondItem="0W3-Ny-gMQ" secondAttribute="leadingMargin" constant="26.199999999999999" id="hnL-vY-bDt"/>
+                                    <constraint firstItem="2Uq-qQ-XCP" firstAttribute="top" secondItem="0W3-Ny-gMQ" secondAttribute="topMargin" constant="16" id="ogW-HN-VvZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wF7-79-Lug">
+                                <rect key="frame" x="24" y="205" width="327" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="기존 비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGF-tj-rbg" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                        <rect key="frame" x="34" y="24" width="108" height="17"/>
+                                        <color key="textColor" name="coolGrey"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Oxj-fh-csa"/>
+                                    <constraint firstItem="cGF-tj-rbg" firstAttribute="leading" secondItem="wF7-79-Lug" secondAttribute="leadingMargin" constant="26.199999999999999" id="aAR-bX-gAS"/>
+                                    <constraint firstItem="cGF-tj-rbg" firstAttribute="top" secondItem="wF7-79-Lug" secondAttribute="topMargin" constant="16" id="kGp-do-0qq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frZ-3H-Czs">
+                                <rect key="frame" x="24" y="283" width="327" height="30"/>
+                                <color key="backgroundColor" name="iris"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="다음">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Gc-XL-2Jy" firstAttribute="trailing" secondItem="wF7-79-Lug" secondAttribute="trailing" constant="24" id="CDH-rn-KX7"/>
+                            <constraint firstItem="0Gc-XL-2Jy" firstAttribute="trailing" secondItem="frZ-3H-Czs" secondAttribute="trailing" constant="24" id="Jlr-ek-JK9"/>
+                            <constraint firstItem="0W3-Ny-gMQ" firstAttribute="leading" secondItem="0Gc-XL-2Jy" secondAttribute="leading" constant="24" id="OyB-Vi-eYK"/>
+                            <constraint firstItem="frZ-3H-Czs" firstAttribute="leading" secondItem="0Gc-XL-2Jy" secondAttribute="leading" constant="24" id="Syv-3a-sdC"/>
+                            <constraint firstItem="frZ-3H-Czs" firstAttribute="top" secondItem="wF7-79-Lug" secondAttribute="bottom" constant="30" id="nA3-qQ-rZb"/>
+                            <constraint firstItem="0W3-Ny-gMQ" firstAttribute="top" secondItem="0Gc-XL-2Jy" secondAttribute="top" constant="85" id="t6i-SU-37T"/>
+                            <constraint firstItem="wF7-79-Lug" firstAttribute="leading" secondItem="0Gc-XL-2Jy" secondAttribute="leading" constant="24" id="uOr-du-STg"/>
+                            <constraint firstItem="0Gc-XL-2Jy" firstAttribute="trailing" secondItem="0W3-Ny-gMQ" secondAttribute="trailing" constant="24" id="utz-SU-C1g"/>
+                            <constraint firstItem="wF7-79-Lug" firstAttribute="top" secondItem="0W3-Ny-gMQ" secondAttribute="bottom" constant="8" id="wAF-aw-Oqx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Gc-XL-2Jy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="비밀번호 확인" id="CHZ-V8-xug">
+                        <barButtonItem key="backBarButtonItem" title=" " id="G3M-7L-jWX"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="cJG-la-s30">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MJo-8M-Fn2">
+                                <rect key="frame" x="325" y="5" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="xIcon">
+                                    <color key="titleColor" name="iris"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <segue destination="r9C-5o-o5b" kind="show" id="kU1-0l-O4c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dX8-81-LqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2655" y="-639"/>
+        </scene>
+        <!--비밀번호 확인-->
+        <scene sceneID="Mj4-xx-DJe">
+            <objects>
+                <viewController id="owD-YK-2U9" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QCH-bb-8Pc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsc-rL-ojK">
+                                <rect key="frame" x="24" y="149" width="327" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh24442@hongik.ac.kr" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcK-7j-Rs9" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                        <rect key="frame" x="34" y="24" width="176.5" height="17"/>
+                                        <color key="textColor" name="coolGrey"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wcK-7j-Rs9" firstAttribute="leading" secondItem="lsc-rL-ojK" secondAttribute="leadingMargin" constant="26.199999999999999" id="7qW-uS-TbI"/>
+                                    <constraint firstItem="wcK-7j-Rs9" firstAttribute="top" secondItem="lsc-rL-ojK" secondAttribute="topMargin" constant="16" id="Qkw-Qx-arI"/>
+                                    <constraint firstAttribute="height" constant="48" id="RnS-up-IEz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8k-VB-ngO">
+                                <rect key="frame" x="24" y="205" width="327" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="기존 비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYj-uc-Edw" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
+                                        <rect key="frame" x="34" y="24" width="108" height="17"/>
+                                        <color key="textColor" name="coolGrey"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Nml-gn-hJ1"/>
+                                    <constraint firstItem="xYj-uc-Edw" firstAttribute="top" secondItem="S8k-VB-ngO" secondAttribute="topMargin" constant="16" id="hnj-MT-nZe"/>
+                                    <constraint firstItem="xYj-uc-Edw" firstAttribute="leading" secondItem="S8k-VB-ngO" secondAttribute="leadingMargin" constant="26.199999999999999" id="xQc-TK-c68"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQm-WB-IDV">
+                                <rect key="frame" x="24" y="283" width="327" height="30"/>
+                                <color key="backgroundColor" name="iris"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새로운 비밀번호를 입력해 주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nq-TG-5LP">
+                                <rect key="frame" x="97.5" y="102" width="181" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" name="iris"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lsc-rL-ojK" firstAttribute="top" secondItem="5Nq-TG-5LP" secondAttribute="bottom" constant="30" id="B0c-j2-Hlc"/>
+                            <constraint firstItem="S8k-VB-ngO" firstAttribute="leading" secondItem="AH1-we-bTR" secondAttribute="leading" constant="24" id="FeU-uc-DXc"/>
+                            <constraint firstItem="PQm-WB-IDV" firstAttribute="top" secondItem="S8k-VB-ngO" secondAttribute="bottom" constant="30" id="I7q-Ze-Knx"/>
+                            <constraint firstItem="AH1-we-bTR" firstAttribute="trailing" secondItem="lsc-rL-ojK" secondAttribute="trailing" constant="24" id="LNB-xD-sti"/>
+                            <constraint firstItem="PQm-WB-IDV" firstAttribute="leading" secondItem="AH1-we-bTR" secondAttribute="leading" constant="24" id="PaL-id-5TI"/>
+                            <constraint firstItem="lsc-rL-ojK" firstAttribute="leading" secondItem="AH1-we-bTR" secondAttribute="leading" constant="24" id="XTp-J4-7Ev"/>
+                            <constraint firstItem="S8k-VB-ngO" firstAttribute="top" secondItem="lsc-rL-ojK" secondAttribute="bottom" constant="8" id="goD-Yj-g7J"/>
+                            <constraint firstItem="AH1-we-bTR" firstAttribute="trailing" secondItem="PQm-WB-IDV" secondAttribute="trailing" constant="24" id="mnE-mh-ZEx"/>
+                            <constraint firstItem="5Nq-TG-5LP" firstAttribute="top" secondItem="AH1-we-bTR" secondAttribute="top" constant="38" id="mrg-ZP-XSf"/>
+                            <constraint firstItem="5Nq-TG-5LP" firstAttribute="centerX" secondItem="QCH-bb-8Pc" secondAttribute="centerX" id="wzE-8r-WdL"/>
+                            <constraint firstItem="AH1-we-bTR" firstAttribute="trailing" secondItem="S8k-VB-ngO" secondAttribute="trailing" constant="24" id="zwE-xb-RLU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AH1-we-bTR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="비밀번호 확인" id="hYM-Be-WPV">
+                        <barButtonItem key="backBarButtonItem" title=" " id="P6g-XU-Nhq"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="bse-h7-QLB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fwH-y7-pgT">
+                                <rect key="frame" x="325" y="5" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="xIcon">
+                                    <color key="titleColor" name="iris"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCX-xj-raj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="-658"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dropdownIcon" width="6" height="4"/>
-        <namedColor name="black">
-            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="xIcon" width="20" height="20"/>
+        <namedColor name="coolGrey">
+            <color red="0.57647058819999997" green="0.57647058819999997" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="iris">
+            <color red="0.31764705879999999" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="whiteThree">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kU1-0l-O4c"/>
+    </inferredMetricsTieBreakers>
 </document>
