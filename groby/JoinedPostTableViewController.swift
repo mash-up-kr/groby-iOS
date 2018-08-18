@@ -1,47 +1,51 @@
 //
-//  ViewController.swift
+//  JoinedPostViewController.swift
 //  groby
 //
-//  Created by 이재성 on 03/08/2018.
-//  Copyright © 2018 mashup. All rights reserved.
+//  Created by byungtak on 2018. 8. 18..
+//  Copyright © 2018년 mashup. All rights reserved.
 //
 
 import UIKit
 
-class MyPostTableViewController: UIViewController {
+class JoinedPostTableViewController: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
     
     private var posts: [Post] = []
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.setCustomTitle("내가 쓴 글")
-        let newBackButton = UIBarButtonItem(title: " ",
-                                            style: .plain, target: self, action: nil)
+
+        navigationItem.setCustomTitle("참여한 글")
+        let newBackButton = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
         
         navigationController?.navigationBar.topItem?.backBarButtonItem = newBackButton
+        
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
     }
+    
 }
 
-extension MyPostTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension JoinedPostTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "my_post_cell", for: indexPath) as? PostTableViewCell else { return UITableViewCell() }
+        guard let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "my_post_cell", for: indexPath) as? PostTableViewCell else {
+            return UITableViewCell()
+        }
         
         let post = posts[indexPath.row]
         
@@ -59,7 +63,6 @@ extension MyPostTableViewController: UITableViewDelegate, UITableViewDataSource 
         return cell
     }
 }
-
 
 
 

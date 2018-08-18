@@ -20,7 +20,9 @@ class MenuViewController: UITableViewController {
     }
     
     @IBAction func tappedJoinedPost(_ sender: UIButton) {
-        
+        let menuStoryBoard = UIStoryboard.init(name: "Menu", bundle: nil)
+        let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "JoinedPostTableViewController")
+        navigationController?.pushViewController(menuViewController, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {

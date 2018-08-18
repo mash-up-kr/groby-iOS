@@ -13,14 +13,12 @@ struct Post {
     var postImageUrl: String
     var postTitle: String
     var postDate: String
-    var postLike: String
-    var postInProgress: Float
+    var postInProgressOrLikeCount: Int
     
-    init(postImageUrl: String, postTitle: String, postDate: String, postLike: String, postInProgress: Float = 0.5) {
+    init(postImageUrl: String, postTitle: String, postDate: String, postInProgressOrLikeCount: Int) {
         self.postImageUrl = postImageUrl
         self.postTitle = postTitle
         self.postDate = postDate
-        self.postLike = postLike
-        self.postInProgress = postInProgress
+        self.postInProgressOrLikeCount = postInProgressOrLikeCount
     }
 }
