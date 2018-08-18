@@ -185,6 +185,7 @@
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="collectionView" destination="W5f-ib-F0n" id="WMe-0H-zua"/>
+                                                    <segue destination="iLa-qk-L3E" kind="presentation" id="k5a-RC-dzT"/>
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Afh-Jg-vwl">
@@ -281,6 +282,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptv-zu-JVA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1172" y="791"/>
+        </scene>
+        <!--Bank-->
+        <scene sceneID="VNh-L5-c50">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bank" id="iLa-qk-L3E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXZ-Ci-9pJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773" y="502"/>
         </scene>
         <!--Search-->
         <scene sceneID="NZc-UR-dSH">
