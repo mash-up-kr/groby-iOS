@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kyj-nq-BAi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kyj-nq-BAi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +31,7 @@
         <!--내용 작성-->
         <scene sceneID="wzg-sG-94W">
             <objects>
-                <viewController id="Wea-bB-VIY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="내용작성ViewController" id="Wea-bB-VIY" customClass="내용작성ViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6wF-SF-BN4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-au-eXH">
-                                        <rect key="frame" x="24" y="15.5" width="24.5" height="17"/>
+                                        <rect key="frame" x="24" y="16" width="24.5" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="coolGrey"/>
                                         <nil key="highlightedColor"/>
@@ -55,14 +56,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-wm-zg9">
                                 <rect key="frame" x="0.0" y="112" width="375" height="48"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="도착 예정 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-py-zWG">
-                                        <rect key="frame" x="24" y="15.5" width="80" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="도착 예정 날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-py-zWG">
+                                        <rect key="frame" x="24" y="15" width="80" height="17"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <color key="textColor" name="iris"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/07/23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEJ-6T-a3B">
-                                        <rect key="frame" x="267" y="15.5" width="73" height="17"/>
+                                        <rect key="frame" x="267" y="15" width="73" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="coolGrey"/>
                                         <nil key="highlightedColor"/>
@@ -144,24 +145,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a9f-yH-01w"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" id="wB5-KY-690">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DsL-WT-fUE">
-                                <rect key="frame" x="16" y="7" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="등록">
-                                    <color key="titleColor" name="iris"/>
-                                </state>
-                            </button>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="내용 작성" id="wDP-WN-m6l">
-                        <barButtonItem key="rightBarButtonItem" title="다음" id="2J8-ki-Euy">
-                            <connections>
-                                <segue destination="p1J-Vn-9Pd" kind="show" id="aWY-Zm-Zqd"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="다음" id="2J8-ki-Euy"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -330,7 +316,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수량조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b1-YK-ydF">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
+                                                                        <rect key="frame" x="16.5" y="14" width="42" height="14.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                         <color key="textColor" name="brownishGrey"/>
                                                                         <nil key="highlightedColor"/>
@@ -375,7 +361,7 @@
                                                                 <rect key="frame" x="225" y="0.0" width="75" height="41"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문완료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0B-qj-fmx">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
+                                                                        <rect key="frame" x="16.5" y="14" width="42" height="14.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                         <color key="textColor" name="iris"/>
                                                                         <nil key="highlightedColor"/>
@@ -433,14 +419,14 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xGc-b0-M3n">
-                                                        <rect key="frame" x="24" y="313.5" width="326" height="567"/>
+                                                        <rect key="frame" x="24" y="313" width="326" height="567.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="j11-M6-deh">
-                                                        <rect key="frame" x="24" y="94.5" width="327" height="195"/>
+                                                        <rect key="frame" x="24" y="94" width="327" height="195"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="195" id="FuG-0B-bgE"/>
                                                         </constraints>
@@ -516,19 +502,19 @@
             </objects>
             <point key="canvasLocation" x="3178" y="210"/>
         </scene>
-        <!--ㅎㅇㄹㄴㅎㄴㅇㅎ호ㅗㄹ-->
+        <!--잡화-->
         <scene sceneID="OOr-45-La1">
             <objects>
-                <viewController id="eoH-XA-Ebi" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eoH-XA-Ebi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t8x-2j-gJj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V2-sW-w1h">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1392"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWs-4b-zid">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1392"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1436"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-qY-D2K">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
@@ -658,12 +644,12 @@
                                             </view>
                                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFN-yV-gyu" customClass="BlueButton" customModule="groby" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="430.5" width="327" height="48"/>
-                                                <color key="backgroundColor" name="whiteTwo"/>
+                                                <color key="backgroundColor" name="iris"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="dMU-f0-fUn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                                <state key="normal" title="공구 마감">
+                                                <state key="normal" title="배부 공지 작성하기">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -677,7 +663,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수량조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-mb-xz1">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
+                                                                        <rect key="frame" x="16.5" y="14" width="42" height="14.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                         <color key="textColor" name="brownishGrey"/>
                                                                         <nil key="highlightedColor"/>
@@ -722,7 +708,7 @@
                                                                 <rect key="frame" x="225" y="0.0" width="75" height="41"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문완료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmG-aw-66R">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
+                                                                        <rect key="frame" x="16.5" y="14" width="42" height="14.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                         <color key="textColor" name="iris"/>
                                                                         <nil key="highlightedColor"/>
@@ -771,7 +757,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5R-fY-4nf">
-                                                <rect key="frame" x="0.0" y="545.5" width="375" height="846.5"/>
+                                                <rect key="frame" x="0.0" y="545.5" width="375" height="890.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[수량조사] 사쿠라 키링 공구 주문 영수증 입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyw-NO-0Qi">
                                                         <rect key="frame" x="24" y="47" width="317.5" height="20.5"/>
@@ -780,14 +766,14 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-dU-Akk">
-                                                        <rect key="frame" x="24" y="313.5" width="326" height="523"/>
+                                                        <rect key="frame" x="24" y="313" width="326" height="567.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="g9S-mb-ZgQ">
-                                                        <rect key="frame" x="24" y="94.5" width="327" height="195"/>
+                                                        <rect key="frame" x="24" y="94" width="327" height="195"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="195" id="rKq-51-asd"/>
                                                         </constraints>
@@ -853,7 +839,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fk1-jj-EBI"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ㅎㅇㄹㄴㅎㄴㅇㅎ호ㅗㄹ" id="i7A-Oe-H6n">
+                    <navigationItem key="navigationItem" title="잡화" id="i7A-Oe-H6n">
                         <barButtonItem key="backBarButtonItem" title=" " id="Jj4-Bd-lIe"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="6I8-RI-A6f">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rJf-Hz-qpc">
@@ -876,16 +862,16 @@
         <!--글 미리보기-->
         <scene sceneID="q8y-4o-MPg">
             <objects>
-                <viewController id="p1J-Vn-9Pd" customClass="MakeTab1FourthViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="미리보기ViewController" id="p1J-Vn-9Pd" customClass="미리보기ViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Wg-5o-FEw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjw-7b-f5M">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1392"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-FJ-EIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1392"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1436"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="DIS-He-p3X">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
@@ -1034,7 +1020,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수량조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-zJ-Trg">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
+                                                                        <rect key="frame" x="16.5" y="14" width="42" height="14.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                         <color key="textColor" name="brownishGrey"/>
                                                                         <nil key="highlightedColor"/>
@@ -1079,7 +1065,7 @@
                                                                 <rect key="frame" x="225" y="0.0" width="75" height="41"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문완료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sI-1d-cuy">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
+                                                                        <rect key="frame" x="16.5" y="14" width="42" height="14.5"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                         <color key="textColor" name="iris"/>
                                                                         <nil key="highlightedColor"/>
@@ -1128,7 +1114,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9L-tj-jVW">
-                                                <rect key="frame" x="0.0" y="545.5" width="375" height="846.5"/>
+                                                <rect key="frame" x="0.0" y="545.5" width="375" height="890.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[수량조사] 사쿠라 키링 공구 주문 영수증 입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbE-I3-wHn">
                                                         <rect key="frame" x="24" y="47" width="317.5" height="20.5"/>
@@ -1136,15 +1122,40 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x30-0S-TuR">
-                                                        <rect key="frame" x="24" y="313.5" width="326" height="523"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x30-0S-TuR">
+                                                        <rect key="frame" x="25" y="481" width="326" height="523.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="8kP-8z-nbh">
-                                                        <rect key="frame" x="24" y="94.5" width="327" height="195"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxL-8y-FcM">
+                                                        <rect key="frame" x="0.0" y="94.5" width="375" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="도착 예정 날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaT-A5-Mxm">
+                                                                <rect key="frame" x="24" y="15" width="80" height="17"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                                <color key="textColor" name="iris"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/07/23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znx-cu-0QI">
+                                                                <rect key="frame" x="267" y="15" width="73" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" name="coolGrey"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="znx-cu-0QI" secondAttribute="trailing" constant="35" id="HVA-qK-Z1v"/>
+                                                            <constraint firstItem="WaT-A5-Mxm" firstAttribute="centerY" secondItem="xxL-8y-FcM" secondAttribute="centerY" id="Jpk-hb-nHc"/>
+                                                            <constraint firstItem="znx-cu-0QI" firstAttribute="centerY" secondItem="xxL-8y-FcM" secondAttribute="centerY" id="jIo-1c-TRC"/>
+                                                            <constraint firstAttribute="height" constant="48" id="jMv-ms-W43"/>
+                                                            <constraint firstItem="WaT-A5-Mxm" firstAttribute="leading" secondItem="xxL-8y-FcM" secondAttribute="leading" constant="24" id="uOE-3h-JzV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="8kP-8z-nbh">
+                                                        <rect key="frame" x="19" y="267" width="327" height="195"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="195" id="YWF-Bv-IGL"/>
                                                         </constraints>
@@ -1153,14 +1164,16 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="8kP-8z-nbh" firstAttribute="leading" secondItem="L9L-tj-jVW" secondAttribute="leading" constant="24" id="8OR-c1-1vN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xxL-8y-FcM" secondAttribute="trailing" id="8zE-qF-sqM"/>
                                                     <constraint firstItem="DbE-I3-wHn" firstAttribute="leading" secondItem="L9L-tj-jVW" secondAttribute="leading" constant="24" id="JfO-vG-Zn5"/>
                                                     <constraint firstAttribute="bottom" secondItem="x30-0S-TuR" secondAttribute="bottom" constant="10" id="Ndv-1c-uwd"/>
                                                     <constraint firstAttribute="trailing" secondItem="8kP-8z-nbh" secondAttribute="trailing" constant="24" id="OMY-a0-o9i"/>
                                                     <constraint firstItem="DbE-I3-wHn" firstAttribute="top" secondItem="L9L-tj-jVW" secondAttribute="topMargin" constant="39" id="W0I-IW-9HW"/>
-                                                    <constraint firstItem="8kP-8z-nbh" firstAttribute="top" secondItem="DbE-I3-wHn" secondAttribute="bottom" constant="27" id="cfS-5F-qCb"/>
+                                                    <constraint firstItem="xxL-8y-FcM" firstAttribute="top" secondItem="DbE-I3-wHn" secondAttribute="bottom" constant="27" id="cX0-4E-1Gx"/>
                                                     <constraint firstAttribute="trailing" secondItem="x30-0S-TuR" secondAttribute="trailing" constant="25" id="cle-D7-NDX"/>
                                                     <constraint firstItem="x30-0S-TuR" firstAttribute="top" secondItem="8kP-8z-nbh" secondAttribute="bottom" constant="24" id="kLt-AQ-gi8"/>
                                                     <constraint firstItem="x30-0S-TuR" firstAttribute="leading" secondItem="L9L-tj-jVW" secondAttribute="leading" constant="24" id="l58-Lo-eBq"/>
+                                                    <constraint firstItem="xxL-8y-FcM" firstAttribute="leading" secondItem="L9L-tj-jVW" secondAttribute="leading" id="zwt-v8-mW2"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1220,9 +1233,6 @@
                                 <state key="normal" title="등록">
                                     <color key="titleColor" name="iris"/>
                                 </state>
-                                <connections>
-                                    <segue destination="eoH-XA-Ebi" kind="show" id="4Sd-2T-PSp"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -1231,7 +1241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Zs-6t-ob1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="210"/>
+            <point key="canvasLocation" x="1701.5999999999999" y="209.59520239880061"/>
         </scene>
     </scenes>
     <resources>
@@ -1239,25 +1249,25 @@
         <image name="cameraButton" width="40" height="40"/>
         <image name="galleryButton" width="40" height="40"/>
         <namedColor name="black">
-            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brownishGrey">
-            <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="coolGrey">
-            <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.57647058819999997" green="0.57647058819999997" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="iris">
-            <color red="0.31764705882352939" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.31764705879999999" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="irisTwo">
-            <color red="0.32156862745098042" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.32156862749999998" green="0.42745098040000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="whiteOne">
-            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="whiteTwo">
-            <color red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

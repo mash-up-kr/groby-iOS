@@ -13,6 +13,14 @@ class MenuViewController: UITableViewController {
     @IBOutlet weak var wroteButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
     
+    @IBAction func mypageButton(_ sender: Any) {
+        let myPageStoryBoard = UIStoryboard.init(name: "MyPage", bundle: nil)
+        let myPageNavigationController = myPageStoryBoard.instantiateViewController(withIdentifier: "MyPageViewController")
+        navigationController?.pushViewController(myPageNavigationController, animated: true)
+        
+        
+    }
+    
     @IBAction func tappedMyPost(_ sender: UIButton) {
         let menuStoryBoard = UIStoryboard.init(name: "Menu", bundle: nil)
         let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "MyPostTableViewController")
@@ -20,7 +28,9 @@ class MenuViewController: UITableViewController {
     }
     
     @IBAction func tappedJoinedPost(_ sender: UIButton) {
-        
+        let menuStoryBoard = UIStoryboard.init(name: "Menu", bundle: nil)
+        let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "JoinedPostTableViewController")
+        navigationController?.pushViewController(menuViewController, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
