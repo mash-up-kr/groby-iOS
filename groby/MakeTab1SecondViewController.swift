@@ -91,7 +91,7 @@ extension MakeTab1SecondViewController: UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageUrls.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell: ImageCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "image_cell", for: indexPath) as? ImageCollectionViewCell else {
             return UICollectionViewCell()
@@ -103,7 +103,9 @@ extension MakeTab1SecondViewController: UICollectionViewDataSource, UICollection
         cell.imageClearButton.addTarget(self, action: #selector(tappedClearImage), for: .touchUpInside)
         
         DispatchQueue.global().async {
-            guard let imageData: Data = try? Data.init(contentsOf: imageUrl as URL), let image: UIImage = UIImage(data: imageData) else {
+            guard
+                let imageData: Data = try? Data.init(contentsOf: imageUrl as URL),
+                let image: UIImage = UIImage(data: imageData) else {
                 return
             }
             
@@ -137,5 +139,6 @@ extension MakeTab1SecondViewController: UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
 }
+
 
 
