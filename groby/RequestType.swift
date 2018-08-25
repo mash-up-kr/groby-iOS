@@ -33,12 +33,12 @@ extension RequestType {
                         onError(error)
                     }
                 }
-        },
+            },
             onError: { (error: Error) in
                 DispatchQueue.main.async {
                     onError(error)
                 }
-        }
+            }
         )
     }
 }

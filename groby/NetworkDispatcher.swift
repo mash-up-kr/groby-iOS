@@ -15,16 +15,16 @@ protocol NetworkDispatcher {
 struct URLSessionNetworkDispatcher: NetworkDispatcher {
     static let instance = URLSessionNetworkDispatcher()
     private init() {}
-    
+
     func dispatch(request: RequestData, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void) {
         guard let url = URL(string: request.path) else {
             onError(ConnError.invalidURL)
             return
         }
-        
+
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
-        
+
         do {
             if let params = request.params {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
@@ -33,19 +33,19 @@ struct URLSessionNetworkDispatcher: NetworkDispatcher {
             onError(error)
             return
         }
-        
-        URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+
+        URLSession.shared.dataTask(with: urlRequest) { data, _, error in
             if let error = error {
                 onError(error)
                 return
             }
-            
+
             guard let _data = data else {
                 onError(ConnError.noData)
                 return
             }
-            
+
             onSuccess(_data)
-            }.resume()
+        }.resume()
     }
 }

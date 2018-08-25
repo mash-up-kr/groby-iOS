@@ -12,10 +12,10 @@ class JoinFirstViewController: UIViewController {
     @IBOutlet weak var emailTextField: LoginTextField!
     @IBOutlet weak var checkNumTextField: LoginTextField!
     @IBOutlet weak var sendCheckNumButton: BlueButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationItem.setCustomTitle("Groby")
         setDelegate()
         sendCheckNumButton.activeButton(false)
@@ -24,15 +24,15 @@ class JoinFirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     @IBAction func sendNumButtonAction(_ sender: UIButton) {
     }
-    
+
     private func setDelegate() {
         checkNumTextField.loginTextFieldDelegate = self
         emailTextField.loginTextFieldDelegate = self
     }
-    
+
     private func checkTextFieldEmpty() -> Bool {
         if emailTextField.text != "" {
             return true
@@ -55,4 +55,3 @@ extension JoinFirstViewController: LoginTextFieldDelegate {
         }
     }
 }
-

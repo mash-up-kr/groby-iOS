@@ -17,7 +17,7 @@ class MakeTab1SecondViewController: UIViewController {
         toolbar.options = [RichEditorDefaultOption.image]
         return toolbar
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,14 +25,14 @@ class MakeTab1SecondViewController: UIViewController {
         toolbar.editor = editor
         editor.inputAccessoryView = toolbar
         toolbar.delegate = self
-        
+
         navigationItem.setCustomTitle("내용 작성")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     @IBAction func nextButtonAction(_ sender: UIButton) {
         guard let makeTab1ThirdTableTableViewController = storyboard?.instantiateViewController(withIdentifier: "MakeTab1ThirdTableTableViewController") as? MakeTab1ThirdTableTableViewController else { return }
         navigationController?.pushViewController(makeTab1ThirdTableTableViewController, animated: true)
@@ -56,11 +56,11 @@ extension MakeTab1SecondViewController: TLPhotosPickerViewControllerDelegate {
             })
         }
     }
-    
+
     func handleNoAlbumPermissions(picker: TLPhotosPickerViewController) {
         // handle denied albums permissions case
     }
-    
+
     func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
         // handle denied camera permissions case
     }

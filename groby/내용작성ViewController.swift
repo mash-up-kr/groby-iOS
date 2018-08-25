@@ -17,7 +17,7 @@ class 내용작성ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
+
     }
-    
+
 }

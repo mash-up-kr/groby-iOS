@@ -8,13 +8,12 @@
 
 import Foundation
 
-
 struct Post {
     var postImageUrl: String
     var postTitle: String
     var postDate: String
     var postInProgressOrLikeCount: Int
-    
+
     init(postImageUrl: String, postTitle: String, postDate: String, postInProgressOrLikeCount: Int) {
         self.postImageUrl = postImageUrl
         self.postTitle = postTitle

@@ -11,10 +11,10 @@ import UIKit
 class AlarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationItem.setCustomTitle("알림")
     }
-    
+
     @IBAction func actionClose(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
@@ -26,11 +26,11 @@ extension AlarmViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 104
     }
-    
+
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
         }
@@ -43,7 +43,7 @@ extension AlarmViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AlarmViewCell", for: indexPath) as? AlarmViewCell else {
             return UITableViewCell()

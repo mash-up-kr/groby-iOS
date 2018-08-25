@@ -15,16 +15,16 @@ class 비밀번호변경ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setCustomTitle("비밀번호 변경")
-        
+
     }
     @IBAction func 확인버튼(_ sender: Any) {
         // 코드
         dismiss(animated: true, completion: nil)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
+
     }
 
 }

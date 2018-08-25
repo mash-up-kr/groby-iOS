@@ -12,7 +12,7 @@ class MakeTab1FourthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationItem.setCustomTitle("글 미리보기")
     }
 
