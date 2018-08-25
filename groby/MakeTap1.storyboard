@@ -499,91 +499,56 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zPm-2Y-QKj">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8q-Tq-3yj">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scM-hI-WDa">
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="41"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수량조사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg1-by-HUX">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                                                        <color key="textColor" name="iris"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnI-tT-6Rc">
-                                                                        <rect key="frame" x="0.0" y="40" width="75" height="1"/>
-                                                                        <color key="backgroundColor" name="iris"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="1" id="gZM-X2-Sb8"/>
-                                                                        </constraints>
-                                                                    </view>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="QnI-tT-6Rc" secondAttribute="trailing" id="2yM-Vk-h6n"/>
-                                                                    <constraint firstItem="Hg1-by-HUX" firstAttribute="centerX" secondItem="q8q-Tq-3yj" secondAttribute="centerX" id="BPy-IU-z0J"/>
-                                                                    <constraint firstItem="QnI-tT-6Rc" firstAttribute="leading" secondItem="q8q-Tq-3yj" secondAttribute="leading" id="CJH-YE-yOI"/>
-                                                                    <constraint firstItem="Hg1-by-HUX" firstAttribute="centerY" secondItem="q8q-Tq-3yj" secondAttribute="centerY" id="Tg6-IC-YJT"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="QnI-tT-6Rc" secondAttribute="bottom" id="fyd-Rd-Db2"/>
-                                                                </constraints>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRf-od-EE8">
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                <state key="normal" title="수량조사">
+                                                                    <color key="titleColor" name="brownishGrey"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" name="iris"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="940-jd-8sn">
                                                                 <rect key="frame" x="75" y="0.0" width="75" height="41"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공구진행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQb-uE-GYN">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                        <color key="textColor" name="brownishGrey"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="SQb-uE-GYN" firstAttribute="centerX" secondItem="JRf-od-EE8" secondAttribute="centerX" id="fcE-Fw-SBZ"/>
-                                                                    <constraint firstItem="SQb-uE-GYN" firstAttribute="centerY" secondItem="JRf-od-EE8" secondAttribute="centerY" id="qHW-XQ-71N"/>
-                                                                </constraints>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-Zg-eyf">
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                <state key="normal" title="공구진행">
+                                                                    <color key="titleColor" name="brownishGrey"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" name="iris"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="un7-Wv-mSQ">
                                                                 <rect key="frame" x="150" y="0.0" width="75" height="41"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공구확정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-91-vdt">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                        <color key="textColor" name="brownishGrey"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="hA3-91-vdt" firstAttribute="centerX" secondItem="Kku-Zg-eyf" secondAttribute="centerX" id="F2w-cg-yaQ"/>
-                                                                    <constraint firstItem="hA3-91-vdt" firstAttribute="centerY" secondItem="Kku-Zg-eyf" secondAttribute="centerY" id="vww-Ku-x0D"/>
-                                                                </constraints>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4f-cf-y9a">
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                <state key="normal" title="공구확정">
+                                                                    <color key="titleColor" name="brownishGrey"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" name="iris"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCH-JV-dXr">
                                                                 <rect key="frame" x="225" y="0.0" width="75" height="41"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문완료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaW-cp-lmD">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                        <color key="textColor" name="brownishGrey"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="JaW-cp-lmD" firstAttribute="centerY" secondItem="I4f-cf-y9a" secondAttribute="centerY" id="4SU-7D-I2F"/>
-                                                                    <constraint firstItem="JaW-cp-lmD" firstAttribute="centerX" secondItem="I4f-cf-y9a" secondAttribute="centerX" id="g3b-ST-rye"/>
-                                                                </constraints>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7X-BR-q7G">
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                <state key="normal" title="주문완료">
+                                                                    <color key="titleColor" name="brownishGrey"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" name="iris"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-2W-u26">
                                                                 <rect key="frame" x="300" y="0.0" width="75" height="41"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배부공지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vx-rX-YOY">
-                                                                        <rect key="frame" x="16.5" y="13.5" width="42" height="14.5"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                        <color key="textColor" name="brownishGrey"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="1vx-rX-YOY" firstAttribute="centerY" secondItem="E7X-BR-q7G" secondAttribute="centerY" id="5JK-Hx-ECa"/>
-                                                                    <constraint firstItem="1vx-rX-YOY" firstAttribute="centerX" secondItem="E7X-BR-q7G" secondAttribute="centerX" id="Hw4-PT-okF"/>
-                                                                </constraints>
-                                                            </view>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                <state key="normal" title="배부공지">
+                                                                    <color key="titleColor" name="brownishGrey"/>
+                                                                </state>
+                                                                <state key="selected">
+                                                                    <color key="titleColor" name="iris"/>
+                                                                </state>
+                                                            </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -697,11 +662,17 @@
         <namedColor name="brownishGrey">
             <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="brownishGrey">
+            <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="coolGrey">
             <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="coolGrey">
             <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="iris">
+            <color red="0.31764705882352939" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="iris">
             <color red="0.31764705882352939" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
