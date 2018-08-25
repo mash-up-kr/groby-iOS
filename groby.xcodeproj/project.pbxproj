@@ -46,7 +46,10 @@
 		EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EB2114978B0013F360 /* BlueButton.swift */; };
 		EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */; };
 		EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */; };
-		EFCCDAC421314B890007C394 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDAC321314B890007C394 /* NetworkModel.swift */; };
+		EFCCDAC82131D8720007C394 /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDAC72131D8720007C394 /* NetworkEnums.swift */; };
+		EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDAC92131D88D0007C394 /* RequestData.swift */; };
+		EFCCDACC2131D8B20007C394 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDACB2131D8B20007C394 /* RequestType.swift */; };
+		EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDACD2131D8C70007C394 /* NetworkDispatcher.swift */; };
 		EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D361211F37A700C909FD /* MakeTab1FirstViewController.swift */; };
 		EFE7D364211F3C0F00C909FD /* MakeTap1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */; };
 		EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */; };
@@ -99,7 +102,10 @@
 		EFAAA9EB2114978B0013F360 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFirstViewController.swift; sourceTree = "<group>"; };
 		EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSecondViewController.swift; sourceTree = "<group>"; };
-		EFCCDAC321314B890007C394 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		EFCCDAC72131D8720007C394 /* NetworkEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
+		EFCCDAC92131D88D0007C394 /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+		EFCCDACB2131D8B20007C394 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		EFCCDACD2131D8C70007C394 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		EFE7D361211F37A700C909FD /* MakeTab1FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTab1FirstViewController.swift; sourceTree = "<group>"; };
 		EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeTap1.storyboard; sourceTree = "<group>"; };
 		EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -318,7 +324,10 @@
 		EFCCDAC021314B600007C394 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EFCCDAC321314B890007C394 /* NetworkModel.swift */,
+				EFCCDACD2131D8C70007C394 /* NetworkDispatcher.swift */,
+				EFCCDAC72131D8720007C394 /* NetworkEnums.swift */,
+				EFCCDAC92131D88D0007C394 /* RequestData.swift */,
+				EFCCDACB2131D8B20007C394 /* RequestType.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -481,6 +490,7 @@
 				83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */,
 				C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
+				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
@@ -494,15 +504,17 @@
 				EFE7D36C211F4DEA00C909FD /* MakeTab1FourthViewController.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
-				EFCCDAC421314B890007C394 /* NetworkModel.swift in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
+				EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */,
 				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
 				EFE7D368211F404000C909FD /* MakeTab1SecondViewController.swift in Sources */,
 				EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */,
 				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
+				EFCCDAC82131D8720007C394 /* NetworkEnums.swift in Sources */,
 				8382CAE021280FBD0051ECCE /* 미리보기ViewController.swift in Sources */,
 				AA16A57C211E0B0200A1A4DD /* DummyCollectionViewCell.swift in Sources */,
+				EFCCDACC2131D8B20007C394 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
