@@ -46,6 +46,7 @@
 		EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EB2114978B0013F360 /* BlueButton.swift */; };
 		EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */; };
 		EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */; };
+		EFCCDAC421314B890007C394 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDAC321314B890007C394 /* NetworkModel.swift */; };
 		EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D361211F37A700C909FD /* MakeTab1FirstViewController.swift */; };
 		EFE7D364211F3C0F00C909FD /* MakeTap1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */; };
 		EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */; };
@@ -98,6 +99,7 @@
 		EFAAA9EB2114978B0013F360 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		EFAAA9ED211548800013F360 /* JoinFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFirstViewController.swift; sourceTree = "<group>"; };
 		EFAAA9EF2115488C0013F360 /* JoinSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSecondViewController.swift; sourceTree = "<group>"; };
+		EFCCDAC321314B890007C394 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		EFE7D361211F37A700C909FD /* MakeTab1FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTab1FirstViewController.swift; sourceTree = "<group>"; };
 		EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeTap1.storyboard; sourceTree = "<group>"; };
 		EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				EFCCDAC021314B600007C394 /* Network */,
 				EF476947211F5F6F00561AD4 /* Common */,
 				EFE7D360211F378000C909FD /* Tap1 */,
 				EF5E1D1321270861004A9A42 /* Tap2 */,
@@ -310,6 +313,14 @@
 				EFAAA9D2211486E50013F360 /* groby.xcdatamodeld */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		EFCCDAC021314B600007C394 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EFCCDAC321314B890007C394 /* NetworkModel.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		EFE7D360211F378000C909FD /* Tap1 */ = {
@@ -483,6 +494,7 @@
 				EFE7D36C211F4DEA00C909FD /* MakeTab1FourthViewController.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
+				EFCCDAC421314B890007C394 /* NetworkModel.swift in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
 				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
