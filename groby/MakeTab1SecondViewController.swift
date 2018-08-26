@@ -98,7 +98,7 @@ extension MakeTab1SecondViewController: UICollectionViewDataSource, UICollection
         }
         
         let imageUrl: URL = imageUrls[indexPath.item]
-        
+
         cell.imageClearButton.layer.setValue(indexPath.row, forKey: "selected_index")
         cell.imageClearButton.addTarget(self, action: #selector(tappedClearImage), for: .touchUpInside)
         
@@ -106,6 +106,7 @@ extension MakeTab1SecondViewController: UICollectionViewDataSource, UICollection
             guard
                 let imageData: Data = try? Data.init(contentsOf: imageUrl as URL),
                 let image: UIImage = UIImage(data: imageData) else {
+
                 return
             }
             
