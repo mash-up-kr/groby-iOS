@@ -121,16 +121,27 @@
                                                                 <constraint firstAttribute="width" secondItem="za8-bj-PYw" secondAttribute="height" multiplier="96:96" id="utT-Xv-dv6"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TK-ho-qSC">
+                                                            <rect key="frame" x="80" y="4" width="12" height="12"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="12" id="RAA-Fe-ty5"/>
+                                                                <constraint firstAttribute="height" constant="12" id="XWI-Ph-4v3"/>
+                                                            </constraints>
+                                                            <state key="normal" image="xButton-1"/>
+                                                        </button>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
+                                                    <constraint firstItem="0TK-ho-qSC" firstAttribute="top" secondItem="c7R-Ry-EbJ" secondAttribute="top" constant="4" id="0zR-nR-mBv"/>
                                                     <constraint firstAttribute="bottom" secondItem="za8-bj-PYw" secondAttribute="bottom" id="4Uw-Vr-b73"/>
                                                     <constraint firstItem="za8-bj-PYw" firstAttribute="top" secondItem="c7R-Ry-EbJ" secondAttribute="top" id="5VP-qB-ky7"/>
                                                     <constraint firstAttribute="trailing" secondItem="za8-bj-PYw" secondAttribute="trailing" id="VAZ-wN-zB2"/>
                                                     <constraint firstItem="za8-bj-PYw" firstAttribute="leading" secondItem="c7R-Ry-EbJ" secondAttribute="leading" id="veZ-wg-qX2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0TK-ho-qSC" secondAttribute="trailing" constant="4" id="w1z-24-j62"/>
                                                 </constraints>
                                                 <size key="customSize" width="96" height="96"/>
                                                 <connections>
+                                                    <outlet property="imageClearButton" destination="0TK-ho-qSC" id="dtq-Xd-LTy"/>
                                                     <outlet property="imageView" destination="za8-bj-PYw" id="VUh-T1-B7B"/>
                                                 </connections>
                                             </collectionViewCell>
@@ -655,6 +666,7 @@
         <image name="backButton" width="44" height="16"/>
         <image name="dropdownButton" width="9" height="6"/>
         <image name="plusIcon-1" width="40" height="40"/>
+        <image name="xButton-1" width="12" height="12"/>
         <image name="xIcon" width="20" height="20"/>
         <namedColor name="black">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -662,17 +674,8 @@
         <namedColor name="brownishGrey">
             <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="brownishGrey">
-            <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="coolGrey">
             <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="coolGrey">
-            <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="iris">
-            <color red="0.31764705882352939" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="iris">
             <color red="0.31764705882352939" green="0.42745098039215684" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -682,9 +685,6 @@
         </namedColor>
         <namedColor name="whiteOne">
             <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="whiteThree">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="whiteThree">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

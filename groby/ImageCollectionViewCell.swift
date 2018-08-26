@@ -9,5 +9,6 @@
 import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageClearButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
 }

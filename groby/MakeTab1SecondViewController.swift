@@ -46,7 +46,7 @@ class MakeTab1SecondViewController: UIViewController {
         return picker
     } ()
     
-    private var imageUrls: [NSURL] = []
+    private var imageUrls: [URL] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +56,7 @@ class MakeTab1SecondViewController: UIViewController {
         initializeView()
     }
     
-    func initializeView() {
+    private func initializeView() {
         imageAddButton.layer.borderWidth = 1
         imageAddButton.layer.borderColor = UIColor.whiteTwo.cgColor
 
@@ -69,14 +69,22 @@ class MakeTab1SecondViewController: UIViewController {
         let itemHeight = collectionView.frame.size.height
         let itemWidth = itemHeight
         
-        print(itemHeight)
         flowLayout.itemSize = CGSize(width: itemWidth, height: itemHeight)
         
         collectionView.collectionViewLayout = flowLayout
     }
+    
+    @objc private func tappedClearImage(sender: UIButton) {
+        let index : Int = sender.layer.value(forKey: "selected_index") as! Int
+        
+        imageUrls.remove(at: index)
+        
+        collectionView.reloadData()
+    }
 }
 
 extension MakeTab1SecondViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageUrls.count
     }
@@ -86,10 +94,13 @@ extension MakeTab1SecondViewController: UICollectionViewDataSource, UICollection
             return UICollectionViewCell()
         }
         
-        let imageUrl: NSURL = imageUrls[indexPath.item]
+        let imageUrl: URL = imageUrls[indexPath.item]
+        
+        cell.imageClearButton.layer.setValue(indexPath.row, forKey: "selected_index")
+        cell.imageClearButton.addTarget(self, action: #selector(tappedClearImage), for: .touchUpInside)
         
         OperationQueue().addOperation {
-            guard let imageData: Data = try! Data.init(contentsOf: imageUrl as URL), let image: UIImage = UIImage(data: imageData) else {
+            guard let imageData: Data = try? Data.init(contentsOf: imageUrl as URL), let image: UIImage = UIImage(data: imageData) else {
                 return
             }
             
@@ -108,15 +119,19 @@ extension MakeTab1SecondViewController: UIImagePickerControllerDelegate, UINavig
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        guard let imageUrl = info[UIImagePickerControllerImageURL] as? NSURL else {
+        guard let imageUrl = info[UIImagePickerControllerImageURL] else {
             return
         }
         
-        imageUrls.append(imageUrl)
+        guard let url = imageUrl as? URL else {
+            return
+        }
+        
+        imageUrls.append(url)
         
         collectionView.reloadData()
         
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 
