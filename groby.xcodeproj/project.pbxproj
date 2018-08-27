@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		674B38AD990C56437589766B /* Pods_groby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DAA172196E4371D37432EA /* Pods_groby.framework */; };
 		8322A7F5211F64E00028504D /* tap4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8322A7F4211F64E00028504D /* tap4.storyboard */; };
+		8356729A21313BDE001144C3 /* DivisionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8356729921313BDE001144C3 /* DivisionList.storyboard */; };
+		8356729C21313C21001144C3 /* DivisionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356729B21313C21001144C3 /* DivisionListTableViewController.swift */; };
 		8382CAD8212803EC0051ECCE /* 비밀번호확인ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382CAD7212803EC0051ECCE /* 비밀번호확인ViewController.swift */; };
 		8382CADA212804F70051ECCE /* 비밀번호변경ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382CAD9212804F70051ECCE /* 비밀번호변경ViewController.swift */; };
 		8382CADC2128060A0051ECCE /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8382CADB2128060A0051ECCE /* MyPage.storyboard */; };
 		8382CADE21280DD10051ECCE /* 내용작성ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382CADD21280DD10051ECCE /* 내용작성ViewController.swift */; };
 		8382CAE021280FBD0051ECCE /* 미리보기ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382CADF21280FBD0051ECCE /* 미리보기ViewController.swift */; };
+		8382CAF1212DAD800051ECCE /* BankButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382CAF0212DAD800051ECCE /* BankButton.swift */; };
 		83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A47E6D2127F185006B70EC /* MyPageTableViewController.swift */; };
 		AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA16A569211DE20C00A1A4DD /* Menu.storyboard */; };
 		AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */; };
@@ -61,11 +64,14 @@
 /* Begin PBXFileReference section */
 		60DAA172196E4371D37432EA /* Pods_groby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_groby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8322A7F4211F64E00028504D /* tap4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tap4.storyboard; sourceTree = "<group>"; };
+		8356729921313BDE001144C3 /* DivisionList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DivisionList.storyboard; sourceTree = "<group>"; };
+		8356729B21313C21001144C3 /* DivisionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionListTableViewController.swift; sourceTree = "<group>"; };
 		8382CAD7212803EC0051ECCE /* 비밀번호확인ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "비밀번호확인ViewController.swift"; sourceTree = "<group>"; };
 		8382CAD9212804F70051ECCE /* 비밀번호변경ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "비밀번호변경ViewController.swift"; sourceTree = "<group>"; };
 		8382CADB2128060A0051ECCE /* MyPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		8382CADD21280DD10051ECCE /* 내용작성ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "내용작성ViewController.swift"; sourceTree = "<group>"; };
 		8382CADF21280FBD0051ECCE /* 미리보기ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "미리보기ViewController.swift"; sourceTree = "<group>"; };
+		8382CAF0212DAD800051ECCE /* BankButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankButton.swift; sourceTree = "<group>"; };
 		83A47E6D2127F185006B70EC /* MyPageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewController.swift; sourceTree = "<group>"; };
 		AA16A569211DE20C00A1A4DD /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +158,8 @@
 				8322A7F4211F64E00028504D /* tap4.storyboard */,
 				8382CADD21280DD10051ECCE /* 내용작성ViewController.swift */,
 				8382CADF21280FBD0051ECCE /* 미리보기ViewController.swift */,
+				8356729921313BDE001144C3 /* DivisionList.storyboard */,
+				8356729B21313C21001144C3 /* DivisionListTableViewController.swift */,
 			);
 			name = Tap4;
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 			children = (
 				EFAAA9E721148E800013F360 /* LoginTextField.swift */,
 				EFAAA9EB2114978B0013F360 /* BlueButton.swift */,
+				8382CAF0212DAD800051ECCE /* BankButton.swift */,
 				EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */,
 				EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */,
 			);
@@ -411,6 +420,7 @@
 				EFAAA9E421148DC80013F360 /* Login.storyboard in Resources */,
 				EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */,
 				EFE7D364211F3C0F00C909FD /* MakeTap1.storyboard in Resources */,
+				8356729A21313BDE001144C3 /* DivisionList.storyboard in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
 				AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */,
 				8322A7F5211F64E00028504D /* tap4.storyboard in Resources */,
@@ -509,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8382CAF1212DAD800051ECCE /* BankButton.swift in Sources */,
 				8382CAD8212803EC0051ECCE /* 비밀번호확인ViewController.swift in Sources */,
 				AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */,
 				8382CADE21280DD10051ECCE /* 내용작성ViewController.swift in Sources */,
@@ -529,6 +540,7 @@
 				C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */,
 				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
 				EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */,
+				8356729C21313C21001144C3 /* DivisionListTableViewController.swift in Sources */,
 				EFE7D36A211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift in Sources */,
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
 				EFE7D36C211F4DEA00C909FD /* MakeTab1FourthViewController.swift in Sources */,
