@@ -18,11 +18,14 @@ class MakeTab1SecondViewController: UIViewController {
     @IBAction func tappedImgaeFetch(_ sender: UIButton) {
         let alertController: UIAlertController = UIAlertController()
         
-        let cameraAction: UIAlertAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.default) { (action: UIAlertAction) in
+        let cameraAction: UIAlertAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.default) { [weak self] (_ : UIAlertAction) in
             print("camera")
         }
         
-        let albumAction: UIAlertAction = UIAlertAction(title: "Album", style: UIAlertActionStyle.default) { (action: UIAlertAction) in
+        let albumAction: UIAlertAction = UIAlertAction(title: "Album", style: UIAlertActionStyle.default) { [weak self] (_ : UIAlertAction) in
+            guard let `self` = self else {
+                return
+            }
             self.present(self.imagePicker, animated: true, completion: nil)
         }
         
@@ -99,12 +102,12 @@ extension MakeTab1SecondViewController: UICollectionViewDataSource, UICollection
         cell.imageClearButton.layer.setValue(indexPath.row, forKey: "selected_index")
         cell.imageClearButton.addTarget(self, action: #selector(tappedClearImage), for: .touchUpInside)
         
-        OperationQueue().addOperation {
+        DispatchQueue.global().async {
             guard let imageData: Data = try? Data.init(contentsOf: imageUrl as URL), let image: UIImage = UIImage(data: imageData) else {
                 return
             }
             
-            OperationQueue.main.addOperation {
+            DispatchQueue.main.async {
                 cell.imageView.image = image
             }
         }
