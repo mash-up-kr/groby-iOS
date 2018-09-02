@@ -31,6 +31,7 @@
 		C2388E7D212446E40010AAD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7A212446E30010AAD1 /* Post.swift */; };
 		C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */; };
 		C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* JoinedPostTableViewController.swift */; };
+		C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
 		EF5E1D1521270876004A9A42 /* Bank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5E1D1421270876004A9A42 /* Bank.storyboard */; };
@@ -86,6 +87,7 @@
 		C2388E7A212446E30010AAD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		C24A4A222128021500406733 /* JoinedPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedPostTableViewController.swift; sourceTree = "<group>"; };
+		C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
 		EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */,
 				EFE7D361211F37A700C909FD /* MakeTab1FirstViewController.swift */,
 				EFE7D367211F403F00C909FD /* MakeTab1SecondViewController.swift */,
+				C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */,
 				EFE7D369211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift */,
 				EFE7D36B211F4DEA00C909FD /* MakeTab1FourthViewController.swift */,
 				EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */,
@@ -533,6 +536,7 @@
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
 				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
+				C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
 				C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */,
