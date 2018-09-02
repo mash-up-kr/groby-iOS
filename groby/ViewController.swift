@@ -9,17 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     @IBOutlet weak var menu: UIButton?
     @IBOutlet weak var menuView: UIView?
     @IBOutlet weak var viewForDimed: UIView?
     @IBOutlet weak var contentViewTrailing: NSLayoutConstraint?
-    
+
     var isShownMenu: Bool = false
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         presentLoginView()
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(actionMenu))
         viewForDimed?.addGestureRecognizer(tapGestureRecognizer)
@@ -29,19 +29,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     private func presentLoginView() {
-        let loginStoryBoard = UIStoryboard.init(name: "Login", bundle: nil)
+        let loginStoryBoard = UIStoryboard(name: "Login", bundle: nil)
         let loginViewController = loginStoryBoard.instantiateViewController(withIdentifier: "LoginRootViewController")
         present(loginViewController, animated: true, completion: nil)
     }
-    
+
     @IBAction func fabButtonAction(_ sender: UIButton) {
-        let makeTap1RootViewController = UIStoryboard.init(name: "MakeTap1", bundle: nil)
+        let makeTap1RootViewController = UIStoryboard(name: "MakeTap1", bundle: nil)
         let makeTap1ViewController = makeTap1RootViewController.instantiateViewController(withIdentifier: "MakeTap1RootViewController")
         present(makeTap1ViewController, animated: true, completion: nil)
     }
-    
+
     @objc @IBAction func actionMenu(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) {
             if !self.isShownMenu {
@@ -60,11 +60,11 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
-    
+
     @IBAction func actionShowAlarmView(_ sender: UIButton) {
         performSegue(withIdentifier: "SegueShowAlarm", sender: nil)
     }
-    
+
     @IBAction func actionSearch(_ sender: UIButton) {
         performSegue(withIdentifier: "SegueSearch", sender: nil)
     }
@@ -87,17 +87,16 @@ extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DummyTableViewCell", for: indexPath) as? DummyTableViewCell else {
             return UITableViewCell()
         }
-        
+
         return cell
     }
 }
-

@@ -12,28 +12,28 @@ class LoginMainViewController: UIViewController {
     @IBOutlet weak var passwordTextField: LoginTextField!
     @IBOutlet weak var emailTextField: LoginTextField!
     @IBOutlet weak var loginButton: BlueButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationItem.setCustomTitle("Groby")
         setDelegate()
         loginButton.activeButton(false)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     @IBAction func loginButtonAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
+
     private func setDelegate() {
         passwordTextField.loginTextFieldDelegate = self
         emailTextField.loginTextFieldDelegate = self
     }
-    
+
     private func checkTextFieldEmpty() -> Bool {
         if passwordTextField.text != "" && emailTextField.text != "" {
             return true

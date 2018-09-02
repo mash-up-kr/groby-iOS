@@ -14,28 +14,28 @@ protocol LoginTextFieldDelegate: class {
 
 class LoginTextField: UITextField {
     weak var loginTextFieldDelegate: LoginTextFieldDelegate?
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         delegate = self
-        
+
         makePadding()
         makeBorder()
     }
-    
+
     private func makePadding() {
-        let paddingView = UIView.init(frame: .init(x: 0, y: 0, width: 25, height: frame.height))
+        let paddingView = UIView(frame: .init(x: 0, y: 0, width: 25, height: frame.height))
         leftView = paddingView
         leftViewMode = .always
     }
-    
+
     private func makeBorder() {
         layer.borderColor = #colorLiteral(red: 0.8352941176, green: 0.8352941176, blue: 0.8352941176, alpha: 1).cgColor
         layer.cornerRadius = frame.height / 2
         layer.borderWidth = 2
         clipsToBounds = true
     }
-    
+
     private func activeTextField(_ bool: Bool) {
         layer.borderColor = bool ? #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1).cgColor : #colorLiteral(red: 0.8352941176, green: 0.8352941176, blue: 0.8352941176, alpha: 1).cgColor
     }
@@ -46,11 +46,11 @@ extension LoginTextField: UITextFieldDelegate {
         loginTextFieldDelegate?.textfieldChange()
         return true
     }
-    
+
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTextField(true)
     }
-    
+
     func textFieldDidEndEditing(_ textField: UITextField) {
         activeTextField(false)
     }

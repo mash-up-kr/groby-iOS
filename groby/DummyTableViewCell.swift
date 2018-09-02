@@ -16,7 +16,7 @@ class DummyTableViewCell: UITableViewCell {
             collectionView.delegate = self
         }
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -25,7 +25,7 @@ class DummyTableViewCell: UITableViewCell {
 // MARK: - Collection View Delegate
 
 extension DummyTableViewCell: UICollectionViewDelegate {
-    
+
 }
 
 // MARK: - Collection View Data Source
@@ -34,13 +34,12 @@ extension DummyTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return  4
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DummyCollectionViewCell", for: indexPath) as? DummyCollectionViewCell else {
             return UICollectionViewCell()
         }
-        
+
         return cell
     }
 }
-

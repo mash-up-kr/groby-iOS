@@ -14,10 +14,10 @@ class JoinSecondViewController: UIViewController {
     @IBOutlet weak var passwordTextField: LoginTextField!
     @IBOutlet weak var checkPasswordTextField: LoginTextField!
     @IBOutlet weak var signUpButton: BlueButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationItem.setCustomTitle("Groby")
         setDelegate()
         signUpButton.activeButton(false)
@@ -26,25 +26,25 @@ class JoinSecondViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     @IBAction func signUpButtonAction(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
     }
-    
+
     private func setDelegate() {
         nickNameTextField.loginTextFieldDelegate = self
         emailTextField.loginTextFieldDelegate = self
         passwordTextField.loginTextFieldDelegate = self
         checkPasswordTextField.loginTextFieldDelegate = self
     }
-    
+
     private func checkTextFieldEmpty() -> Bool {
         if nickNameTextField.text != "" && emailTextField.text != "" && passwordTextField.text != "" && checkPasswordTextField.text != "" {
             return true
         }
         return false
     }
-    
+
     private func checkPasswordSame() -> Bool {
         if passwordTextField.text == checkPasswordTextField.text {
             return true
@@ -67,5 +67,3 @@ extension JoinSecondViewController: LoginTextFieldDelegate {
         }
     }
 }
-
-

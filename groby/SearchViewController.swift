@@ -13,7 +13,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction func actionClose(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
