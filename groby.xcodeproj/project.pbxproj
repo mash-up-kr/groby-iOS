@@ -30,6 +30,9 @@
 		C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */; };
 		C2388E7D212446E40010AAD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7A212446E30010AAD1 /* Post.swift */; };
 		C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */; };
+		C239E062213EAB56009D3545 /* CategoryJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E061213EAB56009D3545 /* CategoryJson.swift */; };
+		C239E064213EAB9A009D3545 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E063213EAB9A009D3545 /* Category.swift */; };
+		C239E066213EAD8C009D3545 /* FetchCategoryJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */; };
 		C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* JoinedPostTableViewController.swift */; };
 		C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
@@ -86,6 +89,9 @@
 		C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostTableViewController.swift; sourceTree = "<group>"; };
 		C2388E7A212446E30010AAD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C239E061213EAB56009D3545 /* CategoryJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryJson.swift; sourceTree = "<group>"; };
+		C239E063213EAB9A009D3545 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoryJson.swift; sourceTree = "<group>"; };
 		C24A4A222128021500406733 /* JoinedPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedPostTableViewController.swift; sourceTree = "<group>"; };
 		C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 				C24A4A222128021500406733 /* JoinedPostTableViewController.swift */,
 				C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */,
 				C2388E7A212446E30010AAD1 /* Post.swift */,
+				C239E061213EAB56009D3545 /* CategoryJson.swift */,
+				C239E063213EAB9A009D3545 /* Category.swift */,
+				C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -531,10 +540,12 @@
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
 				C2388E7D212446E40010AAD1 /* Post.swift in Sources */,
 				8382CADA212804F70051ECCE /* 비밀번호변경ViewController.swift in Sources */,
+				C239E064213EAB9A009D3545 /* Category.swift in Sources */,
 				83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */,
 				C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
 				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
+				C239E062213EAB56009D3545 /* CategoryJson.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
 				C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
@@ -550,6 +561,7 @@
 				EFE7D36C211F4DEA00C909FD /* MakeTab1FourthViewController.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
+				C239E066213EAD8C009D3545 /* FetchCategoryJson.swift in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
 				EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */,
 				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
