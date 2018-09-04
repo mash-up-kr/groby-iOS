@@ -36,6 +36,8 @@ class MenuViewController: UITableViewController {
         super.viewWillAppear(animated)
 
         navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        fetchCategories()
     }
 
     override func viewDidLoad() {
@@ -43,6 +45,10 @@ class MenuViewController: UITableViewController {
 
         navigationItem.setCustomTitle("Groby")
         setProperties()
+    }
+    
+    private func fetchCategories() {
+        
     }
 
     private func setProperties() {
