@@ -9,23 +9,21 @@
 import UIKit
 
 class MakeTab1SecondViewController: UIViewController {
-    @IBAction func nextButtonAction(_ sender: UIButton) {
-        guard let makeTab1ThirdTableTableViewController = storyboard?.instantiateViewController(withIdentifier: "MakeTab1ThirdTableTableViewController") as? MakeTab1ThirdTableTableViewController else { return }
-        navigationController?.pushViewController(makeTab1ThirdTableTableViewController, animated: true)
-    }
-    
     @IBAction func tappedImgaeFetch(_ sender: UIButton) {
         let alertController: UIAlertController = UIAlertController()
         
         let cameraAction: UIAlertAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.default) { [weak self] (_ : UIAlertAction) in
-            print("camera")
+            guard let `self` = self else {
+                return
+            }
+            self.present(self.imagePickerFromCamera, animated: true, completion: nil)
         }
         
         let albumAction: UIAlertAction = UIAlertAction(title: "Album", style: UIAlertActionStyle.default) { [weak self] (_ : UIAlertAction) in
             guard let `self` = self else {
                 return
             }
-            self.present(self.imagePicker, animated: true, completion: nil)
+            self.present(self.imagePickerFromLibrary, animated: true, completion: nil)
         }
         
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
@@ -37,18 +35,33 @@ class MakeTab1SecondViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    @IBOutlet weak var editor: RichEditorView!
-    lazy var toolbar: RichEditorToolbar = {
-        let toolbar = RichEditorToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44))
-        toolbar.options = [RichEditorDefaultOption.image]
-        return toolbar
-    }()
+//    @IBOutlet weak var editor: RichEditorView!
+//    lazy var toolbar: RichEditorToolbar = {
+//        let toolbar = RichEditorToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44))
+//        toolbar.options = [RichEditorDefaultOption.image]
+//        return toolbar
+//    }()
 
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.delegate = self
+            collectionView.dataSource = self
+        }
+    }
     @IBOutlet weak var imageAddButton: UIButton!
     
-    private lazy var imagePicker: UIImagePickerController = {
+    private lazy var imagePickerFromCamera: UIImagePickerController = {
         let picker: UIImagePickerController = UIImagePickerController()
+        
+        picker.sourceType = .camera
+        picker.delegate = self
+        
+        return picker
+    } ()
+    
+    private lazy var imagePickerFromLibrary: UIImagePickerController = {
+        let picker: UIImagePickerController = UIImagePickerController()
+        
         picker.sourceType = .photoLibrary
         picker.delegate = self
         
@@ -60,10 +73,10 @@ class MakeTab1SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        editor.placeholder = "내용"
-        toolbar.editor = editor
-        editor.inputAccessoryView = toolbar
-        toolbar.delegate = self
+//        editor.placeholder = "내용"
+//        toolbar.editor = editor
+//        editor.inputAccessoryView = toolbar
+//        toolbar.delegate = self
       
         navigationItem.setCustomTitle("내용 작성")
         
@@ -77,8 +90,9 @@ class MakeTab1SecondViewController: UIViewController {
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         
         flowLayout.sectionInset = UIEdgeInsets.zero
-        flowLayout.minimumInteritemSpacing = 6
-        flowLayout.minimumLineSpacing = 0
+        flowLayout.minimumInteritemSpacing = 0
+        flowLayout.minimumLineSpacing = 6
+        flowLayout.scrollDirection = .horizontal
         
         let itemHeight = collectionView.frame.size.height
         let itemWidth = itemHeight
@@ -156,13 +170,13 @@ extension MakeTab1SecondViewController: UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
     }
 
-    func handleNoAlbumPermissions(picker: TLPhotosPickerViewController) {
-        // handle denied albums permissions case
-    }
-
-    func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
-        // handle denied camera permissions case
-    }
+//    func handleNoAlbumPermissions(picker: TLPhotosPickerViewController) {
+//        // handle denied albums permissions case
+//    }
+//
+//    func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
+//        // handle denied camera permissions case
+//    }
 }
 
 
