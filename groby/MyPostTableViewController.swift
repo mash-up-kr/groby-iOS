@@ -17,8 +17,6 @@ class MyPostTableViewController: UIViewController {
         super.viewWillAppear(animated)
 
         navigationController?.setNavigationBarHidden(false, animated: false)
-        
-        fetchCategoryItem()
     }
 
     override func viewDidLoad() {
@@ -34,10 +32,6 @@ class MyPostTableViewController: UIViewController {
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
         posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
-    }
-    
-    private func fetchCategoryItem() {
-    
     }
 }
 
