@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5I-fb-JFH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5I-fb-JFH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -92,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrD-we-Rls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280.8" y="-233.43328335832086"/>
+            <point key="canvasLocation" x="1206" y="-233"/>
         </scene>
         <!--Groby-->
         <scene sceneID="cIv-Xq-GKa">
@@ -113,7 +112,6 @@
                                 <connections>
                                     <action selector="loginButtonAction:" destination="sf2-g9-3tw" eventType="touchUpInside" id="Bwr-Yl-EZ3"/>
                                     <action selector="sendNumButtonAction:" destination="bT8-TS-S60" eventType="touchUpInside" id="og8-1f-OD7"/>
-                                    <segue destination="1s7-kC-0pY" kind="show" id="VWY-oW-bmw"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="인증번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2CL-9O-leM" customClass="LoginTextField" customModule="groby" customModuleProvider="target">
@@ -161,6 +159,7 @@
                         <outlet property="checkNumTextField" destination="2CL-9O-leM" id="V9i-mO-Nxr"/>
                         <outlet property="emailTextField" destination="gEr-YH-AZk" id="Kfe-Jp-lbe"/>
                         <outlet property="sendCheckNumButton" destination="l9i-iJ-iW8" id="hRw-TQ-ZfG"/>
+                        <segue destination="1s7-kC-0pY" kind="show" identifier="JoinSecondSegue" id="lrm-4t-gJ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNh-f8-81R" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -20,3 +20,12 @@ enum HTTPMethod: String {
     case delete = "DELETE"
     case patch = "PATCH"
 }
+
+enum GrobyURL: String {
+    static let base: String = "http://ec2-13-125-62-50.ap-northeast-2.compute.amazonaws.com/"
+
+    case user = "user/"
+    case main = "api/"
+    case item = "item/"
+    case category = "category/"
+}

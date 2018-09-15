@@ -14,7 +14,7 @@ protocol RequestType {
 }
 
 extension RequestType {
-    func execute (
+    func execute(
         dispatcher: NetworkDispatcher = URLSessionNetworkDispatcher.instance,
         onSuccess: @escaping (ResponseType) -> Void,
         onError: @escaping (Error) -> Void
@@ -23,6 +23,9 @@ extension RequestType {
             request: self.data,
             onSuccess: { (responseData: Data) in
                 do {
+//                    let result = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any]
+//                    print(result)
+
                     let jsonDecoder = JSONDecoder()
                     let result = try jsonDecoder.decode(ResponseType.self, from: responseData)
                     DispatchQueue.main.async {
