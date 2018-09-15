@@ -11,7 +11,6 @@ import Foundation
 struct CategoryJson: Codable {
     let status: String
     let message: String
-    
+
     let returnJson: [Category]
 }
-

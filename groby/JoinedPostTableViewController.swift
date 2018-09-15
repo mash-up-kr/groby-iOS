@@ -12,7 +12,8 @@ class JoinedPostTableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    private var posts: [Post] = []
+    private var categoryItems: [CategoryItem] = []
+    var category: Category?
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,23 +24,32 @@ class JoinedPostTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.setCustomTitle("참여한 글")
+        if let category = category {
+            navigationItem.setCustomTitle(category.category)
+            let path: String = "\(GrobyURL.base)\(GrobyURL.main.rawValue)\(GrobyURL.category.rawValue)\(category.categotyId)"
+            let requestData = RequestData(path: path)
+            CategoryItemAPI(requestData).execute(onSuccess: { [weak self] categoryItems in
+                guard let `self` = self else {
+                    return
+                }
+                print(categoryItems)
+                self.categoryItems = categoryItems.returnJson
+                self.tableView.reloadData()
+            }) { _ in
+            }
+        } else {
+            navigationItem.setCustomTitle("참여한 글")
+        }
+
         let newBackButton = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
-
         navigationController?.navigationBar.topItem?.backBarButtonItem = newBackButton
-
-        posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
-        posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
-        posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
-        posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
-        posts.append(Post(postImageUrl: "asdf", postTitle: "사쿠라 키링 진행중입니다.", postDate: "2018-08-30", postInProgressOrLikeCount: 63))
     }
 
 }
 
 extension JoinedPostTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return categoryItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,19 +57,22 @@ extension JoinedPostTableViewController: UITableViewDelegate, UITableViewDataSou
             return UITableViewCell()
         }
 
-        let post = posts[indexPath.row]
+        let categoryItem = categoryItems[indexPath.row]
 
-        cell.postTitle.text = post.postTitle
-        cell.postDate.text = post.postDate
+        cell.postTitle.text = categoryItem.title
+        cell.postDate.text = "\(categoryItem.dueDate)"
 
         if true {
             cell.postLikeOrProgress.text = "좋아요 수"
-            cell.postLikeOrProgressCount.text = String(post.postInProgressOrLikeCount)
+            if let participantNum = categoryItem.participantNum {
+                cell.postLikeOrProgressCount.text = "\(participantNum)"
+            }
         } else {
             cell.postLikeOrProgress.text = "진행률"
-            cell.postLikeOrProgressCount.text = String(post.postInProgressOrLikeCount)
+            if let progress = categoryItem.progress {
+                cell.postLikeOrProgressCount.text = "\(progress)"
+            }
         }
-
         return cell
     }
 }

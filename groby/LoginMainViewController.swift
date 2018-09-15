@@ -28,8 +28,10 @@ class LoginMainViewController: UIViewController {
     @IBAction private func loginButtonAction(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
             let path: String = "\(GrobyURL.base)\(GrobyURL.user.rawValue)\(UserLoginAPI.subUrl)"
-            let params: [String: Any?] = ["userEmail": email,
-                                            "userPw": password]
+//            let params: [String: Any?] = ["userEmail": email,
+//                                            "userPw": password]
+            let params: [String: Any?] = ["userEmail": "one@naver.com",
+                                          "userPw": "string"]
             let requestData = RequestData(path: path, method: .post, params: params)
             let login = UserLoginAPI(requestData)
             login.execute(onSuccess: { [weak self] userJson in

@@ -11,9 +11,9 @@ import Foundation
 struct CommonAPIManager {
     static func execute(_ request: RequestData,
                         dispatcher: NetworkDispatcher = URLSessionNetworkDispatcher.instance,
-                        onSuccess: @escaping ([String: Any]?) -> Void,
-                        onError: @escaping (Error) -> Void
-        ) {
+                        onSuccess: @escaping ([String: Any]?) -> Void = { _ in },
+                        onError: @escaping (Error) -> Void = { _ in }
+    ) {
         dispatcher.dispatch(request: request,
                             onSuccess: {(responseData: Data) in
                                 do {

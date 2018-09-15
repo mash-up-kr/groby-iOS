@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Category: Codable {
     let categotyId: Int
     let category: String
