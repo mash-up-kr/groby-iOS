@@ -36,7 +36,7 @@
                                                     <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh2442@hongik.ac.kr" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7so-cp-SfH">
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh2442@hongik.ac.kr" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7so-cp-SfH">
                                                     <rect key="frame" x="96.5" y="14.5" width="243.5" height="17"/>
                                                     <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -65,7 +65,7 @@
                                                     <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh24442" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-yB-sIf">
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="pdh24442" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-yB-sIf">
                                                     <rect key="frame" x="68.5" y="15.5" width="271.5" height="17"/>
                                                     <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -94,7 +94,7 @@
                                                     <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="010-1234-5678" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-os-JZL">
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="010-1234-5678" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-os-JZL">
                                                     <rect key="frame" x="80.5" y="14.5" width="259.5" height="17"/>
                                                     <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -132,7 +132,7 @@
                                                     <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="박다희" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X1Z-Ve-GqV">
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="박다희" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X1Z-Ve-GqV">
                                                     <rect key="frame" x="80.5" y="14.5" width="259.5" height="17"/>
                                                     <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -161,7 +161,7 @@
                                                     <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="신한은행" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKB-td-shj">
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="신한은행" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKB-td-shj">
                                                     <rect key="frame" x="68.5" y="14.5" width="271.5" height="17"/>
                                                     <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -195,7 +195,7 @@
                                                     <color key="textColor" name="iris"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="110-0103331133" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Un8-Al-yvB">
+                                                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="110-0103331133" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Un8-Al-yvB">
                                                     <rect key="frame" x="80.5" y="14.5" width="259.5" height="17"/>
                                                     <color key="textColor" name="coolGrey"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
@@ -262,6 +262,14 @@
                     <navigationItem key="navigationItem" title="개인정보 관리" id="4cb-ZW-TdL">
                         <barButtonItem key="backBarButtonItem" title=" " id="135-eQ-neb"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bankAccountTextFieled" destination="Un8-Al-yvB" id="rRo-IU-9WK"/>
+                        <outlet property="bankHolderTextFieled" destination="X1Z-Ve-GqV" id="3Pi-cN-aSj"/>
+                        <outlet property="bankNameTextFieled" destination="GKB-td-shj" id="w6p-hJ-f25"/>
+                        <outlet property="emailTextField" destination="7so-cp-SfH" id="7pE-Zc-Lz6"/>
+                        <outlet property="nicknameTextField" destination="ecd-yB-sIf" id="iW0-OO-mvM"/>
+                        <outlet property="phoneNumberTextFieled" destination="nfq-os-JZL" id="cmR-Ak-6k3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZG-ES-St1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,12 +8,14 @@
 
 import UIKit
 
-class JoinSecondViewController: UIViewController {
+class JoinSecondViewController: UIViewController, AlertShowable {
     @IBOutlet weak var emailTextField: LoginTextField!
     @IBOutlet weak var nickNameTextField: LoginTextField!
     @IBOutlet weak var passwordTextField: LoginTextField!
     @IBOutlet weak var checkPasswordTextField: LoginTextField!
     @IBOutlet weak var signUpButton: BlueButton!
+
+    var checkedEmail: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class JoinSecondViewController: UIViewController {
         navigationItem.setCustomTitle("Groby")
         setDelegate()
         signUpButton.activeButton(false)
+        emailTextField.text = checkedEmail
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +31,27 @@ class JoinSecondViewController: UIViewController {
     }
 
     @IBAction func signUpButtonAction(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)
+        if let email = emailTextField.text, let name = nickNameTextField.text, let password = passwordTextField.text {
+            let path: String = "\(GrobyURL.base)\(GrobyURL.user.rawValue)"
+            let params: [String: Any?] = ["userEmail": email,
+                                          "userName": name,
+                                          "userPw": password,
+                                          "userToken": "string"]
+
+            let requestData = RequestData(path: path, method: .post, params: params)
+            CommonAPIManager.execute(requestData, onSuccess: { [weak self] data in
+                guard let `self` = self else {
+                    return
+                }
+
+                if let status = data?["status"] as? String, status == "OK" {
+                    self.navigationController?.popToRootViewController(animated: true)
+                } else {
+                    self.popUpAlert("You couldn't join", message: "You should check password or token.")
+                }
+            }) { _ in
+            }
+        }
     }
 
     private func setDelegate() {

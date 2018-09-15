@@ -20,8 +20,6 @@ class DivisionListTableViewController: UITableViewController {
 
     }
 
-
-
     override func numberOfSections(in tableView: UITableView) -> Int {
 
         return 0

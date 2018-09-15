@@ -18,7 +18,7 @@ struct RequestData {
         path: String,
         method: HTTPMethod = .get,
         params: [String: Any?]? = nil,
-        headers: [String: String]? = nil
+        headers: [String: String]? = ["Content-Type": "application/x-www-form-urlencoded"]
         ) {
         self.path = path
         self.method = method

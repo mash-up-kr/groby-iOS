@@ -35,6 +35,12 @@
 		C239E066213EAD8C009D3545 /* FetchCategoryJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */; };
 		C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* JoinedPostTableViewController.swift */; };
 		C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */; };
+		CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */; };
+		CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */; };
+		CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */; };
+		CE70AA132142E9820086A23A /* UserCheckEmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */; };
+		CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA142142FDF50086A23A /* CommonAPIManager.swift */; };
+		CEF710F1213BBC03007BF3E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF710F0213BBC03007BF3E2 /* User.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
 		EF5E1D1521270876004A9A42 /* Bank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5E1D1421270876004A9A42 /* Bank.storyboard */; };
@@ -94,6 +100,12 @@
 		C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoryJson.swift; sourceTree = "<group>"; };
 		C24A4A222128021500406733 /* JoinedPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedPostTableViewController.swift; sourceTree = "<group>"; };
 		C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataManager.swift; sourceTree = "<group>"; };
+		CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertAction.swift; sourceTree = "<group>"; };
+		CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPI.swift; sourceTree = "<group>"; };
+		CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckEmailAPI.swift; sourceTree = "<group>"; };
+		CE70AA142142FDF50086A23A /* CommonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAPIManager.swift; sourceTree = "<group>"; };
+		CEF710F0213BBC03007BF3E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
 		EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Extension.swift"; sourceTree = "<group>"; };
@@ -176,9 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				8382CADB2128060A0051ECCE /* MyPage.storyboard */,
+				83A47E6D2127F185006B70EC /* MyPageTableViewController.swift */,
 				8382CAD7212803EC0051ECCE /* 비밀번호확인ViewController.swift */,
 				8382CAD9212804F70051ECCE /* 비밀번호변경ViewController.swift */,
-				83A47E6D2127F185006B70EC /* MyPageTableViewController.swift */,
 			);
 			name = MyPage;
 			sourceTree = "<group>";
@@ -243,6 +255,57 @@
 			name = Search;
 			sourceTree = "<group>";
 		};
+		CE45C0D421402C2200CDD952 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CEF710F0213BBC03007BF3E2 /* User.swift */,
+				CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */,
+				CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		CE45C0D521402C3600CDD952 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CE45C0D621402C3B00CDD952 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		CE45C0D721402C5500CDD952 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		CE70AA1621430C160086A23A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		CEF710EF213BBBD2007BF3E2 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				CE70AA142142FDF50086A23A /* CommonAPIManager.swift */,
+				CE45C0D421402C2200CDD952 /* User */,
+				CE45C0D721402C5500CDD952 /* Item */,
+				CE45C0D621402C3B00CDD952 /* Category */,
+				CE45C0D521402C3600CDD952 /* Main */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
 		EF0C971621270831003F63F9 /* MakeTap2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +321,7 @@
 				8382CAF0212DAD800051ECCE /* BankButton.swift */,
 				EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */,
 				EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */,
+				CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -292,6 +356,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				CE70AA1621430C160086A23A /* Manager */,
 				EFCCDAC021314B600007C394 /* Network */,
 				EF476947211F5F6F00561AD4 /* Common */,
 				EFE7D360211F378000C909FD /* Tap1 */,
@@ -303,6 +368,7 @@
 				4D8669D821183BC300862B9A /* Main */,
 				EFAAA9E621148E080013F360 /* Support */,
 				EFAAA9E521148DF00013F360 /* Login */,
+				CEF710EF213BBBD2007BF3E2 /* APIs */,
 				EFAAA9E021148B430013F360 /* Extensions */,
 				83F4A5D92127F03A008C50C1 /* MyPage */,
 			);
@@ -541,9 +607,11 @@
 				C2388E7D212446E40010AAD1 /* Post.swift in Sources */,
 				8382CADA212804F70051ECCE /* 비밀번호변경ViewController.swift in Sources */,
 				C239E064213EAB9A009D3545 /* Category.swift in Sources */,
+				CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */,
 				83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */,
 				C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
+				CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */,
 				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
 				C239E062213EAB56009D3545 /* CategoryJson.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
@@ -551,6 +619,7 @@
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
 				C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */,
+				CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */,
 				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,
 				C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */,
 				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
@@ -560,13 +629,16 @@
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
 				EFE7D36C211F4DEA00C909FD /* MakeTab1FourthViewController.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
+				CEF710F1213BBC03007BF3E2 /* User.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
 				C239E066213EAD8C009D3545 /* FetchCategoryJson.swift in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
 				EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */,
 				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
+				CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
 				EFE7D368211F404000C909FD /* MakeTab1SecondViewController.swift in Sources */,
+				CE70AA132142E9820086A23A /* UserCheckEmailAPI.swift in Sources */,
 				EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */,
 				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
 				EFCCDAC82131D8720007C394 /* NetworkEnums.swift in Sources */,
