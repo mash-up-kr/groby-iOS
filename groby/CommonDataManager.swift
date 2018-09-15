@@ -12,4 +12,6 @@ class CommonDataManager {
     static let share = CommonDataManager()
 
     var userInfo: User?
+    var categories: [Category]?
+    var item: Item?
 }

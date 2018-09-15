@@ -40,6 +40,10 @@
 		CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */; };
 		CE70AA132142E9820086A23A /* UserCheckEmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */; };
 		CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA142142FDF50086A23A /* CommonAPIManager.swift */; };
+		CEE745C9214D7C27002FD454 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745C8214D7C27002FD454 /* CategoryItem.swift */; };
+		CEE745CB214D7D9C002FD454 /* CategoryItemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */; };
+		CEE745CD214D8671002FD454 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CC214D8671002FD454 /* Item.swift */; };
+		CEE745CF214DA30B002FD454 /* ItemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CE214DA30B002FD454 /* ItemAPI.swift */; };
 		CEF710F1213BBC03007BF3E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF710F0213BBC03007BF3E2 /* User.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
@@ -105,6 +109,10 @@
 		CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPI.swift; sourceTree = "<group>"; };
 		CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckEmailAPI.swift; sourceTree = "<group>"; };
 		CE70AA142142FDF50086A23A /* CommonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAPIManager.swift; sourceTree = "<group>"; };
+		CEE745C8214D7C27002FD454 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemAPI.swift; sourceTree = "<group>"; };
+		CEE745CC214D8671002FD454 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CEE745CE214DA30B002FD454 /* ItemAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAPI.swift; sourceTree = "<group>"; };
 		CEF710F0213BBC03007BF3E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +283,8 @@
 		CE45C0D621402C3B00CDD952 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CEE745C8214D7C27002FD454 /* CategoryItem.swift */,
+				CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 		CE45C0D721402C5500CDD952 /* Item */ = {
 			isa = PBXGroup;
 			children = (
+				CEE745CC214D8671002FD454 /* Item.swift */,
+				CEE745CE214DA30B002FD454 /* ItemAPI.swift */,
 			);
 			name = Item;
 			sourceTree = "<group>";
@@ -600,6 +612,7 @@
 				8382CAF1212DAD800051ECCE /* BankButton.swift in Sources */,
 				8382CAD8212803EC0051ECCE /* 비밀번호확인ViewController.swift in Sources */,
 				AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */,
+				CEE745C9214D7C27002FD454 /* CategoryItem.swift in Sources */,
 				8382CADE21280DD10051ECCE /* 내용작성ViewController.swift in Sources */,
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
 				EF5E1D1721270AE6004A9A42 /* BankViewController.swift in Sources */,
@@ -615,6 +628,7 @@
 				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
 				C239E062213EAB56009D3545 /* CategoryJson.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
+				CEE745CD214D8671002FD454 /* Item.swift in Sources */,
 				C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
@@ -639,10 +653,12 @@
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
 				EFE7D368211F404000C909FD /* MakeTab1SecondViewController.swift in Sources */,
 				CE70AA132142E9820086A23A /* UserCheckEmailAPI.swift in Sources */,
+				CEE745CB214D7D9C002FD454 /* CategoryItemAPI.swift in Sources */,
 				EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */,
 				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
 				EFCCDAC82131D8720007C394 /* NetworkEnums.swift in Sources */,
 				8382CAE021280FBD0051ECCE /* 미리보기ViewController.swift in Sources */,
+				CEE745CF214DA30B002FD454 /* ItemAPI.swift in Sources */,
 				AA16A57C211E0B0200A1A4DD /* DummyCollectionViewCell.swift in Sources */,
 				EFCCDACC2131D8B20007C394 /* RequestType.swift in Sources */,
 			);

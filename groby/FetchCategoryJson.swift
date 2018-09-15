@@ -10,8 +10,8 @@ import Foundation
 
 struct FetchCategoryJson: RequestType {
     typealias ResponseType = CategoryJson
-    
+
     var data: RequestData {
-        return RequestData(path: "http://ec2-13-125-62-50.ap-northeast-2.compute.amazonaws.com/category/")
+        return RequestData(path: "\(GrobyURL.base)\(GrobyURL.category.rawValue)")
     }
 }

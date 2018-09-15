@@ -23,8 +23,8 @@ extension RequestType {
             request: self.data,
             onSuccess: { (responseData: Data) in
                 do {
-//                    let result = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any]
-//                    print(result)
+                    let result1 = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any]
+                    print(result1)
 
                     let jsonDecoder = JSONDecoder()
                     let result = try jsonDecoder.decode(ResponseType.self, from: responseData)
