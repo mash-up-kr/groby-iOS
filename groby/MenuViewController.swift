@@ -10,23 +10,23 @@ import UIKit
 
 class MenuViewController: UITableViewController {
 
+    @IBOutlet weak var userNicknameLabel: UILabel!
     @IBOutlet weak var wroteButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
 
-    @IBAction func mypageButton(_ sender: Any) {
+    @IBAction private func mypageButton(_ sender: Any) {
         let myPageStoryBoard = UIStoryboard(name: "MyPage", bundle: nil)
         let myPageNavigationController = myPageStoryBoard.instantiateViewController(withIdentifier: "MyPageViewController")
         navigationController?.pushViewController(myPageNavigationController, animated: true)
-
     }
 
-    @IBAction func tappedMyPost(_ sender: UIButton) {
+    @IBAction private func tappedMyPost(_ sender: UIButton) {
         let menuStoryBoard = UIStoryboard(name: "Menu", bundle: nil)
         let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "MyPostTableViewController")
         navigationController?.pushViewController(menuViewController, animated: true)
     }
 
-    @IBAction func tappedJoinedPost(_ sender: UIButton) {
+    @IBAction private func tappedJoinedPost(_ sender: UIButton) {
         let menuStoryBoard = UIStoryboard(name: "Menu", bundle: nil)
         let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "JoinedPostTableViewController")
         navigationController?.pushViewController(menuViewController, animated: true)
@@ -35,6 +35,7 @@ class MenuViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+       userNicknameLabel.text = CommonDataManager.share.userInfo?.userName
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
@@ -57,7 +58,7 @@ class MenuViewController: UITableViewController {
 
     // MARK: - Actions
 
-    @IBAction func actionClose(_ sender: UIButton) {
+    @IBAction private func actionClose(_ sender: UIButton) {
 
     }
 

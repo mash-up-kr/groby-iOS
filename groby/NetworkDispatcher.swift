@@ -16,6 +16,10 @@ struct URLSessionNetworkDispatcher: NetworkDispatcher {
     static let instance = URLSessionNetworkDispatcher()
     private init() {}
 
+    static func dispatch(request: RequestData, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void) {
+
+    }
+
     func dispatch(request: RequestData, onSuccess: @escaping (Data) -> Void, onError: @escaping (Error) -> Void) {
         guard let url = URL(string: request.path) else {
             onError(ConnError.invalidURL)
@@ -23,6 +27,7 @@ struct URLSessionNetworkDispatcher: NetworkDispatcher {
         }
 
         var urlRequest = URLRequest(url: url)
+        urlRequest.setValue("application/json; charset=UTF-8;", forHTTPHeaderField: "Content-Type")
         urlRequest.httpMethod = request.method.rawValue
 
         do {

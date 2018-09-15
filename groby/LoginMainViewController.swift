@@ -25,8 +25,32 @@ class LoginMainViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func loginButtonAction(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+    @IBAction private func loginButtonAction(_ sender: UIButton) {
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            let path: String = "\(GrobyURL.base)\(GrobyURL.user.rawValue)\(UserLoginAPI.subUrl)"
+            let params: [String: Any?] = ["userEmail": email,
+                                            "userPw": password]
+            let requestData = RequestData(path: path, method: .post, params: params)
+            let login = UserLoginAPI(requestData)
+            login.execute(onSuccess: { [weak self] userJson in
+                guard let `self` = self else {
+                    return
+                }
+                CommonDataManager.share.userInfo = userJson.returnJson
+
+                self.dismiss(animated: true, completion: nil)
+            }) { [weak self]error in
+                guard let `self` = self else {
+                    return
+                }
+                let alertController = UIAlertController(title: "Login failed", message: "You should check your e-mail or password.", preferredStyle: .alert)
+                let cancel = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(cancel)
+
+                self.present(alertController, animated: false, completion: nil)
+                print("Login Error: \(error)")
+            }
+        }
     }
 
     private func setDelegate() {
