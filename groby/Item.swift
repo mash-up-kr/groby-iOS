@@ -21,7 +21,7 @@ struct Item: Codable {
     var itemCategoryId: String?
     var itemTitle: String?
     var userId: String?
-    var tab1: TapOne?
+    var tabOne: TapOne?
 }
 
 struct TapOne: Codable {

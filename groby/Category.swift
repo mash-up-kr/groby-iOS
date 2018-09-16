@@ -9,6 +9,6 @@
 import Foundation
 
 struct Category: Codable {
-    let categotyId: Int
+    let categoryId: Int
     let category: String
 }

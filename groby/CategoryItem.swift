@@ -10,7 +10,7 @@ import Foundation
 
 struct CategoryItem: Codable {
     let amountLimit: Int
-    let dueDate: Date
+    let dueDate: String
     let itemId: String
     let likeNum: String
     let nowTab: Int
