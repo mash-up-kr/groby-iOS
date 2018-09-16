@@ -41,7 +41,7 @@ class MenuViewController: UITableViewController {
                 CommonDataManager.share.categories = categoryJson.returnJson
 
                 for category in categoryJson.returnJson {
-                    print("\(category.categotyId) , \(category.category)")
+                    print("\(category.categoryId) , \(category.category)")
                 }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()

@@ -26,7 +26,7 @@ class JoinedPostTableViewController: UIViewController {
 
         if let category = category {
             navigationItem.setCustomTitle(category.category)
-            let path: String = "\(GrobyURL.base)\(GrobyURL.main.rawValue)\(GrobyURL.category.rawValue)\(category.categotyId)"
+            let path: String = "\(GrobyURL.base)\(GrobyURL.main.rawValue)\(GrobyURL.category.rawValue)\(category.categoryId)"
             let requestData = RequestData(path: path)
             CategoryItemAPI(requestData).execute(onSuccess: { [weak self] categoryItems in
                 guard let `self` = self else {
@@ -59,8 +59,11 @@ extension JoinedPostTableViewController: UITableViewDelegate, UITableViewDataSou
 
         let categoryItem = categoryItems[indexPath.row]
 
+        let date = categoryItem.dueDate.split(separator: " ")
+        if let dateString = date.first {
+            cell.postDate.text = "\(dateString)"
+        }
         cell.postTitle.text = categoryItem.title
-        cell.postDate.text = "\(categoryItem.dueDate)"
 
         if true {
             cell.postLikeOrProgress.text = "좋아요 수"

@@ -52,8 +52,8 @@ class MakeTab1ThirdTableTableViewController: UITableViewController {
         }
 
         CommonDataManager.share.item?.itemAmountLimit = minimumCountTextField.text
-        CommonDataManager.share.item?.tab1?.endDate = endDateButton.titleLabel?.text
-        CommonDataManager.share.item?.tab1?.location = locationTextField.text
+        CommonDataManager.share.item?.tabOne?.endDate = endDateButton.titleLabel?.text
+        CommonDataManager.share.item?.tabOne?.location = locationTextField.text
         navigationController?.pushViewController(makeTab1FourthViewController, animated: true)
     }
 

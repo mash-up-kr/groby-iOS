@@ -40,10 +40,15 @@
 		CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */; };
 		CE70AA132142E9820086A23A /* UserCheckEmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */; };
 		CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA142142FDF50086A23A /* CommonAPIManager.swift */; };
+		CE899A29214E7E72003A53C1 /* CommonTapHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE899A28214E7E72003A53C1 /* CommonTapHeaderView.swift */; };
 		CEE745C9214D7C27002FD454 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745C8214D7C27002FD454 /* CategoryItem.swift */; };
 		CEE745CB214D7D9C002FD454 /* CategoryItemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */; };
 		CEE745CD214D8671002FD454 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CC214D8671002FD454 /* Item.swift */; };
 		CEE745CF214DA30B002FD454 /* ItemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CE214DA30B002FD454 /* ItemAPI.swift */; };
+		CEE745D2214E70B2002FD454 /* CommonTapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE745D1214E70B2002FD454 /* CommonTapHeaderView.xib */; };
+		CEE745D4214E77BA002FD454 /* CommonTapViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D3214E77BA002FD454 /* CommonTapViewTableViewCell.swift */; };
+		CEE745D6214E77FF002FD454 /* CommonTapViewContainerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D5214E77FF002FD454 /* CommonTapViewContainerViewCell.swift */; };
+		CEE745D8214E7862002FD454 /* MakeTab1ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D7214E7862002FD454 /* MakeTab1ContainerViewController.swift */; };
 		CEF710F1213BBC03007BF3E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF710F0213BBC03007BF3E2 /* User.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
@@ -109,10 +114,15 @@
 		CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPI.swift; sourceTree = "<group>"; };
 		CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckEmailAPI.swift; sourceTree = "<group>"; };
 		CE70AA142142FDF50086A23A /* CommonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAPIManager.swift; sourceTree = "<group>"; };
+		CE899A28214E7E72003A53C1 /* CommonTapHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTapHeaderView.swift; sourceTree = "<group>"; };
 		CEE745C8214D7C27002FD454 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemAPI.swift; sourceTree = "<group>"; };
 		CEE745CC214D8671002FD454 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CEE745CE214DA30B002FD454 /* ItemAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAPI.swift; sourceTree = "<group>"; };
+		CEE745D1214E70B2002FD454 /* CommonTapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTapHeaderView.xib; sourceTree = "<group>"; };
+		CEE745D3214E77BA002FD454 /* CommonTapViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTapViewTableViewCell.swift; sourceTree = "<group>"; };
+		CEE745D5214E77FF002FD454 /* CommonTapViewContainerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTapViewContainerViewCell.swift; sourceTree = "<group>"; };
+		CEE745D7214E7862002FD454 /* MakeTab1ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTab1ContainerViewController.swift; sourceTree = "<group>"; };
 		CEF710F0213BBC03007BF3E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
@@ -306,6 +316,17 @@
 			name = Manager;
 			sourceTree = "<group>";
 		};
+		CEE745D0214E706E002FD454 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				CEE745D1214E70B2002FD454 /* CommonTapHeaderView.xib */,
+				CEE745D3214E77BA002FD454 /* CommonTapViewTableViewCell.swift */,
+				CEE745D5214E77FF002FD454 /* CommonTapViewContainerViewCell.swift */,
+				CE899A28214E7E72003A53C1 /* CommonTapHeaderView.swift */,
+			);
+			name = CommonView;
+			sourceTree = "<group>";
+		};
 		CEF710EF213BBBD2007BF3E2 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +389,7 @@
 		EFAAA9CA211486E50013F360 /* groby */ = {
 			isa = PBXGroup;
 			children = (
+				CEE745D0214E706E002FD454 /* CommonView */,
 				CE70AA1621430C160086A23A /* Manager */,
 				EFCCDAC021314B600007C394 /* Network */,
 				EF476947211F5F6F00561AD4 /* Common */,
@@ -440,6 +462,7 @@
 				EFE7D369211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift */,
 				EFE7D36B211F4DEA00C909FD /* MakeTab1FourthViewController.swift */,
 				EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */,
+				CEE745D7214E7862002FD454 /* MakeTab1ContainerViewController.swift */,
 			);
 			name = Tap1;
 			sourceTree = "<group>";
@@ -515,6 +538,7 @@
 				AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */,
 				8322A7F5211F64E00028504D /* tap4.storyboard in Resources */,
 				8382CADC2128060A0051ECCE /* MyPage.storyboard in Resources */,
+				CEE745D2214E70B2002FD454 /* CommonTapHeaderView.xib in Resources */,
 				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
 				EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */,
@@ -617,6 +641,7 @@
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
 				EF5E1D1721270AE6004A9A42 /* BankViewController.swift in Sources */,
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
+				CEE745D8214E7862002FD454 /* MakeTab1ContainerViewController.swift in Sources */,
 				C2388E7D212446E40010AAD1 /* Post.swift in Sources */,
 				8382CADA212804F70051ECCE /* 비밀번호변경ViewController.swift in Sources */,
 				C239E064213EAB9A009D3545 /* Category.swift in Sources */,
@@ -624,11 +649,13 @@
 				83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */,
 				C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
+				CEE745D4214E77BA002FD454 /* CommonTapViewTableViewCell.swift in Sources */,
 				CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */,
 				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
 				C239E062213EAB56009D3545 /* CategoryJson.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
 				CEE745CD214D8671002FD454 /* Item.swift in Sources */,
+				CE899A29214E7E72003A53C1 /* CommonTapHeaderView.swift in Sources */,
 				C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
@@ -648,6 +675,7 @@
 				C239E066213EAD8C009D3545 /* FetchCategoryJson.swift in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
 				EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */,
+				CEE745D6214E77FF002FD454 /* CommonTapViewContainerViewCell.swift in Sources */,
 				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
 				CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,

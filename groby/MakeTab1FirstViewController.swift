@@ -51,7 +51,7 @@ extension MakeTab1FirstViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        guard let controller = storyboard?.instantiateViewController(withIdentifier: "MakeTap1SecondViewController") as? MakeTab1SecondViewController, let categoryId = CommonDataManager.share.categories?[indexPath.row].categotyId else {
+        guard let controller = storyboard?.instantiateViewController(withIdentifier: "MakeTap1SecondViewController") as? MakeTab1SecondViewController, let categoryId = CommonDataManager.share.categories?[indexPath.row].categoryId else {
             return
         }
         CommonDataManager.share.item = Item()

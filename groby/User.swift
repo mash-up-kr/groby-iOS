@@ -15,7 +15,7 @@ struct User: Codable {
     let denied: Bool
     let isDeleted: Bool
     let userEmail: String
-    let userId: Int
+    let userId: String
     let userName: String
     let phoneNumber: String?
 }
