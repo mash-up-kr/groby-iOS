@@ -22,27 +22,31 @@
                     <color key="backgroundColor" name="whiteTwo"/>
                     <state key="normal" image="plus button"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세부 옵션 추가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve7-cB-Dpg">
-                    <rect key="frame" x="36" y="626.5" width="80" height="17"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                    <color key="textColor" name="coolGrey"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M15-8z-0Tj">
                     <rect key="frame" x="25" y="619" width="292" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세부 옵션 추가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve7-cB-Dpg">
+                            <rect key="frame" x="12" y="7.5" width="80" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" name="coolGrey"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
                     <color key="backgroundColor" name="whiteOne"/>
+                    <constraints>
+                        <constraint firstItem="ve7-cB-Dpg" firstAttribute="leading" secondItem="M15-8z-0Tj" secondAttribute="leading" constant="12" id="XeA-NU-Gkk"/>
+                        <constraint firstItem="ve7-cB-Dpg" firstAttribute="centerY" secondItem="M15-8z-0Tj" secondAttribute="centerY" id="bfs-Ah-Zx7"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ve7-cB-Dpg" firstAttribute="centerY" secondItem="lLC-yz-yRb" secondAttribute="centerY" id="4qX-g6-2cX"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lLC-yz-yRb" secondAttribute="bottom" constant="15" id="Bc4-Z7-T2H"/>
                 <constraint firstItem="lLC-yz-yRb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="ChS-L7-XRo"/>
                 <constraint firstItem="M15-8z-0Tj" firstAttribute="top" secondItem="lLC-yz-yRb" secondAttribute="top" constant="1" id="GSD-XU-zNf"/>
                 <constraint firstItem="M15-8z-0Tj" firstAttribute="bottom" secondItem="lLC-yz-yRb" secondAttribute="bottom" constant="-1" id="LRb-bD-JbY"/>
                 <constraint firstItem="M15-8z-0Tj" firstAttribute="trailing" secondItem="lLC-yz-yRb" secondAttribute="trailing" constant="-34" id="LWB-S9-bbp"/>
                 <constraint firstItem="M15-8z-0Tj" firstAttribute="leading" secondItem="lLC-yz-yRb" secondAttribute="leading" constant="1" id="PfB-BP-4bx"/>
-                <constraint firstItem="ve7-cB-Dpg" firstAttribute="leading" secondItem="lLC-yz-yRb" secondAttribute="leading" constant="12" id="cfb-m4-pWe"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lLC-yz-yRb" secondAttribute="trailing" constant="24" id="y2I-QD-TZc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
