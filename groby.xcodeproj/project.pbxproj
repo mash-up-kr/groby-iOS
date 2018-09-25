@@ -35,6 +35,12 @@
 		CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */; };
 		CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */; };
 		CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */; };
+		CE4A88AF215AA19300FFC7DD /* DepositConfirmHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A88AE215AA19300FFC7DD /* DepositConfirmHeaderView.swift */; };
+		CE4A88B1215AA1AD00FFC7DD /* DepositConfirmHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4A88B0215AA1AD00FFC7DD /* DepositConfirmHeaderFooterView.xib */; };
+		CE4A88B5215AA1DA00FFC7DD /* DepositConfirmListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A88B4215AA1DA00FFC7DD /* DepositConfirmListHeaderView.swift */; };
+		CE4A88B7215AA1EA00FFC7DD /* DepositConfirmListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4A88B6215AA1EA00FFC7DD /* DepositConfirmListHeaderView.xib */; };
+		CE4A88BA215AA25200FFC7DD /* UserTabTwoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A88B9215AA25200FFC7DD /* UserTabTwoView.storyboard */; };
+		CE4A88BC215AA2B900FFC7DD /* TabTwoCheckDepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A88BB215AA2B900FFC7DD /* TabTwoCheckDepositViewController.swift */; };
 		CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA142142FDF50086A23A /* CommonAPIManager.swift */; };
 		CE899A29214E7E72003A53C1 /* CommonTabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE899A28214E7E72003A53C1 /* CommonTabHeaderView.swift */; };
 		CED7D8912158C76300A3D645 /* CategoryItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8902158C76300A3D645 /* CategoryItemListTableViewController.swift */; };
@@ -47,6 +53,13 @@
 		CED7D8A42158F7B600A3D645 /* TabThreeContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8A22158F7B600A3D645 /* TabThreeContainerViewController.swift */; };
 		CED7D8A82158F7C500A3D645 /* TabFourContainerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8A62158F7C500A3D645 /* TabFourContainerView.storyboard */; };
 		CED7D8AA21590E3700A3D645 /* TabFourContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8A921590E3700A3D645 /* TabFourContainerViewController.swift */; };
+		CED7D8AC215A632C00A3D645 /* MakeTabTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8AB215A632C00A3D645 /* MakeTabTwo.storyboard */; };
+		CED7D8AE215A635800A3D645 /* MakeTabTwoFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8AD215A635800A3D645 /* MakeTabTwoFirstViewController.swift */; };
+		CED7D8B0215A637400A3D645 /* MakeTabTwoSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8AF215A637400A3D645 /* MakeTabTwoSecondViewController.swift */; };
+		CED7D8B3215A8D9D00A3D645 /* OptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8B2215A8D9D00A3D645 /* OptionHeaderView.swift */; };
+		CED7D8B5215A8DC800A3D645 /* OptionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8B4215A8DC800A3D645 /* OptionFooterView.swift */; };
+		CED7D8B7215A8DEF00A3D645 /* OptionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8B6215A8DEF00A3D645 /* OptionHeaderView.xib */; };
+		CED7D8B9215A8E0300A3D645 /* OptionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8B8215A8E0300A3D645 /* OptionFooterView.xib */; };
 		CEE745C9214D7C27002FD454 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745C8214D7C27002FD454 /* ItemList.swift */; };
 		CEE745CB214D7D9C002FD454 /* ItemListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CA214D7D9C002FD454 /* ItemListAPI.swift */; };
 		CEE745CD214D8671002FD454 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CC214D8671002FD454 /* Item.swift */; };
@@ -115,6 +128,12 @@
 		CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataManager.swift; sourceTree = "<group>"; };
 		CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertAction.swift; sourceTree = "<group>"; };
 		CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPI.swift; sourceTree = "<group>"; };
+		CE4A88AE215AA19300FFC7DD /* DepositConfirmHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositConfirmHeaderView.swift; sourceTree = "<group>"; };
+		CE4A88B0215AA1AD00FFC7DD /* DepositConfirmHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepositConfirmHeaderFooterView.xib; sourceTree = "<group>"; };
+		CE4A88B4215AA1DA00FFC7DD /* DepositConfirmListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositConfirmListHeaderView.swift; sourceTree = "<group>"; };
+		CE4A88B6215AA1EA00FFC7DD /* DepositConfirmListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepositConfirmListHeaderView.xib; sourceTree = "<group>"; };
+		CE4A88B9215AA25200FFC7DD /* UserTabTwoView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTabTwoView.storyboard; sourceTree = "<group>"; };
+		CE4A88BB215AA2B900FFC7DD /* TabTwoCheckDepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTwoCheckDepositViewController.swift; sourceTree = "<group>"; };
 		CE70AA142142FDF50086A23A /* CommonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAPIManager.swift; sourceTree = "<group>"; };
 		CE899A28214E7E72003A53C1 /* CommonTabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabHeaderView.swift; sourceTree = "<group>"; };
 		CED7D8902158C76300A3D645 /* CategoryItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemListTableViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +146,13 @@
 		CED7D8A22158F7B600A3D645 /* TabThreeContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabThreeContainerViewController.swift; sourceTree = "<group>"; };
 		CED7D8A62158F7C500A3D645 /* TabFourContainerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabFourContainerView.storyboard; sourceTree = "<group>"; };
 		CED7D8A921590E3700A3D645 /* TabFourContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabFourContainerViewController.swift; sourceTree = "<group>"; };
+		CED7D8AB215A632C00A3D645 /* MakeTabTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeTabTwo.storyboard; sourceTree = "<group>"; };
+		CED7D8AD215A635800A3D645 /* MakeTabTwoFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTabTwoFirstViewController.swift; sourceTree = "<group>"; };
+		CED7D8AF215A637400A3D645 /* MakeTabTwoSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTabTwoSecondViewController.swift; sourceTree = "<group>"; };
+		CED7D8B2215A8D9D00A3D645 /* OptionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
+		CED7D8B4215A8DC800A3D645 /* OptionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionFooterView.swift; sourceTree = "<group>"; };
+		CED7D8B6215A8DEF00A3D645 /* OptionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
+		CED7D8B8215A8E0300A3D645 /* OptionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionFooterView.xib; sourceTree = "<group>"; };
 		CEE745C8214D7C27002FD454 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
 		CEE745CA214D7D9C002FD454 /* ItemListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListAPI.swift; sourceTree = "<group>"; };
 		CEE745CC214D8671002FD454 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -356,6 +382,21 @@
 			name = Tap5;
 			sourceTree = "<group>";
 		};
+		CED7D8B1215A8CC900A3D645 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED7D8B2215A8D9D00A3D645 /* OptionHeaderView.swift */,
+				CED7D8B6215A8DEF00A3D645 /* OptionHeaderView.xib */,
+				CED7D8B4215A8DC800A3D645 /* OptionFooterView.swift */,
+				CED7D8B8215A8E0300A3D645 /* OptionFooterView.xib */,
+				CE4A88AE215AA19300FFC7DD /* DepositConfirmHeaderView.swift */,
+				CE4A88B0215AA1AD00FFC7DD /* DepositConfirmHeaderFooterView.xib */,
+				CE4A88B4215AA1DA00FFC7DD /* DepositConfirmListHeaderView.swift */,
+				CE4A88B6215AA1EA00FFC7DD /* DepositConfirmListHeaderView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		CEE745D0214E706E002FD454 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,10 +436,16 @@
 		EF5E1D1321270861004A9A42 /* Tab2 */ = {
 			isa = PBXGroup;
 			children = (
+				CED7D8B1215A8CC900A3D645 /* View */,
 				EF5E1D1421270876004A9A42 /* Bank.storyboard */,
 				EF5E1D1621270AE6004A9A42 /* BankViewController.swift */,
 				CED7D89B2158EE9800A3D645 /* TabTwoContainerView.storyboard */,
 				CED7D89F2158F51200A3D645 /* TabTwoContainerViewController.swift */,
+				CED7D8AB215A632C00A3D645 /* MakeTabTwo.storyboard */,
+				CED7D8AD215A635800A3D645 /* MakeTabTwoFirstViewController.swift */,
+				CED7D8AF215A637400A3D645 /* MakeTabTwoSecondViewController.swift */,
+				CE4A88BB215AA2B900FFC7DD /* TabTwoCheckDepositViewController.swift */,
+				CE4A88B9215AA25200FFC7DD /* UserTabTwoView.storyboard */,
 			);
 			name = Tab2;
 			sourceTree = "<group>";
@@ -568,15 +615,21 @@
 				EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */,
 				EFE7D364211F3C0F00C909FD /* MakeTab1.storyboard in Resources */,
 				8356729A21313BDE001144C3 /* DivisionList.storyboard in Resources */,
+				CE4A88B1215AA1AD00FFC7DD /* DepositConfirmHeaderFooterView.xib in Resources */,
+				CE4A88B7215AA1EA00FFC7DD /* DepositConfirmListHeaderView.xib in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
 				AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */,
+				CED7D8B9215A8E0300A3D645 /* OptionFooterView.xib in Resources */,
 				CED7D8A82158F7C500A3D645 /* TabFourContainerView.storyboard in Resources */,
 				8322A7F5211F64E00028504D /* tap4.storyboard in Resources */,
 				8382CADC2128060A0051ECCE /* MyPage.storyboard in Resources */,
 				CED7D8A32158F7B600A3D645 /* TabThreeContainerView.storyboard in Resources */,
+				CE4A88BA215AA25200FFC7DD /* UserTabTwoView.storyboard in Resources */,
 				CEE745D2214E70B2002FD454 /* CommonTabHeaderView.xib in Resources */,
+				CED7D8AC215A632C00A3D645 /* MakeTabTwo.storyboard in Resources */,
 				CED7D8962158DB1000A3D645 /* CommonTabView.storyboard in Resources */,
 				CED7D89A2158EE8700A3D645 /* TabOneContainerView.storyboard in Resources */,
+				CED7D8B7215A8DEF00A3D645 /* OptionHeaderView.xib in Resources */,
 				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
 				CED7D89C2158EE9800A3D645 /* TabTwoContainerView.storyboard in Resources */,
@@ -682,6 +735,7 @@
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
 				CEE745D8214E7862002FD454 /* TabOneContainerViewController.swift in Sources */,
 				8382CADA212804F70051ECCE /* 비밀번호변경ViewController.swift in Sources */,
+				CED7D8B5215A8DC800A3D645 /* OptionFooterView.swift in Sources */,
 				C239E064213EAB9A009D3545 /* Category.swift in Sources */,
 				CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */,
 				83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */,
@@ -706,20 +760,26 @@
 				8356729C21313C21001144C3 /* DivisionListTableViewController.swift in Sources */,
 				EFE7D36A211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift in Sources */,
 				CED7D8AA21590E3700A3D645 /* TabFourContainerViewController.swift in Sources */,
+				CED7D8B3215A8D9D00A3D645 /* OptionHeaderView.swift in Sources */,
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
 				EFE7D36C211F4DEA00C909FD /* MakeTab1FourthViewController.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
+				CE4A88AF215AA19300FFC7DD /* DepositConfirmHeaderView.swift in Sources */,
 				CEF710F1213BBC03007BF3E2 /* User.swift in Sources */,
+				CED7D8B0215A637400A3D645 /* MakeTabTwoSecondViewController.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
+				CE4A88BC215AA2B900FFC7DD /* TabTwoCheckDepositViewController.swift in Sources */,
 				C239E066213EAD8C009D3545 /* CategoryAPI.swift in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
 				EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */,
+				CE4A88B5215AA1DA00FFC7DD /* DepositConfirmListHeaderView.swift in Sources */,
 				CEE745D6214E77FF002FD454 /* CommonTabViewContainerViewCell.swift in Sources */,
 				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
 				CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
 				EFE7D368211F404000C909FD /* MakeTab1SecondViewController.swift in Sources */,
 				CED7D8A02158F51200A3D645 /* TabTwoContainerViewController.swift in Sources */,
+				CED7D8AE215A635800A3D645 /* MakeTabTwoFirstViewController.swift in Sources */,
 				CEE745CB214D7D9C002FD454 /* ItemListAPI.swift in Sources */,
 				EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */,
 				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,

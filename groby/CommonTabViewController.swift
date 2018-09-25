@@ -48,6 +48,7 @@ class CommonTabViewController: UIViewController {
     @IBOutlet var headerTabButtons: [UIButton]!
     @IBOutlet var headerTabButtonSelectedViews: [UIView]!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var favoriteButtonView: UIView!
 
     var pageViewController: UIPageViewController?
     var tabNumber: Int? = 0
@@ -134,6 +135,10 @@ class CommonTabViewController: UIViewController {
             assertionFailure("JSONEncoder Error")
         }
     }
+
+    @IBAction private func actionNext(_ sender: UIButton) {
+
+    }
 }
 
 // MARK: -
@@ -142,8 +147,10 @@ extension CommonTabViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > 532 {
             tabMenuView.isHidden = false
+            favoriteButtonView.isHidden = false
         } else {
             tabMenuView.isHidden = true
+            favoriteButtonView.isHidden = true
         }
         print("scrollViewDidScroll: \(scrollView.contentOffset.y)")
     }
@@ -151,8 +158,10 @@ extension CommonTabViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > 532 {
             tabMenuView.isHidden = false
+            favoriteButtonView.isHidden = false
         } else {
             tabMenuView.isHidden = true
+            favoriteButtonView.isHidden = true
         }
         print("scrollViewDidEndDecelerating: \(scrollView.contentOffset.y)")
     }

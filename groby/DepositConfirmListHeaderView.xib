@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idQ-Ur-6gd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입금확인 명단" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gox-Mk-cTw">
+                    <rect key="frame" x="149.5" y="14" width="76.5" height="17"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown button" translatesAutoresizingMaskIntoConstraints="NO" id="uiy-g8-BmA">
+                    <rect key="frame" x="232" y="19.5" width="9" height="6"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" name="powderBlue"/>
+            <constraints>
+                <constraint firstItem="idQ-Ur-6gd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1OX-PJ-sDc"/>
+                <constraint firstAttribute="bottom" secondItem="idQ-Ur-6gd" secondAttribute="bottom" id="1ai-Wn-u0F"/>
+                <constraint firstItem="idQ-Ur-6gd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7vc-d1-v7w"/>
+                <constraint firstItem="gox-Mk-cTw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="9YD-iz-X86"/>
+                <constraint firstItem="gox-Mk-cTw" firstAttribute="centerX" secondItem="idQ-Ur-6gd" secondAttribute="centerX" id="CrU-ew-P0D"/>
+                <constraint firstItem="idQ-Ur-6gd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FVy-HB-lxF"/>
+                <constraint firstItem="uiy-g8-BmA" firstAttribute="leading" secondItem="gox-Mk-cTw" secondAttribute="trailing" constant="6" id="kaY-xE-YFV"/>
+                <constraint firstItem="uiy-g8-BmA" firstAttribute="centerY" secondItem="gox-Mk-cTw" secondAttribute="centerY" id="s2o-qA-VWV"/>
+                <constraint firstAttribute="trailing" secondItem="idQ-Ur-6gd" secondAttribute="trailing" id="tWR-Cl-lKH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dropdown button" width="9" height="6"/>
+        <namedColor name="powderBlue">
+            <color red="0.65490196078431373" green="0.73333333333333328" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

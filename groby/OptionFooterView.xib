@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLC-yz-yRb">
+                    <rect key="frame" x="24" y="618" width="327" height="34"/>
+                    <color key="backgroundColor" name="whiteTwo"/>
+                    <state key="normal" image="plus button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세부 옵션 추가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve7-cB-Dpg">
+                    <rect key="frame" x="36" y="626.5" width="80" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" name="coolGrey"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M15-8z-0Tj">
+                    <rect key="frame" x="25" y="619" width="292" height="32"/>
+                    <color key="backgroundColor" name="whiteOne"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ve7-cB-Dpg" firstAttribute="centerY" secondItem="lLC-yz-yRb" secondAttribute="centerY" id="4qX-g6-2cX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lLC-yz-yRb" secondAttribute="bottom" constant="15" id="Bc4-Z7-T2H"/>
+                <constraint firstItem="lLC-yz-yRb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="ChS-L7-XRo"/>
+                <constraint firstItem="M15-8z-0Tj" firstAttribute="top" secondItem="lLC-yz-yRb" secondAttribute="top" constant="1" id="GSD-XU-zNf"/>
+                <constraint firstItem="M15-8z-0Tj" firstAttribute="bottom" secondItem="lLC-yz-yRb" secondAttribute="bottom" constant="-1" id="LRb-bD-JbY"/>
+                <constraint firstItem="M15-8z-0Tj" firstAttribute="trailing" secondItem="lLC-yz-yRb" secondAttribute="trailing" constant="-34" id="LWB-S9-bbp"/>
+                <constraint firstItem="M15-8z-0Tj" firstAttribute="leading" secondItem="lLC-yz-yRb" secondAttribute="leading" constant="1" id="PfB-BP-4bx"/>
+                <constraint firstItem="ve7-cB-Dpg" firstAttribute="leading" secondItem="lLC-yz-yRb" secondAttribute="leading" constant="12" id="cfb-m4-pWe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lLC-yz-yRb" secondAttribute="trailing" constant="24" id="y2I-QD-TZc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus button" width="34" height="34"/>
+        <namedColor name="coolGrey">
+            <color red="0.57647058823529407" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteOne">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteTwo">
+            <color red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
