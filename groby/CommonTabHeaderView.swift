@@ -1,5 +1,5 @@
 //
-//  CommonTapHeaderView.swift
+//  CommonTabHeaderView.swift
 //  groby
 //
 //  Created by Daeyun Ethan on 16/09/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommonTapHeaderView: UIView {
+class CommonTabHeaderView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

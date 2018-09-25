@@ -1,5 +1,5 @@
 //
-//  CategoryItemAPI.swift
+//  ItemListAPI.swift
 //  groby
 //
 //  Created by Daeyun Ethan on 16/09/2018.
@@ -8,8 +8,10 @@
 
 import Foundation
 
-struct CategoryItemAPI: RequestType {
-    typealias ResponseType = CategoryItemJSON
+struct ItemListAPI: RequestType {
+    static let subURL: String = "participantlist/"
+
+    typealias ResponseType = ItemListJSON
 
     var requestData: RequestData
     var data: RequestData {

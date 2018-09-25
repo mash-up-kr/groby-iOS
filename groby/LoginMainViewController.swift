@@ -40,6 +40,9 @@ class LoginMainViewController: UIViewController {
                 }
                 CommonDataManager.share.userInfo = userJson.returnJson
 
+                self.requestUserAssociatedItems(userJson.returnJson.userId)
+                self.requestUserAssociatedItems(userJson.returnJson.userId, isOwnItem: true)
+
                 self.dismiss(animated: true, completion: nil)
             }) { [weak self]error in
                 guard let `self` = self else {
@@ -52,6 +55,27 @@ class LoginMainViewController: UIViewController {
                 self.present(alertController, animated: false, completion: nil)
                 print("Login Error: \(error)")
             }
+        }
+    }
+
+    func requestUserAssociatedItems(_ userID: String, isOwnItem: Bool = false) {
+        var owner: String
+        if isOwnItem {
+            owner = "t"
+        } else {
+            owner = "f"
+        }
+
+        let path: String = "\(GrobyURL.base)\(GrobyURL.user.rawValue)\(userID)/\(ItemListAPI.subURL)\(owner)"
+        let requsetData = RequestData(path: path)
+        ItemListAPI(requsetData).execute(onSuccess: { userAssociatedItemJSON in
+            if isOwnItem {
+                CommonDataManager.share.userOwnedItems = userAssociatedItemJSON.returnJson
+            } else {
+                CommonDataManager.share.userFavoritedItems = userAssociatedItemJSON.returnJson
+            }
+        }) { error in
+            print("requestUserAssociatedItems: \(error)")
         }
     }
 

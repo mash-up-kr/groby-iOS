@@ -1,5 +1,5 @@
 //
-//  CommonTapViewTableViewCell.swift
+//  CommonTabViewTableViewCell.swift
 //  groby
 //
 //  Created by Daeyun Ethan on 16/09/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommonTapViewTableViewCell: UITableViewCell {
+class CommonTabViewTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

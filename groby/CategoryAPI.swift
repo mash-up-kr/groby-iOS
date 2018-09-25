@@ -1,5 +1,5 @@
 //
-//  FetchCategoryJson.swift
+//  CategoryAPI.swift
 //  groby
 //
 //  Created by byungtak on 2018. 9. 4..
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FetchCategoryJson: RequestType {
+struct CategoryAPI: RequestType {
     typealias ResponseType = CategoryJson
 
     var data: RequestData {

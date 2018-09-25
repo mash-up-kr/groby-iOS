@@ -37,9 +37,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func fabButtonAction(_ sender: UIButton) {
-        let makeTap1RootViewController = UIStoryboard(name: "MakeTap1", bundle: nil)
-        let makeTap1ViewController = makeTap1RootViewController.instantiateViewController(withIdentifier: "MakeTap1RootViewController")
-        present(makeTap1ViewController, animated: true, completion: nil)
+        let makeTab1RootViewController = UIStoryboard(name: "MakeTab1", bundle: nil)
+        let makeTab1ViewController = makeTab1RootViewController.instantiateViewController(withIdentifier: "MakeTab1RootViewController")
+        present(makeTab1ViewController, animated: true, completion: nil)
     }
 
     @objc @IBAction func actionMenu(_ sender: UIButton) {

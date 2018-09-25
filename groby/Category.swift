@@ -12,3 +12,10 @@ struct Category: Codable {
     let categoryId: Int
     let category: String
 }
+
+struct CategoryJson: Codable {
+    let status: String
+    let message: String
+
+    let returnJson: [Category]
+}
