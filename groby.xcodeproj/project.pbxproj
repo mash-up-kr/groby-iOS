@@ -27,28 +27,34 @@
 		AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */; };
 		AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9A1065211F4FC700B4A222 /* Search.storyboard */; };
 		AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1067211F4FD900B4A222 /* SearchViewController.swift */; };
-		C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */; };
-		C2388E7D212446E40010AAD1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7A212446E30010AAD1 /* Post.swift */; };
 		C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */; };
-		C239E062213EAB56009D3545 /* CategoryJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E061213EAB56009D3545 /* CategoryJson.swift */; };
 		C239E064213EAB9A009D3545 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E063213EAB9A009D3545 /* Category.swift */; };
-		C239E066213EAD8C009D3545 /* FetchCategoryJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */; };
-		C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* JoinedPostTableViewController.swift */; };
+		C239E066213EAD8C009D3545 /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E065213EAD8C009D3545 /* CategoryAPI.swift */; };
+		C24A4A232128021500406733 /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* ItemListTableViewController.swift */; };
 		C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */; };
 		CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */; };
 		CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */; };
 		CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */; };
-		CE70AA132142E9820086A23A /* UserCheckEmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */; };
 		CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70AA142142FDF50086A23A /* CommonAPIManager.swift */; };
-		CE899A29214E7E72003A53C1 /* CommonTapHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE899A28214E7E72003A53C1 /* CommonTapHeaderView.swift */; };
-		CEE745C9214D7C27002FD454 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745C8214D7C27002FD454 /* CategoryItem.swift */; };
-		CEE745CB214D7D9C002FD454 /* CategoryItemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */; };
+		CE899A29214E7E72003A53C1 /* CommonTabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE899A28214E7E72003A53C1 /* CommonTabHeaderView.swift */; };
+		CED7D8912158C76300A3D645 /* CategoryItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8902158C76300A3D645 /* CategoryItemListTableViewController.swift */; };
+		CED7D8962158DB1000A3D645 /* CommonTabView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8952158DB1000A3D645 /* CommonTabView.storyboard */; };
+		CED7D8982158DB2300A3D645 /* CommonTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8972158DB2300A3D645 /* CommonTabViewController.swift */; };
+		CED7D89A2158EE8700A3D645 /* TabOneContainerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8992158EE8700A3D645 /* TabOneContainerView.storyboard */; };
+		CED7D89C2158EE9800A3D645 /* TabTwoContainerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7D89B2158EE9800A3D645 /* TabTwoContainerView.storyboard */; };
+		CED7D8A02158F51200A3D645 /* TabTwoContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D89F2158F51200A3D645 /* TabTwoContainerViewController.swift */; };
+		CED7D8A32158F7B600A3D645 /* TabThreeContainerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8A12158F7B600A3D645 /* TabThreeContainerView.storyboard */; };
+		CED7D8A42158F7B600A3D645 /* TabThreeContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8A22158F7B600A3D645 /* TabThreeContainerViewController.swift */; };
+		CED7D8A82158F7C500A3D645 /* TabFourContainerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7D8A62158F7C500A3D645 /* TabFourContainerView.storyboard */; };
+		CED7D8AA21590E3700A3D645 /* TabFourContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7D8A921590E3700A3D645 /* TabFourContainerViewController.swift */; };
+		CEE745C9214D7C27002FD454 /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745C8214D7C27002FD454 /* ItemList.swift */; };
+		CEE745CB214D7D9C002FD454 /* ItemListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CA214D7D9C002FD454 /* ItemListAPI.swift */; };
 		CEE745CD214D8671002FD454 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CC214D8671002FD454 /* Item.swift */; };
 		CEE745CF214DA30B002FD454 /* ItemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745CE214DA30B002FD454 /* ItemAPI.swift */; };
-		CEE745D2214E70B2002FD454 /* CommonTapHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE745D1214E70B2002FD454 /* CommonTapHeaderView.xib */; };
-		CEE745D4214E77BA002FD454 /* CommonTapViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D3214E77BA002FD454 /* CommonTapViewTableViewCell.swift */; };
-		CEE745D6214E77FF002FD454 /* CommonTapViewContainerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D5214E77FF002FD454 /* CommonTapViewContainerViewCell.swift */; };
-		CEE745D8214E7862002FD454 /* MakeTab1ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D7214E7862002FD454 /* MakeTab1ContainerViewController.swift */; };
+		CEE745D2214E70B2002FD454 /* CommonTabHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE745D1214E70B2002FD454 /* CommonTabHeaderView.xib */; };
+		CEE745D4214E77BA002FD454 /* CommonTabViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D3214E77BA002FD454 /* CommonTabViewTableViewCell.swift */; };
+		CEE745D6214E77FF002FD454 /* CommonTabViewContainerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D5214E77FF002FD454 /* CommonTabViewContainerViewCell.swift */; };
+		CEE745D8214E7862002FD454 /* TabOneContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D7214E7862002FD454 /* TabOneContainerViewController.swift */; };
 		CEF710F1213BBC03007BF3E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF710F0213BBC03007BF3E2 /* User.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
@@ -73,7 +79,7 @@
 		EFCCDACC2131D8B20007C394 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDACB2131D8B20007C394 /* RequestType.swift */; };
 		EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCDACD2131D8C70007C394 /* NetworkDispatcher.swift */; };
 		EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D361211F37A700C909FD /* MakeTab1FirstViewController.swift */; };
-		EFE7D364211F3C0F00C909FD /* MakeTap1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */; };
+		EFE7D364211F3C0F00C909FD /* MakeTab1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7D363211F3C0F00C909FD /* MakeTab1.storyboard */; };
 		EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */; };
 		EFE7D368211F404000C909FD /* MakeTab1SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D367211F403F00C909FD /* MakeTab1SecondViewController.swift */; };
 		EFE7D36A211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D369211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift */; };
@@ -101,28 +107,34 @@
 		AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewCell.swift; sourceTree = "<group>"; };
 		AA9A1065211F4FC700B4A222 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		AA9A1067211F4FD900B4A222 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostTableViewController.swift; sourceTree = "<group>"; };
-		C2388E7A212446E30010AAD1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
-		C239E061213EAB56009D3545 /* CategoryJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryJson.swift; sourceTree = "<group>"; };
 		C239E063213EAB9A009D3545 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoryJson.swift; sourceTree = "<group>"; };
-		C24A4A222128021500406733 /* JoinedPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedPostTableViewController.swift; sourceTree = "<group>"; };
+		C239E065213EAD8C009D3545 /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
+		C24A4A222128021500406733 /* ItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
 		C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataManager.swift; sourceTree = "<group>"; };
 		CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertAction.swift; sourceTree = "<group>"; };
 		CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPI.swift; sourceTree = "<group>"; };
-		CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckEmailAPI.swift; sourceTree = "<group>"; };
 		CE70AA142142FDF50086A23A /* CommonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAPIManager.swift; sourceTree = "<group>"; };
-		CE899A28214E7E72003A53C1 /* CommonTapHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTapHeaderView.swift; sourceTree = "<group>"; };
-		CEE745C8214D7C27002FD454 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
-		CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemAPI.swift; sourceTree = "<group>"; };
+		CE899A28214E7E72003A53C1 /* CommonTabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabHeaderView.swift; sourceTree = "<group>"; };
+		CED7D8902158C76300A3D645 /* CategoryItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemListTableViewController.swift; sourceTree = "<group>"; };
+		CED7D8952158DB1000A3D645 /* CommonTabView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommonTabView.storyboard; sourceTree = "<group>"; };
+		CED7D8972158DB2300A3D645 /* CommonTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabViewController.swift; sourceTree = "<group>"; };
+		CED7D8992158EE8700A3D645 /* TabOneContainerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabOneContainerView.storyboard; sourceTree = "<group>"; };
+		CED7D89B2158EE9800A3D645 /* TabTwoContainerView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabTwoContainerView.storyboard; sourceTree = "<group>"; };
+		CED7D89F2158F51200A3D645 /* TabTwoContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTwoContainerViewController.swift; sourceTree = "<group>"; };
+		CED7D8A12158F7B600A3D645 /* TabThreeContainerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabThreeContainerView.storyboard; sourceTree = "<group>"; };
+		CED7D8A22158F7B600A3D645 /* TabThreeContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabThreeContainerViewController.swift; sourceTree = "<group>"; };
+		CED7D8A62158F7C500A3D645 /* TabFourContainerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabFourContainerView.storyboard; sourceTree = "<group>"; };
+		CED7D8A921590E3700A3D645 /* TabFourContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabFourContainerViewController.swift; sourceTree = "<group>"; };
+		CEE745C8214D7C27002FD454 /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		CEE745CA214D7D9C002FD454 /* ItemListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListAPI.swift; sourceTree = "<group>"; };
 		CEE745CC214D8671002FD454 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CEE745CE214DA30B002FD454 /* ItemAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAPI.swift; sourceTree = "<group>"; };
-		CEE745D1214E70B2002FD454 /* CommonTapHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTapHeaderView.xib; sourceTree = "<group>"; };
-		CEE745D3214E77BA002FD454 /* CommonTapViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTapViewTableViewCell.swift; sourceTree = "<group>"; };
-		CEE745D5214E77FF002FD454 /* CommonTapViewContainerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTapViewContainerViewCell.swift; sourceTree = "<group>"; };
-		CEE745D7214E7862002FD454 /* MakeTab1ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTab1ContainerViewController.swift; sourceTree = "<group>"; };
+		CEE745D1214E70B2002FD454 /* CommonTabHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTabHeaderView.xib; sourceTree = "<group>"; };
+		CEE745D3214E77BA002FD454 /* CommonTabViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabViewTableViewCell.swift; sourceTree = "<group>"; };
+		CEE745D5214E77FF002FD454 /* CommonTabViewContainerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabViewContainerViewCell.swift; sourceTree = "<group>"; };
+		CEE745D7214E7862002FD454 /* TabOneContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneContainerViewController.swift; sourceTree = "<group>"; };
 		CEF710F0213BBC03007BF3E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +163,7 @@
 		EFCCDACB2131D8B20007C394 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		EFCCDACD2131D8C70007C394 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		EFE7D361211F37A700C909FD /* MakeTab1FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTab1FirstViewController.swift; sourceTree = "<group>"; };
-		EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeTap1.storyboard; sourceTree = "<group>"; };
+		EFE7D363211F3C0F00C909FD /* MakeTab1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeTab1.storyboard; sourceTree = "<group>"; };
 		EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		EFE7D367211F403F00C909FD /* MakeTab1SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTab1SecondViewController.swift; sourceTree = "<group>"; };
 		EFE7D369211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTab1ThirdTableTableViewController.swift; sourceTree = "<group>"; };
@@ -189,17 +201,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8322A7F3211F64C10028504D /* Tap4 */ = {
+		8322A7F3211F64C10028504D /* Tab4 */ = {
 			isa = PBXGroup;
 			children = (
-				EF0C971621270831003F63F9 /* MakeTap2 */,
+				CED7D8A921590E3700A3D645 /* TabFourContainerViewController.swift */,
+				CED7D8A62158F7C500A3D645 /* TabFourContainerView.storyboard */,
 				8322A7F4211F64E00028504D /* tap4.storyboard */,
 				8382CADD21280DD10051ECCE /* 내용작성ViewController.swift */,
 				8382CADF21280FBD0051ECCE /* 미리보기ViewController.swift */,
 				8356729921313BDE001144C3 /* DivisionList.storyboard */,
 				8356729B21313C21001144C3 /* DivisionListTableViewController.swift */,
 			);
-			name = Tap4;
+			name = Tab4;
 			sourceTree = "<group>";
 		};
 		83F4A5D92127F03A008C50C1 /* MyPage */ = {
@@ -226,13 +239,9 @@
 			children = (
 				AA16A569211DE20C00A1A4DD /* Menu.storyboard */,
 				AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */,
-				C2388E79212446E30010AAD1 /* MyPostTableViewController.swift */,
-				C24A4A222128021500406733 /* JoinedPostTableViewController.swift */,
+				C24A4A222128021500406733 /* ItemListTableViewController.swift */,
 				C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */,
-				C2388E7A212446E30010AAD1 /* Post.swift */,
-				C239E061213EAB56009D3545 /* CategoryJson.swift */,
-				C239E063213EAB9A009D3545 /* Category.swift */,
-				C239E065213EAD8C009D3545 /* FetchCategoryJson.swift */,
+				CED7D8902158C76300A3D645 /* CategoryItemListTableViewController.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -278,7 +287,6 @@
 			children = (
 				CEF710F0213BBC03007BF3E2 /* User.swift */,
 				CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */,
-				CE70AA122142E9820086A23A /* UserCheckEmailAPI.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -293,8 +301,10 @@
 		CE45C0D621402C3B00CDD952 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				CEE745C8214D7C27002FD454 /* CategoryItem.swift */,
-				CEE745CA214D7D9C002FD454 /* CategoryItemAPI.swift */,
+				C239E063213EAB9A009D3545 /* Category.swift */,
+				C239E065213EAD8C009D3545 /* CategoryAPI.swift */,
+				CEE745C8214D7C27002FD454 /* ItemList.swift */,
+				CEE745CA214D7D9C002FD454 /* ItemListAPI.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -316,13 +326,43 @@
 			name = Manager;
 			sourceTree = "<group>";
 		};
+		CED7D8942158DAB600A3D645 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				EFE7D360211F378000C909FD /* Tab1 */,
+				EF5E1D1321270861004A9A42 /* Tab2 */,
+				CED7D89D2158F4DF00A3D645 /* Tab3 */,
+				8322A7F3211F64C10028504D /* Tab4 */,
+				CED7D8952158DB1000A3D645 /* CommonTabView.storyboard */,
+				CED7D8972158DB2300A3D645 /* CommonTabViewController.swift */,
+				CED7D89E2158F4EC00A3D645 /* Tap5 */,
+			);
+			name = Tab;
+			sourceTree = "<group>";
+		};
+		CED7D89D2158F4DF00A3D645 /* Tab3 */ = {
+			isa = PBXGroup;
+			children = (
+				CED7D8A12158F7B600A3D645 /* TabThreeContainerView.storyboard */,
+				CED7D8A22158F7B600A3D645 /* TabThreeContainerViewController.swift */,
+			);
+			name = Tab3;
+			sourceTree = "<group>";
+		};
+		CED7D89E2158F4EC00A3D645 /* Tap5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tap5;
+			sourceTree = "<group>";
+		};
 		CEE745D0214E706E002FD454 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
-				CEE745D1214E70B2002FD454 /* CommonTapHeaderView.xib */,
-				CEE745D3214E77BA002FD454 /* CommonTapViewTableViewCell.swift */,
-				CEE745D5214E77FF002FD454 /* CommonTapViewContainerViewCell.swift */,
-				CE899A28214E7E72003A53C1 /* CommonTapHeaderView.swift */,
+				CEE745D1214E70B2002FD454 /* CommonTabHeaderView.xib */,
+				CEE745D3214E77BA002FD454 /* CommonTabViewTableViewCell.swift */,
+				CEE745D5214E77FF002FD454 /* CommonTabViewContainerViewCell.swift */,
+				CE899A28214E7E72003A53C1 /* CommonTabHeaderView.swift */,
 			);
 			name = CommonView;
 			sourceTree = "<group>";
@@ -339,13 +379,6 @@
 			name = APIs;
 			sourceTree = "<group>";
 		};
-		EF0C971621270831003F63F9 /* MakeTap2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MakeTap2;
-			sourceTree = "<group>";
-		};
 		EF476947211F5F6F00561AD4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,13 +392,15 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
-		EF5E1D1321270861004A9A42 /* Tap2 */ = {
+		EF5E1D1321270861004A9A42 /* Tab2 */ = {
 			isa = PBXGroup;
 			children = (
 				EF5E1D1421270876004A9A42 /* Bank.storyboard */,
 				EF5E1D1621270AE6004A9A42 /* BankViewController.swift */,
+				CED7D89B2158EE9800A3D645 /* TabTwoContainerView.storyboard */,
+				CED7D89F2158F51200A3D645 /* TabTwoContainerViewController.swift */,
 			);
-			name = Tap2;
+			name = Tab2;
 			sourceTree = "<group>";
 		};
 		EFAAA9BF211486E40013F360 = {
@@ -390,21 +425,19 @@
 			isa = PBXGroup;
 			children = (
 				CEE745D0214E706E002FD454 /* CommonView */,
-				CE70AA1621430C160086A23A /* Manager */,
 				EFCCDAC021314B600007C394 /* Network */,
 				EF476947211F5F6F00561AD4 /* Common */,
-				EFE7D360211F378000C909FD /* Tap1 */,
-				EF5E1D1321270861004A9A42 /* Tap2 */,
-				8322A7F3211F64C10028504D /* Tap4 */,
+				EFAAA9E021148B430013F360 /* Extensions */,
+				CE70AA1621430C160086A23A /* Manager */,
+				CEF710EF213BBBD2007BF3E2 /* APIs */,
+				CED7D8942158DAB600A3D645 /* Tab */,
 				AA9A1064211F4FB500B4A222 /* Search */,
 				AA9A105C211F36E100B4A222 /* Alarm */,
 				AA16A568211DE1EF00A1A4DD /* Menu */,
 				4D8669D821183BC300862B9A /* Main */,
-				EFAAA9E621148E080013F360 /* Support */,
 				EFAAA9E521148DF00013F360 /* Login */,
-				CEF710EF213BBBD2007BF3E2 /* APIs */,
-				EFAAA9E021148B430013F360 /* Extensions */,
 				83F4A5D92127F03A008C50C1 /* MyPage */,
+				EFAAA9E621148E080013F360 /* Support */,
 			);
 			path = groby;
 			sourceTree = "<group>";
@@ -452,7 +485,7 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
-		EFE7D360211F378000C909FD /* Tap1 */ = {
+		EFE7D360211F378000C909FD /* Tab1 */ = {
 			isa = PBXGroup;
 			children = (
 				EFE7D365211F3E3E00C909FD /* CategoryTableViewCell.swift */,
@@ -461,10 +494,11 @@
 				C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */,
 				EFE7D369211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift */,
 				EFE7D36B211F4DEA00C909FD /* MakeTab1FourthViewController.swift */,
-				EFE7D363211F3C0F00C909FD /* MakeTap1.storyboard */,
-				CEE745D7214E7862002FD454 /* MakeTab1ContainerViewController.swift */,
+				EFE7D363211F3C0F00C909FD /* MakeTab1.storyboard */,
+				CEE745D7214E7862002FD454 /* TabOneContainerViewController.swift */,
+				CED7D8992158EE8700A3D645 /* TabOneContainerView.storyboard */,
 			);
-			name = Tap1;
+			name = Tab1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,15 +566,20 @@
 			files = (
 				EFAAA9E421148DC80013F360 /* Login.storyboard in Resources */,
 				EFAAA9D9211486E60013F360 /* LaunchScreen.storyboard in Resources */,
-				EFE7D364211F3C0F00C909FD /* MakeTap1.storyboard in Resources */,
+				EFE7D364211F3C0F00C909FD /* MakeTab1.storyboard in Resources */,
 				8356729A21313BDE001144C3 /* DivisionList.storyboard in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
 				AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */,
+				CED7D8A82158F7C500A3D645 /* TabFourContainerView.storyboard in Resources */,
 				8322A7F5211F64E00028504D /* tap4.storyboard in Resources */,
 				8382CADC2128060A0051ECCE /* MyPage.storyboard in Resources */,
-				CEE745D2214E70B2002FD454 /* CommonTapHeaderView.xib in Resources */,
+				CED7D8A32158F7B600A3D645 /* TabThreeContainerView.storyboard in Resources */,
+				CEE745D2214E70B2002FD454 /* CommonTabHeaderView.xib in Resources */,
+				CED7D8962158DB1000A3D645 /* CommonTabView.storyboard in Resources */,
+				CED7D89A2158EE8700A3D645 /* TabOneContainerView.storyboard in Resources */,
 				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
+				CED7D89C2158EE9800A3D645 /* TabTwoContainerView.storyboard in Resources */,
 				EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */,
 				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
 				EF5E1D1521270876004A9A42 /* Bank.storyboard in Resources */,
@@ -636,52 +675,52 @@
 				8382CAF1212DAD800051ECCE /* BankButton.swift in Sources */,
 				8382CAD8212803EC0051ECCE /* 비밀번호확인ViewController.swift in Sources */,
 				AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */,
-				CEE745C9214D7C27002FD454 /* CategoryItem.swift in Sources */,
+				CEE745C9214D7C27002FD454 /* ItemList.swift in Sources */,
 				8382CADE21280DD10051ECCE /* 내용작성ViewController.swift in Sources */,
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
 				EF5E1D1721270AE6004A9A42 /* BankViewController.swift in Sources */,
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
-				CEE745D8214E7862002FD454 /* MakeTab1ContainerViewController.swift in Sources */,
-				C2388E7D212446E40010AAD1 /* Post.swift in Sources */,
+				CEE745D8214E7862002FD454 /* TabOneContainerViewController.swift in Sources */,
 				8382CADA212804F70051ECCE /* 비밀번호변경ViewController.swift in Sources */,
 				C239E064213EAB9A009D3545 /* Category.swift in Sources */,
 				CE70AA152142FDF50086A23A /* CommonAPIManager.swift in Sources */,
 				83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */,
-				C2388E7C212446E40010AAD1 /* MyPostTableViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
-				CEE745D4214E77BA002FD454 /* CommonTapViewTableViewCell.swift in Sources */,
+				CEE745D4214E77BA002FD454 /* CommonTabViewTableViewCell.swift in Sources */,
 				CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */,
 				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
-				C239E062213EAB56009D3545 /* CategoryJson.swift in Sources */,
+				CED7D8982158DB2300A3D645 /* CommonTabViewController.swift in Sources */,
 				EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */,
+				CED7D8912158C76300A3D645 /* CategoryItemListTableViewController.swift in Sources */,
 				CEE745CD214D8671002FD454 /* Item.swift in Sources */,
-				CE899A29214E7E72003A53C1 /* CommonTapHeaderView.swift in Sources */,
+				CE899A29214E7E72003A53C1 /* CommonTabHeaderView.swift in Sources */,
 				C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
 				C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */,
 				CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */,
 				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,
-				C24A4A232128021500406733 /* JoinedPostTableViewController.swift in Sources */,
+				C24A4A232128021500406733 /* ItemListTableViewController.swift in Sources */,
 				EFAAA9CE211486E50013F360 /* ViewController.swift in Sources */,
 				EFAAA9EA211491E00013F360 /* LoginMainViewController.swift in Sources */,
 				8356729C21313C21001144C3 /* DivisionListTableViewController.swift in Sources */,
 				EFE7D36A211F48A900C909FD /* MakeTab1ThirdTableTableViewController.swift in Sources */,
+				CED7D8AA21590E3700A3D645 /* TabFourContainerViewController.swift in Sources */,
 				EFAAA9CC211486E50013F360 /* AppDelegate.swift in Sources */,
 				EFE7D36C211F4DEA00C909FD /* MakeTab1FourthViewController.swift in Sources */,
 				EFAAA9E221148B640013F360 /* UIColor+Styleguide.swift in Sources */,
 				CEF710F1213BBC03007BF3E2 /* User.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
-				C239E066213EAD8C009D3545 /* FetchCategoryJson.swift in Sources */,
+				C239E066213EAD8C009D3545 /* CategoryAPI.swift in Sources */,
 				AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */,
 				EFCCDACE2131D8C70007C394 /* NetworkDispatcher.swift in Sources */,
-				CEE745D6214E77FF002FD454 /* CommonTapViewContainerViewCell.swift in Sources */,
+				CEE745D6214E77FF002FD454 /* CommonTabViewContainerViewCell.swift in Sources */,
 				EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */,
 				CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */,
 				EFAAA9E821148E800013F360 /* LoginTextField.swift in Sources */,
 				EFE7D368211F404000C909FD /* MakeTab1SecondViewController.swift in Sources */,
-				CE70AA132142E9820086A23A /* UserCheckEmailAPI.swift in Sources */,
-				CEE745CB214D7D9C002FD454 /* CategoryItemAPI.swift in Sources */,
+				CED7D8A02158F51200A3D645 /* TabTwoContainerViewController.swift in Sources */,
+				CEE745CB214D7D9C002FD454 /* ItemListAPI.swift in Sources */,
 				EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */,
 				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
 				EFCCDAC82131D8720007C394 /* NetworkEnums.swift in Sources */,
@@ -689,6 +728,7 @@
 				CEE745CF214DA30B002FD454 /* ItemAPI.swift in Sources */,
 				AA16A57C211E0B0200A1A4DD /* DummyCollectionViewCell.swift in Sources */,
 				EFCCDACC2131D8B20007C394 /* RequestType.swift in Sources */,
+				CED7D8A42158F7B600A3D645 /* TabThreeContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,7 +875,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TA757FA6NR;
+				DEVELOPMENT_TEAM = 74Z28YUL8J;
 				INFOPLIST_FILE = groby/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -857,7 +897,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TA757FA6NR;
+				DEVELOPMENT_TEAM = 74Z28YUL8J;
 				INFOPLIST_FILE = groby/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

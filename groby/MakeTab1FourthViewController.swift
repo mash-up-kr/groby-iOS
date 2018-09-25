@@ -10,18 +10,18 @@ import UIKit
 
 class MakeTab1FourthViewController: UIViewController {
 
-    @IBOutlet weak var tapMenuView: UIView!
+    @IBOutlet weak var tabMenuView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var endDateLabel: UILabel!
     @IBOutlet weak var minimumCountLabel: UILabel!
     @IBOutlet weak var likeCountLabel: UILabel!
-    @IBOutlet var tapButtons: [UIButton]!
-    @IBOutlet var tapButtonSelectedViews: [UIView]!
-    @IBOutlet var headerTapButtons: [UIButton]!
-    @IBOutlet var headerTapButtonSelectedViews: [UIView]!
+    @IBOutlet var tabButtons: [UIButton]!
+    @IBOutlet var tabButtonSelectedViews: [UIView]!
+    @IBOutlet var headerTabButtons: [UIButton]!
+    @IBOutlet var headerTabButtonSelectedViews: [UIView]!
 
-    var tapNumber: Int? = 0
+    var tabNumber: Int? = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,20 +33,20 @@ class MakeTab1FourthViewController: UIViewController {
 
         titleLabel.text = CommonDataManager.share.item?.itemTitle
         nicknameLabel.text = CommonDataManager.share.userInfo?.userName
-        minimumCountLabel.text = CommonDataManager.share.item?.itemAmountLimit
+//        minimumCountLabel.text = CommonDataManager.share.item?.itemAmountLimit
         endDateLabel.text = CommonDataManager.share.item?.tabOne?.endDate
 
         if let userId = CommonDataManager.share.userInfo?.userId {
-            CommonDataManager.share.item?.userId = "\(userId)"
+//            CommonDataManager.share.item?.userId = "\(userId)"
         }
-        CommonDataManager.share.item?.imgPathList = ["String"]
+//        CommonDataManager.share.item?.imgPathList = ["String"]
 
-        if let tapNumber = tapNumber {
-            tapButtons[tapNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
+        if let tabNumber = tabNumber {
+            tabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
                 //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
-            tapButtonSelectedViews[tapNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
-            headerTapButtons[tapNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1) //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
-             headerTapButtonSelectedViews[tapNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
+            tabButtonSelectedViews[tabNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
+            headerTabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1) //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
+             headerTabButtonSelectedViews[tabNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
         }
     }
 
@@ -80,18 +80,18 @@ class MakeTab1FourthViewController: UIViewController {
 extension MakeTab1FourthViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > 532 {
-            tapMenuView.isHidden = false
+            tabMenuView.isHidden = false
         } else {
-            tapMenuView.isHidden = true
+            tabMenuView.isHidden = true
         }
         print("scrollViewDidScroll: \(scrollView.contentOffset.y)")
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > 532 {
-            tapMenuView.isHidden = false
+            tabMenuView.isHidden = false
         } else {
-            tapMenuView.isHidden = true
+            tabMenuView.isHidden = true
         }
         print("scrollViewDidEndDecelerating: \(scrollView.contentOffset.y)")
     }

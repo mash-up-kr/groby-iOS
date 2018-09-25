@@ -1,5 +1,5 @@
 //
-//  CategoryItem.swift
+//  ItemList.swift
 //  groby
 //
 //  Created by Daeyun Ethan on 16/09/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CategoryItem: Codable {
+struct ItemList: Codable {
     let amountLimit: Int
     let dueDate: String
     let itemId: String
@@ -21,9 +21,9 @@ struct CategoryItem: Codable {
     let title: String
 }
 
-struct CategoryItemJSON: Codable {
+struct ItemListJSON: Codable {
     let status: String
     let message: String
 
-    let returnJson: [CategoryItem]
+    let returnJson: [ItemList]
 }

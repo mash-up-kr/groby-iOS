@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuViewController: UITableViewController {
+class MenuViewController: UITableViewController, AlertShowable {
 
     @IBOutlet weak var wroteButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
@@ -33,7 +33,7 @@ class MenuViewController: UITableViewController {
     }
 
     private func fetchCategories() {
-        FetchCategoryJson().execute(
+        CategoryAPI().execute(
             onSuccess: { [weak self] (categoryJson: CategoryJson) in
                 guard let `self` = self else {
                     return
@@ -73,15 +73,24 @@ class MenuViewController: UITableViewController {
     }
 
     @IBAction private func tappedMyPost(_ sender: UIButton) {
-        let menuStoryBoard = UIStoryboard(name: "Menu", bundle: nil)
-        let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "MyPostTableViewController")
-        navigationController?.pushViewController(menuViewController, animated: true)
+        showItemListViewController("작성한 공구 목록이 없습니다.", navigationTitle: "내가 쓴 글", items: CommonDataManager.share.userOwnedItems)
     }
 
     @IBAction private func tappedJoinedPost(_ sender: UIButton) {
-        let menuStoryBoard = UIStoryboard(name: "Menu", bundle: nil)
-        let menuViewController = menuStoryBoard.instantiateViewController(withIdentifier: "JoinedPostTableViewController")
-        navigationController?.pushViewController(menuViewController, animated: true)
+        showItemListViewController("참여한 공구 목록이 없습니다.", navigationTitle: "참여한 글", items: CommonDataManager.share.userFavoritedItems)
+    }
+
+    func showItemListViewController(_ alertTitle: String? = nil, navigationTitle: String, items: [ItemList]?) {
+        guard let items = items, !items.isEmpty else {
+            popUpAlert(alertTitle)
+            return
+        }
+
+        if let controller = storyboard?.instantiateViewController(withIdentifier: "ItemListTableViewController") as? ItemListTableViewController {
+            controller.navigationItem.setCustomTitle(navigationTitle)
+            controller.items = items
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
 
     // MARK: - Table view data source
@@ -98,6 +107,9 @@ class MenuViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // TODO: - 바꾸기
+//        showItemListViewController("해당 카테고리의 공구 목록이 없습니다.", navigationTitle: category, items: CommonDataManager.share.categories?[index - 1])
+
         let index = indexPath.row
         if index == 0 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTitleCell") as? CategoryTitleCell {
@@ -119,7 +131,7 @@ class MenuViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: false)
 
         if indexPath.row != 0,
-            let controller = storyboard?.instantiateViewController(withIdentifier: "JoinedPostTableViewController") as? JoinedPostTableViewController,
+            let controller = storyboard?.instantiateViewController(withIdentifier: "CategoryItemListTableViewController") as? CategoryItemListTableViewController,
             let category = CommonDataManager.share.categories?[indexPath.row - 1] {
             controller.category = category
             navigationController?.pushViewController(controller, animated: true)

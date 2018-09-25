@@ -1,5 +1,5 @@
 //
-//  MakeTap1SecondViewController.swift
+//  MakeTab1SecondViewController.swift
 //  groby
 //
 //  Created by 이재성 on 12/08/2018.
@@ -119,7 +119,7 @@ class MakeTab1SecondViewController: UIViewController {
         }
 
         CommonDataManager.share.item?.itemTitle = titleTextField.text
-        CommonDataManager.share.item?.tabOne = TapOne()
+        CommonDataManager.share.item?.tabOne = TabOne()
         CommonDataManager.share.item?.tabOne?.contents = contentTextView.text
         navigationController?.pushViewController(makeTab1ThirdTableTableViewController, animated: true)
     }

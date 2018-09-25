@@ -1,18 +1,18 @@
 //
-//  JoinedPostViewController.swift
+//  CategoryItemListTableViewController.swift
 //  groby
 //
-//  Created by byungtak on 2018. 8. 18..
-//  Copyright © 2018년 mashup. All rights reserved.
+//  Created by Daeyun Ethan on 24/09/2018.
+//  Copyright © 2018 mashup. All rights reserved.
 //
 
 import UIKit
 
-class JoinedPostTableViewController: UIViewController {
+class CategoryItemListTableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    private var categoryItems: [CategoryItem] = []
+    private var categoryItems: [ItemList] = []
     var category: Category?
 
     override func viewWillAppear(_ animated: Bool) {
@@ -28,7 +28,7 @@ class JoinedPostTableViewController: UIViewController {
             navigationItem.setCustomTitle(category.category)
             let path: String = "\(GrobyURL.base)\(GrobyURL.main.rawValue)\(GrobyURL.category.rawValue)\(category.categoryId)"
             let requestData = RequestData(path: path)
-            CategoryItemAPI(requestData).execute(onSuccess: { [weak self] categoryItems in
+            ItemListAPI(requestData).execute(onSuccess: { [weak self] categoryItems in
                 guard let `self` = self else {
                     return
                 }
@@ -45,9 +45,34 @@ class JoinedPostTableViewController: UIViewController {
         navigationController?.navigationBar.topItem?.backBarButtonItem = newBackButton
     }
 
+    func requestItem() {
+
+    }
 }
 
-extension JoinedPostTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension CategoryItemListTableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+
+        let path: String = "\(GrobyURL.base)\(GrobyURL.item.rawValue)\(categoryItems[indexPath.row].itemId)"
+        let requestData: RequestData = RequestData(path: path)
+        ItemAPI(requestData).execute(onSuccess: { [weak self] itemJSON in            print("\(itemJSON.returnJson)")
+            guard let `self` = self else {
+                return
+            }
+
+            CommonDataManager.share.item = nil
+            if let controller = UIStoryboard(name: "CommonTabView", bundle: nil).instantiateInitialViewController() as? CommonTabViewController {
+                controller.item = itemJSON.returnJson
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
+        }) { error in
+            print("ItemAPI: \(error)")
+        }
+    }
+}
+
+extension CategoryItemListTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoryItems.count
     }
@@ -65,17 +90,11 @@ extension JoinedPostTableViewController: UITableViewDelegate, UITableViewDataSou
         }
         cell.postTitle.text = categoryItem.title
 
-        if true {
-            cell.postLikeOrProgress.text = "좋아요 수"
-            if let participantNum = categoryItem.participantNum {
-                cell.postLikeOrProgressCount.text = "\(participantNum)"
-            }
-        } else {
-            cell.postLikeOrProgress.text = "진행률"
-            if let progress = categoryItem.progress {
-                cell.postLikeOrProgressCount.text = "\(progress)"
-            }
+        cell.postLikeOrProgress.text = "좋아요 수"
+        if let participantNum = categoryItem.participantNum {
+            cell.postLikeOrProgressCount.text = "\(participantNum)"
         }
+
         return cell
     }
 }
