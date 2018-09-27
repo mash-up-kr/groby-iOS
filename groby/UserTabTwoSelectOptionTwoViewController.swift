@@ -21,7 +21,7 @@ class UserTabTwoSelectOptionTwoViewController: UIViewController {
     @IBOutlet weak var bankNameLabel: UILabel!
     @IBOutlet weak var bankAccountNumberLabel: UILabel!
     @IBOutlet weak var phoneNumberLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -35,10 +35,10 @@ extension UserTabTwoSelectOptionTwoViewController {
         } else {
             postButtonView.isHidden = true
         }
-        
+
         print("\(contentHeight) \(scrollView.contentOffset.y)")
     }
-    
+
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let contentHeight = tableView.contentSize.height
         if scrollView.contentOffset.y >= contentHeight {
@@ -50,14 +50,14 @@ extension UserTabTwoSelectOptionTwoViewController {
 }
 
 extension UserTabTwoSelectOptionTwoViewController: UITableViewDelegate {
-    
+
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SelectOptionTwoFooterView") as? SelectOptionTwoFooterView else {
             return nil
         }
         return footerView
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
@@ -67,39 +67,39 @@ extension UserTabTwoSelectOptionTwoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
         }
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
 }
 
 class UserSelectOptionTwoNoticeViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var noticeLabel: UILabel!
     @IBOutlet weak var dueDateLabel: UILabel!
     @IBOutlet weak var bankAccountLabel: UILabel!
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var remainTextLabel: UILabel!
-    
+
     func configure() {
-        
+
     }
 }
 
 class UserSelectOptionTwoOptionViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var optionLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
-    
+
     func configure() {
-        
+
     }
 }

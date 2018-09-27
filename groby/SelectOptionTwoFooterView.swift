@@ -11,8 +11,8 @@ import UIKit
 class SelectOptionTwoFooterView: UITableViewHeaderFooterView {
 
     @IBOutlet var totalPrice: UILabel!
-    
+
     func configure() {
-        
+
     }
 }

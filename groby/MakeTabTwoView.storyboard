@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QoM-50-0NT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fJJ-TU-GTN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="UDG-VA-bXx">
+                            <tableViewSection id="UDG-VA-bXx">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="RQJ-Pm-jlR">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RQJ-Pm-jlR" id="BMm-ZQ-n5Z">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -54,7 +54,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="cbp-Xh-j3n">
-                                        <rect key="frame" x="0.0" y="78" width="375" height="98"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbp-Xh-j3n" id="Qgk-qD-pyq">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
@@ -87,7 +87,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="j8D-zU-bIH">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="148" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j8D-zU-bIH" id="DBf-rL-2vr">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -105,6 +105,9 @@
                                                     <state key="normal" title="2018/10/23" image="dropdownButton">
                                                         <color key="titleColor" name="coolGrey"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actionSetToDate:" destination="QoM-50-0NT" eventType="touchUpInside" id="mtz-ng-RkX"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1f-tq-RR7">
                                                     <rect key="frame" x="160" y="13.5" width="83" height="17"/>
@@ -112,6 +115,9 @@
                                                     <state key="normal" title="2018/10/23" image="dropdownButton">
                                                         <color key="titleColor" name="coolGrey"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actionSetFromDate:" destination="QoM-50-0NT" eventType="touchUpInside" id="h5y-JD-XK4"/>
+                                                    </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdF-OA-gWs">
                                                     <rect key="frame" x="257" y="17.5" width="1" height="9"/>
@@ -145,7 +151,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="uf7-S6-Z1q">
-                                        <rect key="frame" x="0.0" y="220" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="192" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uf7-S6-Z1q" id="5aF-Vv-0P8">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -184,7 +190,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="rqa-Ai-dV1">
-                                        <rect key="frame" x="0.0" y="270" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="242" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rqa-Ai-dV1" id="w85-sD-RLa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -202,6 +208,9 @@
                                                     <state key="normal" title="신한은행" image="dropdownButton">
                                                         <color key="titleColor" name="coolGrey"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actionSetBank:" destination="QoM-50-0NT" eventType="touchUpInside" id="BhI-Pj-hzs"/>
+                                                    </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-NW-4rv">
                                                     <rect key="frame" x="0.0" y="49" width="375" height="1"/>
@@ -223,7 +232,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="GZU-hd-9Pi">
-                                        <rect key="frame" x="0.0" y="320" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="292" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GZU-hd-9Pi" id="FSe-dP-zXe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -262,7 +271,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="a0R-IJ-zCW">
-                                        <rect key="frame" x="0.0" y="370" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="342" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a0R-IJ-zCW" id="auq-fG-9MW">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -334,11 +343,13 @@
                         <outlet property="titleTextField" destination="6S7-Bb-p72" id="fbX-oH-QWB"/>
                         <outlet property="toDueDateButton" destination="ZWG-RI-yhE" id="lWD-Qd-UFg"/>
                         <outlet property="userNameTextField" destination="ksa-5O-KSi" id="0g5-Ra-US4"/>
+                        <segue destination="YFA-EX-bL4" kind="presentation" identifier="presentBankListSegue" modalPresentationStyle="overCurrentContext" id="yiK-sq-kvA"/>
+                        <segue destination="FnH-MU-gMX" kind="show" identifier="showNextSegue" id="f7w-R3-m9y"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Xb-G4-jcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-385" y="251"/>
+            <point key="canvasLocation" x="552.79999999999995" y="250.52473763118442"/>
         </scene>
         <!--폼 옵션 설정-->
         <scene sceneID="0Jr-39-Db9">
@@ -350,7 +361,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="47" sectionFooterHeight="54" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-5A-KcP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="j8a-GX-J3e">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -391,7 +402,7 @@
                                     <rect key="frame" x="0.0" y="203.5" width="375" height="105"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9w-nh-ERv" customClass="BlueButton" customModule="groby" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9w-nh-ERv" customClass="BlueButton" customModule="groby" customModuleProvider="target">
                                             <rect key="frame" x="24" y="65" width="327" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="AUx-Bv-Zw2"/>
@@ -478,11 +489,12 @@
                         <outlet property="addOptionButton" destination="a9w-nh-ERv" id="SWz-Tl-RnL"/>
                         <outlet property="priceTextField" destination="mbU-Na-B68" id="zTD-Xl-v3t"/>
                         <outlet property="tableView" destination="xRP-5A-KcP" id="Vom-Pd-9Eg"/>
+                        <segue destination="JPY-Tb-cwR" kind="show" identifier="showNextSegue" id="yNB-cM-ssJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFk-pi-5fV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="251"/>
+            <point key="canvasLocation" x="1316" y="250.52473763118442"/>
         </scene>
         <!--입금확인 폼-->
         <scene sceneID="ZSC-IW-1pW">
@@ -844,7 +856,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lhb-NC-be4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136.8" y="250.52473763118442"/>
+            <point key="canvasLocation" x="2076" y="250.52473763118442"/>
+        </scene>
+        <!--Bank-->
+        <scene sceneID="IIk-v8-wd4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bank" id="YFA-EX-bL4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKX-mH-foj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="750"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7L1-S0-gga">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fJJ-TU-GTN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="klv-Gu-EbU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QoM-50-0NT" kind="relationship" relationship="rootViewController" id="dtZ-vh-5Ox"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcp-3p-Fc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-244" y="251"/>
         </scene>
     </scenes>
     <resources>

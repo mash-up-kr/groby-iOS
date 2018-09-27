@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MakeTab1ThirdTableTableViewController: UITableViewController {
+class MakeTab1ThirdTableTableViewController: UITableViewController, AlertShowable {
 
     @IBOutlet weak var endDateButton: UIButton!
     @IBOutlet weak var minimumCountTextField: UITextField!
@@ -26,24 +26,18 @@ class MakeTab1ThirdTableTableViewController: UITableViewController {
     }
 
     @IBAction private func setDate(_ sender: UIButton) {
-        let datePicker = UIDatePicker(frame: CGRect(x: 20.0, y: 50.0, width: tableView.bounds.width - 50.0, height: 100))
-
+        var defaultDate: Date?
         if let dateString = endDateButton.titleLabel?.text,
             let date = dateFormatter.date(from: dateString) {
-            datePicker.date = date
+            defaultDate = date
         }
 
-        let alertViewController = UIAlertController(title: "종료 날짜 설정", message: "", preferredStyle: .actionSheet)
-        alertViewController.view.addSubview(datePicker)
-        alertViewController.addAction(UIAlertAction(title: "확인", style: .default, handler: { [weak self] _ in
+        alertDate("종료 날짜 설정", defaultDate: defaultDate) { [weak self] date in
             guard let `self` = self else {
                 return
             }
-            self.endDateButton.setTitle("\(self.dateFormatter.string(from: datePicker.date))", for: .normal)
-        }))
-        alertViewController.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
-        alertViewController.view.heightAnchor.constraint(equalToConstant: 300.0).isActive = true
-        present(alertViewController, animated: true, completion: nil)
+            self.endDateButton.setTitle("\(self.dateFormatter.string(from: date))", for: .normal)
+        }
     }
 
     @IBAction private func nextButtonAction(_ sender: UIButton) {
@@ -55,8 +49,5 @@ class MakeTab1ThirdTableTableViewController: UITableViewController {
         CommonDataManager.share.itemForPost?.tabOne?.endDate = endDateButton.titleLabel?.text
         CommonDataManager.share.itemForPost?.tabOne?.location = locationTextField.text
         navigationController?.pushViewController(makeTab1FourthViewController, animated: true)
-    }
-
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
 }

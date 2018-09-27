@@ -12,14 +12,14 @@ class UserTabTwoSelectOptionOneModalViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
-            tableView.register(UINib.init(nibName: "SelectOptionHeaderView", bundle: nil), forCellReuseIdentifier: "SelectOptionHeaderView")
+            tableView.register(UINib(nibName: "SelectOptionHeaderView", bundle: nil), forCellReuseIdentifier: "SelectOptionHeaderView")
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction func actionDismiss(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -38,11 +38,11 @@ extension UserTabTwoSelectOptionOneModalViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserSelectOptionModalViewCell", for: indexPath) as? UserSelectOptionModalViewCell else {
             return UITableViewCell()
@@ -52,9 +52,9 @@ extension UserTabTwoSelectOptionOneModalViewController: UITableViewDataSource {
 }
 
 class UserSelectOptionModalViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var optionDetailLabel: UILabel!
-    
+
     func configure() {
     }
 }

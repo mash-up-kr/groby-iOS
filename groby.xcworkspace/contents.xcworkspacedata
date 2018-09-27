@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SelectOptionTwoFooterView.xib">
-   </FileRef>
-   <FileRef
       location = "group:groby.xcodeproj">
    </FileRef>
    <FileRef
