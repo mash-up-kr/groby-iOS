@@ -94,7 +94,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7a-Xo-lRP">
                                 <rect key="frame" x="24" y="16" width="327" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" name="coolGrey"/>
+                                <color key="textColor" name="black"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1175,10 +1175,10 @@
             </objects>
             <point key="canvasLocation" x="5903" y="-349"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab One Container View Controller-->
         <scene sceneID="7pH-eW-Zsm">
             <objects>
-                <viewController id="tdk-DV-SPu" sceneMemberID="viewController">
+                <viewController id="tdk-DV-SPu" customClass="TabOneContainerViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ds0-U9-xGd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1311,6 +1311,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cPt-cS-4Ex"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="W0W-RI-rhN" id="xSO-9u-rMj"/>
+                        <outlet property="contentLabel" destination="qU8-Tx-SAA" id="mu6-sE-H34"/>
+                        <outlet property="locationLabel" destination="kgh-IP-6eB" id="zbs-NB-P7a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcP-bO-N7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

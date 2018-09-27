@@ -14,76 +14,6 @@
         <!--글 미리보기-->
         <scene sceneID="3XC-Ie-V6v">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AZQ-OI-gh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="8dT-Vt-Nos" customClass="CommonTabHeaderView" customModule="groby" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sdB-dG-qwu">
-                            <rect key="frame" x="0.0" y="44" width="240" height="84"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWl-4b-hIJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="48" height="84"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                    <state key="normal" title="수량조사">
-                                        <color key="titleColor" name="brownishGrey"/>
-                                    </state>
-                                    <state key="selected">
-                                        <color key="titleColor" name="iris"/>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwn-v3-63b">
-                                    <rect key="frame" x="48" y="0.0" width="48" height="84"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                    <state key="normal" title="공구진행">
-                                        <color key="titleColor" name="brownishGrey"/>
-                                    </state>
-                                    <state key="selected">
-                                        <color key="titleColor" name="iris"/>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-mM-D4d">
-                                    <rect key="frame" x="96" y="0.0" width="48" height="84"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                    <state key="normal" title="공구확정">
-                                        <color key="titleColor" name="brownishGrey"/>
-                                    </state>
-                                    <state key="selected">
-                                        <color key="titleColor" name="iris"/>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDE-ZD-WkD">
-                                    <rect key="frame" x="144" y="0.0" width="48" height="84"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                    <state key="normal" title="주문완료">
-                                        <color key="titleColor" name="brownishGrey"/>
-                                    </state>
-                                    <state key="selected">
-                                        <color key="titleColor" name="iris"/>
-                                    </state>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drd-qu-zSw">
-                                    <rect key="frame" x="192" y="0.0" width="48" height="84"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                    <state key="normal" title="배부공지">
-                                        <color key="titleColor" name="brownishGrey"/>
-                                    </state>
-                                    <state key="selected">
-                                        <color key="titleColor" name="iris"/>
-                                    </state>
-                                </button>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                    <color key="backgroundColor" name="whiteOne"/>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="sdB-dG-qwu" secondAttribute="bottom" id="9Lu-Rv-r1D"/>
-                        <constraint firstItem="rrI-bF-bza" firstAttribute="trailing" secondItem="sdB-dG-qwu" secondAttribute="trailing" id="Zk4-QL-2cq"/>
-                        <constraint firstItem="sdB-dG-qwu" firstAttribute="top" secondItem="rrI-bF-bza" secondAttribute="top" id="umb-Kx-eYV"/>
-                        <constraint firstItem="sdB-dG-qwu" firstAttribute="leading" secondItem="rrI-bF-bza" secondAttribute="leading" id="xjc-P7-R2Y"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="rrI-bF-bza"/>
-                </view>
                 <viewController storyboardIdentifier="CommonTabViewController" id="Ixm-XF-pJY" customClass="CommonTabViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PZx-DR-p79">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -95,7 +25,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcs-Dl-oZM" userLabel="CommonTabView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="532"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-aB-57G">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-1207641" translatesAutoresizingMaskIntoConstraints="NO" id="OP5-aB-57G">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OP5-aB-57G" secondAttribute="height" multiplier="375:226" id="k0q-qc-8Bf"/>
@@ -612,6 +542,76 @@
                         <outletCollection property="tabButtonSelectedViews" destination="TCl-0u-4F7" collectionClass="NSMutableArray" id="oes-Vr-FoX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZQ-OI-gh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="8dT-Vt-Nos" customClass="CommonTabHeaderView" customModule="groby" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sdB-dG-qwu">
+                            <rect key="frame" x="0.0" y="44" width="240" height="84"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWl-4b-hIJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="84"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <state key="normal" title="수량조사">
+                                        <color key="titleColor" name="brownishGrey"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" name="iris"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwn-v3-63b">
+                                    <rect key="frame" x="48" y="0.0" width="48" height="84"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <state key="normal" title="공구진행">
+                                        <color key="titleColor" name="brownishGrey"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" name="iris"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPm-mM-D4d">
+                                    <rect key="frame" x="96" y="0.0" width="48" height="84"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <state key="normal" title="공구확정">
+                                        <color key="titleColor" name="brownishGrey"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" name="iris"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDE-ZD-WkD">
+                                    <rect key="frame" x="144" y="0.0" width="48" height="84"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <state key="normal" title="주문완료">
+                                        <color key="titleColor" name="brownishGrey"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" name="iris"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drd-qu-zSw">
+                                    <rect key="frame" x="192" y="0.0" width="48" height="84"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                    <state key="normal" title="배부공지">
+                                        <color key="titleColor" name="brownishGrey"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" name="iris"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="whiteOne"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sdB-dG-qwu" secondAttribute="bottom" id="9Lu-Rv-r1D"/>
+                        <constraint firstItem="rrI-bF-bza" firstAttribute="trailing" secondItem="sdB-dG-qwu" secondAttribute="trailing" id="Zk4-QL-2cq"/>
+                        <constraint firstItem="sdB-dG-qwu" firstAttribute="top" secondItem="rrI-bF-bza" secondAttribute="top" id="umb-Kx-eYV"/>
+                        <constraint firstItem="sdB-dG-qwu" firstAttribute="leading" secondItem="rrI-bF-bza" secondAttribute="leading" id="xjc-P7-R2Y"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="rrI-bF-bza"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="3909.5999999999999" y="-338.42364532019707"/>
         </scene>
@@ -625,7 +625,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backButton" width="44" height="16"/>
+        <image name="person-1207641" width="4000" height="2395"/>
         <namedColor name="black">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

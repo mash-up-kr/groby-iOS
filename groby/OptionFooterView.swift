@@ -9,4 +9,6 @@
 import UIKit
 
 class OptionFooterView: UITableViewHeaderFooterView {
+    @IBOutlet weak var addOptionButton: UIButton!
+    @IBOutlet weak var addOptionTextField: UITextField!
 }

@@ -61,7 +61,10 @@ class CommonTabViewController: UIViewController {
         titleLabel.text = item?.itemTitle
         nicknameLabel.text = item?.writerId
         minimumCountLabel.text = "\(item?.numOfLike ?? 0)"
-        endDateLabel.text = "2018-09-27" // item?.tabOne?.endDate
+
+        if let date = item?.tabOne?.endDate?.split(separator: " ").first?.description {
+            endDateLabel.text = date
+        }
 
 //        CommonDataManager.share.item?.imgPathList = ["String"]
 

@@ -9,4 +9,6 @@
 import UIKit
 
 class OptionHeaderView: UITableViewHeaderFooterView {
+
+    @IBOutlet weak var optionTitleTextField: UITextField!
 }

@@ -12,7 +12,7 @@ class CategoryItemListTableViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    private var categoryItems: [ItemList] = []
+    private var categoryItems: ItemCardList? //[ItemList] = []
     var category: Category?
 
     override func viewWillAppear(_ animated: Bool) {
@@ -54,7 +54,7 @@ extension CategoryItemListTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
 
-        let path: String = "\(GrobyURL.base)\(GrobyURL.item.rawValue)\(categoryItems[indexPath.row].itemId)"
+        let path: String = "\(GrobyURL.base)\(GrobyURL.item.rawValue)\(categoryItems?.itemList[indexPath.row].itemId)"
         let requestData: RequestData = RequestData(path: path)
         ItemAPI(requestData).execute(onSuccess: { [weak self] itemJSON in            print("\(itemJSON.returnJson)")
             guard let `self` = self else {
@@ -74,7 +74,10 @@ extension CategoryItemListTableViewController: UITableViewDelegate {
 
 extension CategoryItemListTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categoryItems.count
+        if let count = categoryItems?.itemList.count {
+            return count
+        }
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,18 +85,20 @@ extension CategoryItemListTableViewController: UITableViewDataSource {
             return UITableViewCell()
         }
 
-        let categoryItem = categoryItems[indexPath.row]
+        let categoryItem = categoryItems?.itemList[indexPath.row]
 
-        let date = categoryItem.dueDate.split(separator: " ")
-        if let dateString = date.first {
+        let date = categoryItem?.dueDate.split(separator: " ")
+        if let dateString = date?.first {
             cell.postDate.text = "\(dateString)"
         }
-        cell.postTitle.text = categoryItem.title
+        cell.postTitle.text = categoryItem?.title
 
         cell.postLikeOrProgress.text = "좋아요 수"
-        if let participantNum = categoryItem.participantNum {
+        if let participantNum = categoryItem?.participantNum {
             cell.postLikeOrProgressCount.text = "\(participantNum)"
         }
+
+        cell.postImage.image = #imageLiteral(resourceName: "person-1207641")
 
         return cell
     }

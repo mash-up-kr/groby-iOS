@@ -31,15 +31,15 @@ class MakeTab1FourthViewController: UIViewController {
         //        CommonDataManager.share.item?.tabOne?.contents
         //        CommonDataManager.share.item?.tabOne?.location
 
-        titleLabel.text = CommonDataManager.share.item?.itemTitle
+        titleLabel.text = CommonDataManager.share.itemForPost?.itemTitle
         nicknameLabel.text = CommonDataManager.share.userInfo?.userName
-//        minimumCountLabel.text = CommonDataManager.share.item?.itemAmountLimit
-        endDateLabel.text = CommonDataManager.share.item?.tabOne?.endDate
+        minimumCountLabel.text = CommonDataManager.share.itemForPost?.itemAmountLimit
+        endDateLabel.text = CommonDataManager.share.itemForPost?.tabOne?.endDate
 
         if let userId = CommonDataManager.share.userInfo?.userId {
-//            CommonDataManager.share.item?.userId = "\(userId)"
+            CommonDataManager.share.itemForPost?.userId = "\(userId)"
         }
-//        CommonDataManager.share.item?.imgPathList = ["String"]
+        CommonDataManager.share.itemForPost?.imgPathList = ["String"]
 
         if let tabNumber = tabNumber {
             tabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
@@ -53,14 +53,14 @@ class MakeTab1FourthViewController: UIViewController {
     @IBAction private func actionPostItem(_ sender: UIButton) {
         do {
             let jsonEncoder = JSONEncoder()
-            if let item = CommonDataManager.share.item,
+            if let item = CommonDataManager.share.itemForPost,
             let data = try? jsonEncoder.encode(item),
             let params = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any?] {
                 let path = "\(GrobyURL.base)\(GrobyURL.item.rawValue)"
 
                 print(params)
                 let requestData = RequestData(path: path, method: .post, params: params)
-                ItemAPI(requestData).execute(onSuccess: { [weak self] _ in
+                ItemForPostAPI(requestData).execute(onSuccess: { [weak self] _ in
                     guard let `self` = self else {
                         return
                     }

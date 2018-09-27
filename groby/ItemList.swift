@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct ItemCardList: Codable {
+    let itemList: [ItemList]
+}
+
 struct ItemList: Codable {
     let amountLimit: Int
     let dueDate: String
@@ -23,7 +27,7 @@ struct ItemList: Codable {
 
 struct ItemListJSON: Codable {
     let status: String
-    let message: String
+//    let message: String
 
-    let returnJson: [ItemList]
+    let returnJson: ItemCardList
 }

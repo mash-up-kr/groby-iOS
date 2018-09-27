@@ -118,9 +118,9 @@ class MakeTab1SecondViewController: UIViewController {
             return
         }
 
-        CommonDataManager.share.item?.itemTitle = titleTextField.text
-        CommonDataManager.share.item?.tabOne = TabOne()
-        CommonDataManager.share.item?.tabOne?.contents = contentTextView.text
+        CommonDataManager.share.itemForPost?.itemTitle = titleTextField.text
+        CommonDataManager.share.itemForPost?.tabOne = TabOne()
+        CommonDataManager.share.itemForPost?.tabOne?.contents = contentTextView.text
         navigationController?.pushViewController(makeTab1ThirdTableTableViewController, animated: true)
     }
 }

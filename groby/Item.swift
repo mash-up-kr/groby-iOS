@@ -8,6 +8,23 @@
 
 import Foundation
 
+struct ItemForPost: Codable {
+    var imgPathList: [String]?
+    var itemAmountLimit: String?
+    var itemCategoryId: String?
+    var itemTitle: String?
+
+    var tabOne: TabOne?
+    var userId: String?
+}
+
+struct ItemForPostJSON: Codable {
+    let status: String
+    let message: String
+
+//    let acceptJson: ItemForPost
+}
+
 struct ItemJSON: Codable {
     let status: String
     let message: String

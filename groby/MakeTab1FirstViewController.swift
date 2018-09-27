@@ -54,10 +54,9 @@ extension MakeTab1FirstViewController: UITableViewDelegate, UITableViewDataSourc
         guard let controller = storyboard?.instantiateViewController(withIdentifier: "MakeTab1SecondViewController") as? MakeTab1SecondViewController, let categoryId = CommonDataManager.share.categories?[indexPath.row].categoryId else {
             return
         }
-        CommonDataManager.share.item = Item()
+        CommonDataManager.share.itemForPost = ItemForPost()
+        CommonDataManager.share.itemForPost?.itemCategoryId = "\(categoryId)"
 
-//        CommonDataManager.share.item?.itemCategoryId = "\(categoryId)"
-//        controller
         navigationController?.pushViewController(controller, animated: true)
     }
 }

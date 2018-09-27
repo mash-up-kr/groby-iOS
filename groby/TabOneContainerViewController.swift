@@ -20,8 +20,17 @@ class TabOneContainerViewController: UIViewController, TabContainerSettable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        locationLabel.text = CommonDataManager.share.item?.tabOne?.location
-        contentLabel.text = CommonDataManager.share.item?.tabOne?.contents
+        var location: String?
+        var content: String?
+        if let tabOne = CommonDataManager.share.itemForPost?.tabOne {
+            location = tabOne.location
+            content = tabOne.contents
+        } else {
+            location = CommonDataManager.share.item?.tabOne?.location
+            content = CommonDataManager.share.item?.tabOne?.contents
+        }
+        locationLabel.text = location
+        contentLabel.text = content
     }
 }
 
