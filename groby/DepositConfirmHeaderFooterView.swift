@@ -1,5 +1,5 @@
 //
-//  DepositConfirmHeaderView.swift
+//  DepositConfirmHeaderFooterView.swift
 //  groby
 //
 //  Created by Daeyun Ethan on 26/09/2018.

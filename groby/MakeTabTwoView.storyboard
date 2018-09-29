@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QoM-50-0NT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fJJ-TU-GTN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,10 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="UDG-VA-bXx">
+                            <tableViewSection id="UDG-VA-bXx">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="RQJ-Pm-jlR">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RQJ-Pm-jlR" id="BMm-ZQ-n5Z">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -54,7 +54,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="cbp-Xh-j3n">
-                                        <rect key="frame" x="0.0" y="78" width="375" height="98"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbp-Xh-j3n" id="Qgk-qD-pyq">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
@@ -87,7 +87,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="j8D-zU-bIH">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="148" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j8D-zU-bIH" id="DBf-rL-2vr">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -105,6 +105,9 @@
                                                     <state key="normal" title="2018/10/23" image="dropdownButton">
                                                         <color key="titleColor" name="coolGrey"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actionSetToDate:" destination="QoM-50-0NT" eventType="touchUpInside" id="mtz-ng-RkX"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1f-tq-RR7">
                                                     <rect key="frame" x="160" y="13.5" width="83" height="17"/>
@@ -112,6 +115,9 @@
                                                     <state key="normal" title="2018/10/23" image="dropdownButton">
                                                         <color key="titleColor" name="coolGrey"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actionSetFromDate:" destination="QoM-50-0NT" eventType="touchUpInside" id="h5y-JD-XK4"/>
+                                                    </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdF-OA-gWs">
                                                     <rect key="frame" x="257" y="17.5" width="1" height="9"/>
@@ -145,7 +151,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="uf7-S6-Z1q">
-                                        <rect key="frame" x="0.0" y="220" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="192" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uf7-S6-Z1q" id="5aF-Vv-0P8">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -184,7 +190,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="rqa-Ai-dV1">
-                                        <rect key="frame" x="0.0" y="270" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="242" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rqa-Ai-dV1" id="w85-sD-RLa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -202,6 +208,9 @@
                                                     <state key="normal" title="신한은행" image="dropdownButton">
                                                         <color key="titleColor" name="coolGrey"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actionSetBank:" destination="QoM-50-0NT" eventType="touchUpInside" id="BhI-Pj-hzs"/>
+                                                    </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-NW-4rv">
                                                     <rect key="frame" x="0.0" y="49" width="375" height="1"/>
@@ -223,7 +232,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="GZU-hd-9Pi">
-                                        <rect key="frame" x="0.0" y="320" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="292" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GZU-hd-9Pi" id="FSe-dP-zXe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -262,7 +271,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="a0R-IJ-zCW">
-                                        <rect key="frame" x="0.0" y="370" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="342" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a0R-IJ-zCW" id="auq-fG-9MW">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -318,14 +327,29 @@
                                 <state key="normal" title="다음">
                                     <color key="titleColor" name="iris"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionNext:" destination="QoM-50-0NT" eventType="touchUpInside" id="f85-ae-yzZ"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="bankAccountNumberTextField" destination="UYX-kN-Jjn" id="5mb-6R-3eC"/>
+                        <outlet property="bankNameButton" destination="QSw-Gr-rxm" id="ar2-mq-PRa"/>
+                        <outlet property="fromDueDateButton" destination="Y1f-tq-RR7" id="d2Q-V1-F0R"/>
+                        <outlet property="noticeTextField" destination="udj-Gy-RYN" id="gJj-DB-sfd"/>
+                        <outlet property="phoneNumberTextField" destination="gY3-RO-oXD" id="1ho-gK-P76"/>
+                        <outlet property="titleTextField" destination="6S7-Bb-p72" id="fbX-oH-QWB"/>
+                        <outlet property="toDueDateButton" destination="ZWG-RI-yhE" id="lWD-Qd-UFg"/>
+                        <outlet property="userNameTextField" destination="ksa-5O-KSi" id="0g5-Ra-US4"/>
+                        <segue destination="YFA-EX-bL4" kind="presentation" identifier="presentBankListSegue" modalPresentationStyle="overCurrentContext" id="yiK-sq-kvA"/>
+                        <segue destination="FnH-MU-gMX" kind="show" identifier="showNextSegue" id="f7w-R3-m9y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Xb-G4-jcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-385" y="251"/>
+            <point key="canvasLocation" x="552.79999999999995" y="250.52473763118442"/>
         </scene>
         <!--폼 옵션 설정-->
         <scene sceneID="0Jr-39-Db9">
@@ -335,9 +359,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-5A-KcP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="47" sectionFooterHeight="54" translatesAutoresizingMaskIntoConstraints="NO" id="xRP-5A-KcP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="j8a-GX-J3e">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -375,16 +399,19 @@
                                     </constraints>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="evi-FS-4uo">
-                                    <rect key="frame" x="0.0" y="167.5" width="375" height="105"/>
+                                    <rect key="frame" x="0.0" y="203.5" width="375" height="105"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9w-nh-ERv" customClass="BlueButton" customModule="groby" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9w-nh-ERv" customClass="BlueButton" customModule="groby" customModuleProvider="target">
                                             <rect key="frame" x="24" y="65" width="327" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="AUx-Bv-Zw2"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                             <state key="normal" title="옵션 추가"/>
+                                            <connections>
+                                                <action selector="actionAddOption:" destination="FnH-MU-gMX" eventType="touchUpInside" id="Hu8-bD-Y51"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -395,7 +422,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4l4-yV-YVA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OptionViewCell" rowHeight="44" id="4l4-yV-YVA" customClass="OptionViewCell" customModule="groby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="105.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4l4-yV-YVA" id="wm6-eb-5En">
@@ -411,6 +438,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hD-J5-gjF">
                                                     <rect key="frame" x="317" y="5" width="34" height="34"/>
                                                     <state key="normal" image="x button"/>
+                                                    <connections>
+                                                        <action selector="actionDelete" destination="4l4-yV-YVA" eventType="touchUpInside" id="kQi-at-Hn5"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -420,8 +450,16 @@
                                                 <constraint firstItem="5hD-J5-gjF" firstAttribute="centerY" secondItem="AbD-97-yDe" secondAttribute="centerY" id="KF8-GE-BU3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deleteButton" destination="5hD-J5-gjF" id="oXF-Mz-Yo4"/>
+                                            <outlet property="optionDetailLabel" destination="AbD-97-yDe" id="GxX-Qx-UdF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FnH-MU-gMX" id="cND-he-ASf"/>
+                                    <outlet property="delegate" destination="FnH-MU-gMX" id="1fM-S5-3wC"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -443,19 +481,28 @@
                                 <state key="normal" title="다음">
                                     <color key="titleColor" name="iris"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionNext:" destination="FnH-MU-gMX" eventType="touchUpInside" id="5yu-0o-vp6"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addOptionButton" destination="a9w-nh-ERv" id="SWz-Tl-RnL"/>
+                        <outlet property="priceTextField" destination="mbU-Na-B68" id="zTD-Xl-v3t"/>
+                        <outlet property="tableView" destination="xRP-5A-KcP" id="Vom-Pd-9Eg"/>
+                        <segue destination="JPY-Tb-cwR" kind="show" identifier="showNextSegue" id="yNB-cM-ssJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFk-pi-5fV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="251"/>
+            <point key="canvasLocation" x="1316" y="250.52473763118442"/>
         </scene>
         <!--입금확인 폼-->
         <scene sceneID="ZSC-IW-1pW">
             <objects>
-                <viewController id="JPY-Tb-cwR" sceneMemberID="viewController">
+                <viewController id="JPY-Tb-cwR" customClass="TabTwoCheckDepositViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="COA-ww-wi3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,7 +511,7 @@
                                 <rect key="frame" x="0.0" y="146" width="375" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="151" id="vQD-ck-Y6v">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfirmDepositViewCell" rowHeight="151" id="vQD-ck-Y6v" customClass="ConfirmDepositViewCell" customModule="groby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vQD-ck-Y6v" id="8Nd-WX-gzQ">
@@ -517,6 +564,9 @@
                                                                     <state key="normal" title="보류">
                                                                         <color key="titleColor" name="iris"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="actionSuspand:" destination="vQD-ck-Y6v" eventType="touchUpInside" id="Mtj-YT-1x3"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmw-cU-AZW">
                                                                     <rect key="frame" x="187.5" y="0.0" width="163.5" height="40"/>
@@ -528,6 +578,9 @@
                                                                     <state key="normal" title="확인">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <action selector="actionConfirm:" destination="vQD-ck-Y6v" eventType="touchUpInside" id="CHc-PZ-NOK"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -562,8 +615,17 @@
                                                 <constraint firstItem="UMI-oM-FxR" firstAttribute="leading" secondItem="8Nd-WX-gzQ" secondAttribute="leading" constant="12" id="fLE-Xb-x9X"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bankAccountLabel" destination="uFw-bO-LtW" id="TeL-LP-wsU"/>
+                                            <outlet property="confirmButton" destination="vmw-cU-AZW" id="DGJ-f3-Qes"/>
+                                            <outlet property="countLabel" destination="JA4-Uc-sjx" id="dN6-ox-6ju"/>
+                                            <outlet property="optionLabel" destination="j5Z-GR-V3M" id="vAa-e1-yqC"/>
+                                            <outlet property="priceLabel" destination="LgG-cA-f7Q" id="Un4-N4-8xS"/>
+                                            <outlet property="suspandButton" destination="vmw-cU-AZW" id="pYG-pc-fHI"/>
+                                            <outlet property="userIDLabel" destination="ZIn-mL-5Nw" id="3DI-hl-A9d"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="48" id="DV4-eG-zWD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfirmDepositListViewCell" rowHeight="48" id="DV4-eG-zWD" customClass="ConfirmDepositListViewCell" customModule="groby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="179" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DV4-eG-zWD" id="O0h-IR-v3F">
@@ -615,8 +677,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="wl0-8A-55Z" secondAttribute="trailing" constant="14" id="zME-BT-D6n"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countLabel" destination="mfj-gj-D0e" id="neR-zg-uLo"/>
+                                            <outlet property="priceLabel" destination="vkf-sv-BAF" id="NKs-mz-NYV"/>
+                                            <outlet property="userIDLabel" destination="S8E-7L-Z9h" id="jFb-6e-WqE"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="O1y-MW-zeP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfirmDepositListExpandViewCell" rowHeight="103" id="O1y-MW-zeP" customClass="ConfirmDepositListExpandViewCell" customModule="groby" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="227" width="375" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O1y-MW-zeP" id="Etk-22-3PN">
@@ -686,8 +753,19 @@
                                                 <constraint firstItem="VJ1-z2-4gM" firstAttribute="leading" secondItem="Etk-22-3PN" secondAttribute="leading" constant="23" id="yNJ-qW-tXm"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bankAccountLabel" destination="IPP-oX-TqS" id="nwg-b7-xd0"/>
+                                            <outlet property="countLabel" destination="WGw-C5-rJx" id="eJh-bI-8p3"/>
+                                            <outlet property="optionLabel" destination="fyl-bn-ybb" id="Heq-SF-Nu1"/>
+                                            <outlet property="priceLabel" destination="8Wg-V4-6DK" id="GKW-uh-87B"/>
+                                            <outlet property="userIDLabel" destination="VJ1-z2-4gM" id="TLs-Rg-QJg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JPY-Tb-cwR" id="9ot-qO-hEO"/>
+                                    <outlet property="delegate" destination="JPY-Tb-cwR" id="YgI-ul-YLe"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqj-z2-awz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="82"/>
@@ -766,14 +844,48 @@
                                 <state key="normal" title="다음 단계로">
                                     <color key="titleColor" name="iris"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionNext:" destination="JPY-Tb-cwR" eventType="touchUpInside" id="2lK-Ub-3Ia"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="RIS-g8-ZYs" id="NbW-Da-7VO"/>
+                        <outlet property="totalAmountLabel" destination="KP2-l6-Kli" id="RBy-XU-l90"/>
+                        <outlet property="totalPriceLabel" destination="qaq-wg-k5g" id="MjE-85-Y5O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lhb-NC-be4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136.8" y="250.52473763118442"/>
+            <point key="canvasLocation" x="2076" y="250.52473763118442"/>
+        </scene>
+        <!--Bank-->
+        <scene sceneID="IIk-v8-wd4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bank" id="YFA-EX-bL4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKX-mH-foj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="750"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7L1-S0-gga">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fJJ-TU-GTN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="klv-Gu-EbU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QoM-50-0NT" kind="relationship" relationship="rootViewController" id="dtZ-vh-5Ox"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcp-3p-Fc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-244" y="251"/>
         </scene>
     </scenes>
     <resources>

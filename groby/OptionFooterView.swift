@@ -9,4 +9,16 @@
 import UIKit
 
 class OptionFooterView: UITableViewHeaderFooterView {
+    @IBOutlet weak var addOptionButton: UIButton!
+    @IBOutlet weak var addOptionTextField: UITextField!
+
+    var closure: ((String) -> Void)?
+
+    @IBAction private func actionAddDetailOption(_ sender: UIButton) {
+        if let text = addOptionTextField.text,
+        !text.isEmpty {
+            closure?(text)
+            addOptionTextField.text = nil
+        }
+    }
 }

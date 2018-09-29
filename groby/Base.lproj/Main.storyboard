@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BBL-GQ-4C0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BBL-GQ-4C0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -186,7 +185,6 @@
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="collectionView" destination="W5f-ib-F0n" id="WMe-0H-zua"/>
-                                                    <segue destination="iLa-qk-L3E" kind="presentation" id="k5a-RC-dzT"/>
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Afh-Jg-vwl">
@@ -283,14 +281,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptv-zu-JVA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1172" y="791"/>
-        </scene>
-        <!--Bank-->
-        <scene sceneID="VNh-L5-c50">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Bank" id="iLa-qk-L3E" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hXZ-Ci-9pJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1773" y="502"/>
         </scene>
         <!--Search-->
         <scene sceneID="NZc-UR-dSH">

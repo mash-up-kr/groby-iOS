@@ -8,6 +8,19 @@
 
 import Foundation
 
+struct ItemForPostAPI: RequestType {
+    typealias ResponseType = ItemForPostJSON
+
+    var requestData: RequestData
+    var data: RequestData {
+        return requestData
+    }
+
+    init(_ requestData: RequestData) {
+        self.requestData = requestData
+    }
+}
+
 struct ItemAPI: RequestType {
     typealias ResponseType = ItemJSON
 

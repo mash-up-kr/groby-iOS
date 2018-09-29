@@ -9,4 +9,5 @@
 import UIKit
 
 class SelectOptionHeaderView: UITableViewHeaderFooterView {
+    @IBOutlet weak var button: UIButton!
 }
