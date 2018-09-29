@@ -438,6 +438,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hD-J5-gjF">
                                                     <rect key="frame" x="317" y="5" width="34" height="34"/>
                                                     <state key="normal" image="x button"/>
+                                                    <connections>
+                                                        <action selector="actionDelete" destination="4l4-yV-YVA" eventType="touchUpInside" id="kQi-at-Hn5"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

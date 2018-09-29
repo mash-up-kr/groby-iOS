@@ -12,14 +12,13 @@ class OptionFooterView: UITableViewHeaderFooterView {
     @IBOutlet weak var addOptionButton: UIButton!
     @IBOutlet weak var addOptionTextField: UITextField!
 
-    var detailOptionCount: Int = 0
-    var closure: ((String, Int) -> Void)?
+    var closure: ((String) -> Void)?
 
-    @IBAction func actionAddDetailOption(_ sender: UIButton) {
+    @IBAction private func actionAddDetailOption(_ sender: UIButton) {
         if let text = addOptionTextField.text,
         !text.isEmpty {
-            detailOptionCount += 1
-            closure?(text, detailOptionCount)
+            closure?(text)
+            addOptionTextField.text = nil
         }
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MakeTabTwoSecondViewController: UIViewController {
+class MakeTabTwoSecondViewController: UIViewController, AlertShowable {
 
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var addOptionButton: BlueButton!
@@ -34,7 +34,7 @@ class MakeTabTwoSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     @IBAction private func actionAddOption(_ sender: UIButton) {
         optionCount += 1
     }
@@ -63,12 +63,18 @@ extension MakeTabTwoSecondViewController: UITableViewDelegate {
             return nil
         }
 
-        footerView.closure = { [weak self] detailOption, detailCount in
-            guard let `self` = self else {
+        footerView.closure = { [weak self] detailOption in
+            guard let self = self else {
                 return
             }
+
+            if self.detailOptionCount[section].0.contains(detailOption) {
+                self.popUpAlert("세부 옵션이 중복 되었습니다.")
+                return
+            }
+
             self.detailOptionCount[section].0.append(detailOption)
-            self.detailOptionCount[section].1 = detailCount
+            self.detailOptionCount[section].1 += 1
         }
 
         return footerView
@@ -88,12 +94,16 @@ extension MakeTabTwoSecondViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "OptionViewCell", for: indexPath) as? OptionViewCell else {
             return UITableViewCell()
         }
+
         cell.configure(detailOptionCount[indexPath.section].0[indexPath.row])
         cell.deleteClosure = { [weak self] in
-            guard let `self` = self else {
+            guard let self = self else {
                 return
             }
-//            self.detailOptionCount[indexPath.section].0[indexPath.row]
+            self.detailOptionCount[indexPath.section].1 -= 1
+
+            self.detailOptionCount[indexPath.section].0.remove(at: indexPath.row)
+            self.tableView.reloadData()
         }
 
         return cell
@@ -106,8 +116,12 @@ class OptionViewCell: UITableViewCell {
     @IBOutlet weak var deleteButton: UIButton!
 
     var deleteClosure: (() -> Void)?
-    
+
     func configure(_ title: String) {
         optionDetailLabel.text = title
+    }
+
+    @IBAction private func actionDelete() {
+        deleteClosure?()
     }
 }
