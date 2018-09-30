@@ -40,6 +40,7 @@ class MakeTabTwoSecondViewController: UIViewController, AlertShowable {
     }
 
     @IBAction private func actionNext(_ sender: UIButton) {
+        performSegue(withIdentifier: "showNextSegue", sender: nil)
     }
 }
 

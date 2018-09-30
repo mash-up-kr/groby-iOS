@@ -9,5 +9,6 @@
 import UIKit
 
 class DepositConfirmListHeaderView: UITableViewHeaderFooterView {
-    @IBOutlet weak var imageButton: UIImageView!
+    @IBOutlet weak var buttonImage: UIImageView!
+    @IBOutlet weak var expandButton: UIButton!
 }
