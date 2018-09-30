@@ -10,15 +10,43 @@ import UIKit
 
 class TabThreeOrderListViewController: UIViewController {
 
+    @IBOutlet weak var backgroundView: UIView! {
+        didSet {
+            backgroundView.alpha = 0.0
+        }
+    }
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalCountLabel: UILabel!
     @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint! {
+        didSet {
+            bottomConstraint.constant = -600
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    @IBAction func ActionDelete(_ sender: UIButton) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        UIView.animate(withDuration: 0.5) {
+            self.backgroundView.alpha = 1.0
+            self.bottomConstraint.constant = 100
+            self.view.layoutIfNeeded()
+        }
+    }
+
+    @IBAction private func actionDelete(_ sender: UIButton) {
+
+        UIView.animate(withDuration: 0.5, animations: {
+            self.backgroundView.alpha = 0.0
+            self.bottomConstraint.constant = -600
+            self.view.layoutIfNeeded()
+        }) { _ in
+            self.dismiss(animated: false, completion: nil)
+        }
     }
 }
 

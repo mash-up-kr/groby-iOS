@@ -14,6 +14,7 @@ class UserTabTwoSelectOptionTwoViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.register(UINib(nibName: "SelectOptionTwoFooterView", bundle: nil), forCellReuseIdentifier: "SelectOptionTwoFooterView")
+            tableView.estimatedRowHeight = 200
         }
     }
     @IBOutlet weak var titleLabel: UILabel!
@@ -51,15 +52,33 @@ extension UserTabTwoSelectOptionTwoViewController {
 
 extension UserTabTwoSelectOptionTwoViewController: UITableViewDelegate {
 
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == 1 {
+            return 45
+        }
+        return CGFloat.leastNonzeroMagnitude
+    }
+
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SelectOptionTwoFooterView") as? SelectOptionTwoFooterView else {
+//        guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SelectOptionTwoFooterView") as? SelectOptionTwoFooterView else {
+//            return nil
+//        }
+        if section == 0 {
             return nil
         }
+
+        guard let footerView = Bundle.main.loadNibNamed("SelectOptionTwoFooterView", owner: self, options: nil)?.first as? SelectOptionTwoFooterView else {
+            return nil
+        }
+
         return footerView
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        if indexPath.section == 0 {
+            return UITableViewAutomaticDimension
+        }
+        return 49
     }
 }
 
@@ -72,10 +91,19 @@ extension UserTabTwoSelectOptionTwoViewController: UITableViewDataSource {
         if section == 0 {
             return 1
         }
-        return 1
+        return 2
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "UserSelectOptionTwoNoticeViewCell", for: indexPath) as? UserSelectOptionTwoNoticeViewCell {
+                return cell
+            }
+        } else {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "UserSelectOptionTwoOptionViewCell", for: indexPath) as? UserSelectOptionTwoOptionViewCell {
+                return cell
+            }
+        }
         return UITableViewCell()
     }
 }
