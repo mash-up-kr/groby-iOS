@@ -35,11 +35,16 @@ class MakeTabTwoSecondViewController: UIViewController, AlertShowable {
         super.viewDidLoad()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+    }
+
     @IBAction private func actionAddOption(_ sender: UIButton) {
         optionCount += 1
     }
 
     @IBAction private func actionNext(_ sender: UIButton) {
+        performSegue(withIdentifier: "showNextSegue", sender: nil)
     }
 }
 

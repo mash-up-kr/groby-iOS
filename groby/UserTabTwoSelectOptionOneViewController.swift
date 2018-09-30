@@ -17,8 +17,16 @@ class UserTabTwoSelectOptionOneViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+    }
+
     @IBAction func actionAddOption(_ sender: UIButton) {
-        // 모달
+        performSegue(withIdentifier: "OptionSelectModalSegue", sender: nil)
+    }
+
+    @IBAction private func actionNext(_ sender: UIButton) {
+        performSegue(withIdentifier: "OptionSelectTwoSegue", sender: nil)
     }
 }
 

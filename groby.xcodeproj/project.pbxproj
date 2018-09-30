@@ -76,6 +76,7 @@
 		CEE745D4214E77BA002FD454 /* CommonTabViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D3214E77BA002FD454 /* CommonTabViewTableViewCell.swift */; };
 		CEE745D6214E77FF002FD454 /* CommonTabViewContainerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D5214E77FF002FD454 /* CommonTabViewContainerViewCell.swift */; };
 		CEE745D8214E7862002FD454 /* TabOneContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE745D7214E7862002FD454 /* TabOneContainerViewController.swift */; };
+		CEEFC01821610C860074002E /* SelectOptionTwoFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEFC01721610C860074002E /* SelectOptionTwoFooterView.xib */; };
 		CEF710F1213BBC03007BF3E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF710F0213BBC03007BF3E2 /* User.swift */; };
 		EF476949211F5F9000561AD4 /* NavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF476948211F5F9000561AD4 /* NavigationItem+Extension.swift */; };
 		EF47694B211F6B6500561AD4 /* PHAssets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47694A211F6B6500561AD4 /* PHAssets+Extension.swift */; };
@@ -152,7 +153,6 @@
 		CE899A28214E7E72003A53C1 /* CommonTabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabHeaderView.swift; sourceTree = "<group>"; };
 		CEA9F934215CA7B7006A6DED /* SelectOptionTwoFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionTwoFooterView.swift; sourceTree = "<group>"; };
 		CEA9F936215CAE5E006A6DED /* TabThreeOrderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabThreeOrderListViewController.swift; sourceTree = "<group>"; };
-		CEA9F938215CB3E3006A6DED /* SelectOptionTwoFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SelectOptionTwoFooterView.xib; path = /Users/user/Develop/Git/private/groby/groby/SelectOptionTwoFooterView.xib; sourceTree = "<absolute>"; };
 		CED7D8902158C76300A3D645 /* CategoryItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemListTableViewController.swift; sourceTree = "<group>"; };
 		CED7D8952158DB1000A3D645 /* CommonTabView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommonTabView.storyboard; sourceTree = "<group>"; };
 		CED7D8972158DB2300A3D645 /* CommonTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +178,7 @@
 		CEE745D3214E77BA002FD454 /* CommonTabViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabViewTableViewCell.swift; sourceTree = "<group>"; };
 		CEE745D5214E77FF002FD454 /* CommonTabViewContainerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTabViewContainerViewCell.swift; sourceTree = "<group>"; };
 		CEE745D7214E7862002FD454 /* TabOneContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneContainerViewController.swift; sourceTree = "<group>"; };
+		CEEFC01721610C860074002E /* SelectOptionTwoFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectOptionTwoFooterView.xib; sourceTree = "<group>"; };
 		CEF710F0213BBC03007BF3E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DC3D5B3B9BC0FF54D2894DA3 /* Pods-groby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.release.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.release.xcconfig"; sourceTree = "<group>"; };
 		DEE1F800EAECA1E69758F16F /* Pods-groby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groby/Pods-groby.debug.xcconfig"; sourceTree = "<group>"; };
@@ -415,7 +416,7 @@
 				CE4A88BD215AC5B200FFC7DD /* SelectOptionHeaderView.swift */,
 				CE4A88BF215AC5CB00FFC7DD /* SelectOptionHeaderView.xib */,
 				CEA9F934215CA7B7006A6DED /* SelectOptionTwoFooterView.swift */,
-				CEA9F938215CB3E3006A6DED /* SelectOptionTwoFooterView.xib */,
+				CEEFC01721610C860074002E /* SelectOptionTwoFooterView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -664,6 +665,7 @@
 				EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */,
 				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
 				EF5E1D1521270876004A9A42 /* Bank.storyboard in Resources */,
+				CEEFC01821610C860074002E /* SelectOptionTwoFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

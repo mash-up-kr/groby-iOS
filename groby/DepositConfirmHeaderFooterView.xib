@@ -15,7 +15,19 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DepositConfirmHeaderFooterView" customModule="groby" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-xU-4fG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.65490196078431373" green="0.73333333333333328" blue="0.98039215686274506" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="0.65490196078431373" green="0.73333333333333328" blue="0.98039215686274506" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="q0f-xU-4fG" secondAttribute="trailing" id="I8y-aY-Uvh"/>
+                <constraint firstItem="q0f-xU-4fG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gE2-QT-Gxn"/>
+                <constraint firstItem="q0f-xU-4fG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mRE-Td-2K7"/>
+                <constraint firstAttribute="bottom" secondItem="q0f-xU-4fG" secondAttribute="bottom" id="pso-e6-gPu"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>

@@ -31,8 +31,8 @@
                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u58-46-SX4">
                     <rect key="frame" x="13" y="52" width="316" height="32"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세부 옵션 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x5-j6-o2k">
-                            <rect key="frame" x="24" y="7.5" width="80" height="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사이즈 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8x5-j6-o2k">
+                            <rect key="frame" x="24" y="7.5" width="64.5" height="17"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                             <color key="textColor" name="coolGrey"/>
                             <nil key="highlightedColor"/>
@@ -61,6 +61,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="button" destination="2Kz-9m-VDL" id="Bjo-Rm-fRg"/>
+                <outlet property="detailOptionLabel" destination="8x5-j6-o2k" id="gEy-pl-eue"/>
             </connections>
         </view>
     </objects>
