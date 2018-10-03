@@ -22,3 +22,18 @@ struct ItemListAPI: RequestType {
         self.requestData = requestData
     }
 }
+
+struct MainItemListAPI: RequestType {
+    typealias ResponseType = MainItemListJSON
+
+    static let subURL: String = "home"
+
+    var requestData: RequestData
+    var data: RequestData {
+        return requestData
+    }
+
+    init(_ requestData: RequestData) {
+        self.requestData = requestData
+    }
+}

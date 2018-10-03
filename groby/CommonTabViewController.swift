@@ -14,6 +14,8 @@ protocol TabContainerSettable: class {
 
 class CommonTabViewController: UIViewController {
 
+    static let addPostNotificationName = Notification.Name("addPostNotification")
+
     enum TabType: Int {
         case tabOne
         case tabTwo
@@ -58,6 +60,12 @@ class CommonTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let backButtonItem = UIBarButtonItem()
+        backButtonItem.title = ""
+        navigationController?.navigationItem.backBarButtonItem = backButtonItem
+        navigationController?.isNavigationBarHidden = false
+
         titleLabel.text = item?.itemTitle
         nicknameLabel.text = item?.writerId
         minimumCountLabel.text = "\(item?.numOfLike ?? 0)"

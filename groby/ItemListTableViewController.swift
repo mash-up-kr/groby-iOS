@@ -28,7 +28,32 @@ class ItemListTableViewController: UIViewController {
 
 }
 
-extension ItemListTableViewController: UITableViewDelegate, UITableViewDataSource {
+extension ItemListTableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        guard let itemId = items?[indexPath.row].itemId else {
+            return
+        }
+
+        let path: String = "\(GrobyURL.base)\(GrobyURL.item.rawValue)\(itemId)"
+        let requestData: RequestData = RequestData(path: path)
+        ItemAPI(requestData).execute(onSuccess: { [weak self] itemJSON in            print("\(itemJSON.returnJson)")
+            guard let `self` = self else {
+                return
+            }
+
+            CommonDataManager.share.item = nil
+            if let controller = UIStoryboard(name: "CommonTabView", bundle: nil).instantiateInitialViewController() as? CommonTabViewController {
+                controller.item = itemJSON.returnJson
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
+        }) { error in
+            print("ItemAPI: \(error)")
+        }
+    }
+}
+
+extension ItemListTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let items = self.items, !items.isEmpty else {
             return 0
@@ -37,29 +62,10 @@ extension ItemListTableViewController: UITableViewDelegate, UITableViewDataSourc
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "my_post_cell", for: indexPath) as? PostTableViewCell else {
+        guard let cell: CommonTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CommonTableViewCell", for: indexPath) as? CommonTableViewCell, let item = items?[indexPath.row] else {
             return UITableViewCell()
         }
-        //
-        //        let categoryItem = categoryItems[indexPath.row]
-        //
-        //        let date = categoryItem.dueDate.split(separator: " ")
-        //        if let dateString = date.first {
-        //            cell.postDate.text = "\(dateString)"
-        //        }
-        //        cell.postTitle.text = categoryItem.title
-        //
-        //        if true {
-        //            cell.postLikeOrProgress.text = "좋아요 수"
-        //            if let participantNum = categoryItem.participantNum {
-        //                cell.postLikeOrProgressCount.text = "\(participantNum)"
-        //            }
-        //        } else {
-        //            cell.postLikeOrProgress.text = "진행률"
-        //            if let progress = categoryItem.progress {
-        //                cell.postLikeOrProgressCount.text = "\(progress)"
-        //            }
-        //        }
+        cell.configure(item)
         return cell
     }
 }

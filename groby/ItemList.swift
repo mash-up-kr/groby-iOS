@@ -8,26 +8,32 @@
 
 import Foundation
 
-struct ItemCardList: Codable {
-    let itemList: [ItemList]
-}
-
 struct ItemList: Codable {
     let amountLimit: Int
-    let dueDate: String
+    let dueDate: String?
     let itemId: String
-    let likeNum: String
+    let likeNum: String?
     let nowTab: Int
     let participantNum: Int?
     let participantPercent: Int?
-    let progress: Int?
     let thumnailURL: String
     let title: String
 }
 
 struct ItemListJSON: Codable {
     let status: String
-//    let message: String
+    let message: String
 
-    let returnJson: ItemCardList
+    let returnJson: [ItemList]
+}
+
+struct MainItemList: Codable {
+    let popularItemList: [ItemList]
+    let recentItemList: [ItemList]
+}
+
+struct MainItemListJSON: Codable {
+    let status: String
+    let message: String
+    let returnJson: MainItemList
 }

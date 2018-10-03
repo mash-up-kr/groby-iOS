@@ -16,14 +16,18 @@ struct CommonAPIManager {
     ) {
         dispatcher.dispatch(request: request,
                             onSuccess: {(responseData: Data) in
-                                do {
-                                    let result = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any]
-                                    DispatchQueue.main.async {
-                                        onSuccess(result)
-                                    }
-                                } catch let error {
-                                    DispatchQueue.main.async {
-                                        onError(error)
+                                if responseData.isEmpty {
+                                    onSuccess(nil)
+                                } else {
+                                    do {
+                                        let result = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any]
+                                        DispatchQueue.main.async {
+                                            onSuccess(result)
+                                        }
+                                    } catch let error {
+                                        DispatchQueue.main.async {
+                                            onError(error)
+                                        }
                                     }
                                 }
         },
