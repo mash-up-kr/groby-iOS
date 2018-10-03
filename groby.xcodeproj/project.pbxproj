@@ -27,7 +27,7 @@
 		AA9A1063211F416F00B4A222 /* AlarmViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */; };
 		AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9A1065211F4FC700B4A222 /* Search.storyboard */; };
 		AA9A1068211F4FD900B4A222 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9A1067211F4FD900B4A222 /* SearchViewController.swift */; };
-		C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */; };
+		C2388E7E212446E40010AAD1 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2388E7B212446E30010AAD1 /* CommonTableViewCell.swift */; };
 		C239E064213EAB9A009D3545 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E063213EAB9A009D3545 /* Category.swift */; };
 		C239E066213EAD8C009D3545 /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E065213EAD8C009D3545 /* CategoryAPI.swift */; };
 		C24A4A232128021500406733 /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* ItemListTableViewController.swift */; };
@@ -35,6 +35,9 @@
 		C2E05AE5216508D000F1ADC0 /* tap5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E05AE4216508D000F1ADC0 /* tap5.storyboard */; };
 		C2FCA54F2165181500CEDB2D /* DistributionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA54E2165181500CEDB2D /* DistributionsViewController.swift */; };
 		C2FCA5512165186900CEDB2D /* DistributionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA5502165186900CEDB2D /* DistributionsTableViewCell.swift */; };
+		CE120AAF2164AD0F00DCAEF7 /* CommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE120AAE2164AD0F00DCAEF7 /* CommonTableViewCell.xib */; };
+		CE120AB22164BCC300DCAEF7 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE120AB12164BCC300DCAEF7 /* MainHeaderView.swift */; };
+		CE120AB42164BCDA00DCAEF7 /* MainHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE120AB32164BCDA00DCAEF7 /* MainHeaderView.xib */; };
 		CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */; };
 		CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */; };
 		CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */; };
@@ -132,7 +135,7 @@
 		AA9A1062211F416F00B4A222 /* AlarmViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewCell.swift; sourceTree = "<group>"; };
 		AA9A1065211F4FC700B4A222 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		AA9A1067211F4FD900B4A222 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C2388E7B212446E30010AAD1 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		C239E063213EAB9A009D3545 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C239E065213EAD8C009D3545 /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
 		C24A4A222128021500406733 /* ItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +143,9 @@
 		C2E05AE4216508D000F1ADC0 /* tap5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tap5.storyboard; sourceTree = "<group>"; };
 		C2FCA54E2165181500CEDB2D /* DistributionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionsViewController.swift; sourceTree = "<group>"; };
 		C2FCA5502165186900CEDB2D /* DistributionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionsTableViewCell.swift; sourceTree = "<group>"; };
+		CE120AAE2164AD0F00DCAEF7 /* CommonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTableViewCell.xib; sourceTree = "<group>"; };
+		CE120AB12164BCC300DCAEF7 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		CE120AB32164BCDA00DCAEF7 /* MainHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHeaderView.xib; sourceTree = "<group>"; };
 		CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataManager.swift; sourceTree = "<group>"; };
 		CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertAction.swift; sourceTree = "<group>"; };
 		CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPI.swift; sourceTree = "<group>"; };
@@ -235,6 +241,7 @@
 		4D8669D821183BC300862B9A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CE120AB02164BC8B00DCAEF7 /* View */,
 				AA16A578211E0AD700A1A4DD /* Dummy */,
 				EFAAA9CD211486E50013F360 /* ViewController.swift */,
 				EFAAA9CF211486E50013F360 /* Main.storyboard */,
@@ -290,8 +297,9 @@
 				AA16A569211DE20C00A1A4DD /* Menu.storyboard */,
 				AA16A56D211DFC3200A1A4DD /* MenuViewController.swift */,
 				C24A4A222128021500406733 /* ItemListTableViewController.swift */,
-				C2388E7B212446E30010AAD1 /* PostTableViewCell.swift */,
 				CED7D8902158C76300A3D645 /* CategoryItemListTableViewController.swift */,
+				C2388E7B212446E30010AAD1 /* CommonTableViewCell.swift */,
+				CE120AAE2164AD0F00DCAEF7 /* CommonTableViewCell.xib */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -330,6 +338,15 @@
 				AA9A1067211F4FD900B4A222 /* SearchViewController.swift */,
 			);
 			name = Search;
+			sourceTree = "<group>";
+		};
+		CE120AB02164BC8B00DCAEF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE120AB12164BCC300DCAEF7 /* MainHeaderView.swift */,
+				CE120AB32164BCDA00DCAEF7 /* MainHeaderView.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		CE45C0D421402C2200CDD952 /* User */ = {
@@ -661,6 +678,7 @@
 				CED7D8B9215A8E0300A3D645 /* OptionFooterView.xib in Resources */,
 				CED7D8A82158F7C500A3D645 /* TabFourContainerView.storyboard in Resources */,
 				8322A7F5211F64E00028504D /* tap4.storyboard in Resources */,
+				CE120AAF2164AD0F00DCAEF7 /* CommonTableViewCell.xib in Resources */,
 				8382CADC2128060A0051ECCE /* MyPage.storyboard in Resources */,
 				CED7D8A32158F7B600A3D645 /* TabThreeContainerView.storyboard in Resources */,
 				CE4A88BA215AA25200FFC7DD /* UserTabTwoView.storyboard in Resources */,
@@ -671,6 +689,7 @@
 				CED7D8B7215A8DEF00A3D645 /* OptionHeaderView.xib in Resources */,
 				AA16A56A211DE20C00A1A4DD /* Menu.storyboard in Resources */,
 				EFAAA9D1211486E50013F360 /* Main.storyboard in Resources */,
+				CE120AB42164BCDA00DCAEF7 /* MainHeaderView.xib in Resources */,
 				CED7D89C2158EE9800A3D645 /* TabTwoContainerView.storyboard in Resources */,
 				EF5E1D192127EB59004A9A42 /* GoogleService-Info.plist in Resources */,
 				AA9A1066211F4FC700B4A222 /* Search.storyboard in Resources */,
@@ -774,6 +793,7 @@
 				CEA9F937215CAE5E006A6DED /* TabThreeOrderListViewController.swift in Sources */,
 				EFAAA9F02115488C0013F360 /* JoinSecondViewController.swift in Sources */,
 				EF5E1D1721270AE6004A9A42 /* BankViewController.swift in Sources */,
+				CE120AB22164BCC300DCAEF7 /* MainHeaderView.swift in Sources */,
 				EFE7D362211F37A700C909FD /* MakeTab1FirstViewController.swift in Sources */,
 				CEE745D8214E7862002FD454 /* TabOneContainerViewController.swift in Sources */,
 				8382CADA212804F70051ECCE /* 비밀번호변경ViewController.swift in Sources */,
@@ -796,7 +816,7 @@
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
 				C2FCA5512165186900CEDB2D /* DistributionsTableViewCell.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
-				C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */,
+				C2388E7E212446E40010AAD1 /* CommonTableViewCell.swift in Sources */,
 				CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */,
 				EFAAA9EC2114978B0013F360 /* BlueButton.swift in Sources */,
 				C24A4A232128021500406733 /* ItemListTableViewController.swift in Sources */,

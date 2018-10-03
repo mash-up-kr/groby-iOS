@@ -12,7 +12,6 @@ struct User: Codable {
     let accountBank: String?
     let accountHolder: String?
     let accountNum: String?
-    let denied: Bool
     let isDeleted: Bool
     let userEmail: String
     let userId: String

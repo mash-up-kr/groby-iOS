@@ -16,6 +16,7 @@ class CommonDataManager {
     var itemForPost: ItemForPost?
     var item: Item?
 
-    var userFavoritedItems: ItemCardList? //[ItemList]?
-    var userOwnedItems: ItemCardList? //[ItemList]?
+    var userFavoritedItems: [ItemList]?
+    var userOwnedItems: [ItemList]?
+    var mainItems: MainItemList?
 }

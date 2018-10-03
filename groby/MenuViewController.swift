@@ -73,11 +73,11 @@ class MenuViewController: UITableViewController, AlertShowable {
     }
 
     @IBAction private func tappedMyPost(_ sender: UIButton) {
-        showItemListViewController("작성한 공구 목록이 없습니다.", navigationTitle: "내가 쓴 글", items: CommonDataManager.share.userOwnedItems?.itemList)
+        showItemListViewController("작성한 공구 목록이 없습니다.", navigationTitle: "내가 쓴 글", items: CommonDataManager.share.userOwnedItems)
     }
 
     @IBAction private func tappedJoinedPost(_ sender: UIButton) {
-        showItemListViewController("참여한 공구 목록이 없습니다.", navigationTitle: "참여한 글", items: CommonDataManager.share.userFavoritedItems?.itemList)
+        showItemListViewController("참여한 공구 목록이 없습니다.", navigationTitle: "참여한 글", items: CommonDataManager.share.userFavoritedItems)
     }
 
     func showItemListViewController(_ alertTitle: String? = nil, navigationTitle: String, items: [ItemList]?) {
