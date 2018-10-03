@@ -32,6 +32,9 @@
 		C239E066213EAD8C009D3545 /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239E065213EAD8C009D3545 /* CategoryAPI.swift */; };
 		C24A4A232128021500406733 /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A222128021500406733 /* ItemListTableViewController.swift */; };
 		C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */; };
+		C2E05AE5216508D000F1ADC0 /* tap5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E05AE4216508D000F1ADC0 /* tap5.storyboard */; };
+		C2FCA54F2165181500CEDB2D /* DistributionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA54E2165181500CEDB2D /* DistributionsViewController.swift */; };
+		C2FCA5512165186900CEDB2D /* DistributionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA5502165186900CEDB2D /* DistributionsTableViewCell.swift */; };
 		CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */; };
 		CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */; };
 		CE45C0D921402CFD00CDD952 /* UserLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */; };
@@ -134,6 +137,9 @@
 		C239E065213EAD8C009D3545 /* CategoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
 		C24A4A222128021500406733 /* ItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
 		C24A4A242128331E00406733 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2E05AE4216508D000F1ADC0 /* tap5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tap5.storyboard; sourceTree = "<group>"; };
+		C2FCA54E2165181500CEDB2D /* DistributionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionsViewController.swift; sourceTree = "<group>"; };
+		C2FCA5502165186900CEDB2D /* DistributionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionsTableViewCell.swift; sourceTree = "<group>"; };
 		CE25FAE721430C3E0013DAF4 /* CommonDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataManager.swift; sourceTree = "<group>"; };
 		CE25FAE9214322200013DAF4 /* CustomAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertAction.swift; sourceTree = "<group>"; };
 		CE45C0D821402CFD00CDD952 /* UserLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPI.swift; sourceTree = "<group>"; };
@@ -377,9 +383,9 @@
 				EF5E1D1321270861004A9A42 /* Tab2 */,
 				CED7D89D2158F4DF00A3D645 /* Tab3 */,
 				8322A7F3211F64C10028504D /* Tab4 */,
+				CED7D89E2158F4EC00A3D645 /* Tap5 */,
 				CED7D8952158DB1000A3D645 /* CommonTabView.storyboard */,
 				CED7D8972158DB2300A3D645 /* CommonTabViewController.swift */,
-				CED7D89E2158F4EC00A3D645 /* Tap5 */,
 			);
 			name = Tab;
 			sourceTree = "<group>";
@@ -398,6 +404,9 @@
 		CED7D89E2158F4EC00A3D645 /* Tap5 */ = {
 			isa = PBXGroup;
 			children = (
+				C2FCA54E2165181500CEDB2D /* DistributionsViewController.swift */,
+				C2FCA5502165186900CEDB2D /* DistributionsTableViewCell.swift */,
+				C2E05AE4216508D000F1ADC0 /* tap5.storyboard */,
 			);
 			name = Tap5;
 			sourceTree = "<group>";
@@ -645,6 +654,7 @@
 				CE4A88C0215AC5CB00FFC7DD /* SelectOptionHeaderView.xib in Resources */,
 				CE4A88B1215AA1AD00FFC7DD /* DepositConfirmHeaderFooterView.xib in Resources */,
 				CE4A88C2215ADBAB00FFC7DD /* TabThreeView.storyboard in Resources */,
+				C2E05AE5216508D000F1ADC0 /* tap5.storyboard in Resources */,
 				CE4A88B7215AA1EA00FFC7DD /* DepositConfirmListHeaderView.xib in Resources */,
 				EFAAA9D6211486E60013F360 /* Assets.xcassets in Resources */,
 				AA9A105E211F38E400B4A222 /* Alarm.storyboard in Resources */,
@@ -773,6 +783,7 @@
 				83A47E6E2127F185006B70EC /* MyPageTableViewController.swift in Sources */,
 				AA9A1060211F390300B4A222 /* AlarmViewController.swift in Sources */,
 				CEE745D4214E77BA002FD454 /* CommonTabViewTableViewCell.swift in Sources */,
+				C2FCA54F2165181500CEDB2D /* DistributionsViewController.swift in Sources */,
 				CE25FAE821430C3E0013DAF4 /* CommonDataManager.swift in Sources */,
 				EFCCDACA2131D88D0007C394 /* RequestData.swift in Sources */,
 				CED7D8982158DB2300A3D645 /* CommonTabViewController.swift in Sources */,
@@ -783,6 +794,7 @@
 				CE4A88C6215B6E2D00FFC7DD /* UserTabTwoSelectOptionOneModalViewController.swift in Sources */,
 				C24A4A252128331E00406733 /* ImageCollectionViewCell.swift in Sources */,
 				AA16A56E211DFC3200A1A4DD /* MenuViewController.swift in Sources */,
+				C2FCA5512165186900CEDB2D /* DistributionsTableViewCell.swift in Sources */,
 				AA16A57A211E0AEE00A1A4DD /* DummyTableViewCell.swift in Sources */,
 				C2388E7E212446E40010AAD1 /* PostTableViewCell.swift in Sources */,
 				CE25FAEA214322200013DAF4 /* CustomAlertAction.swift in Sources */,
