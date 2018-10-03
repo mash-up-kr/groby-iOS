@@ -10,4 +10,10 @@ import UIKit
 
 class DummyCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var itemImageView: UIImageView?
+
+    func configure(_ title: String, image: UIImage? = nil) {
+        titleLabel.text = title
+    }
 }

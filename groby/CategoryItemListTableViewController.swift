@@ -10,9 +10,13 @@ import UIKit
 
 class CategoryItemListTableViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.register(UINib(nibName: "CommonTableViewCell", bundle: nil), forCellReuseIdentifier: "CommonTableViewCell")
+        }
+    }
 
-    private var categoryItems: ItemCardList? //[ItemList] = []
+    private var categoryItems: [ItemList] = []
     var category: Category?
 
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +39,8 @@ class CategoryItemListTableViewController: UIViewController {
                 print(categoryItems)
                 self.categoryItems = categoryItems.returnJson
                 self.tableView.reloadData()
-            }) { _ in
+            }) { error in
+                print("ItemListAPI: \(error)")
             }
         } else {
             navigationItem.setCustomTitle("참여한 글")
@@ -54,7 +59,7 @@ extension CategoryItemListTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
 
-        let path: String = "\(GrobyURL.base)\(GrobyURL.item.rawValue)\(categoryItems?.itemList[indexPath.row].itemId)"
+        let path: String = "\(GrobyURL.base)\(GrobyURL.item.rawValue)\(categoryItems[indexPath.row].itemId)"
         let requestData: RequestData = RequestData(path: path)
         ItemAPI(requestData).execute(onSuccess: { [weak self] itemJSON in            print("\(itemJSON.returnJson)")
             guard let `self` = self else {
@@ -74,31 +79,28 @@ extension CategoryItemListTableViewController: UITableViewDelegate {
 
 extension CategoryItemListTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let count = categoryItems?.itemList.count {
-            return count
-        }
-        return 0
+        return categoryItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "my_post_cell", for: indexPath) as? PostTableViewCell else {
+        guard let cell: CommonTableViewCell = tableView.dequeueReusableCell(withIdentifier: "CommonTableViewCell", for: indexPath) as? CommonTableViewCell else {
             return UITableViewCell()
         }
 
-        let categoryItem = categoryItems?.itemList[indexPath.row]
+        let categoryItem = categoryItems[indexPath.row]
 
-        let date = categoryItem?.dueDate.split(separator: " ")
+        let date = categoryItem.dueDate?.split(separator: " ")
         if let dateString = date?.first {
-            cell.postDate.text = "\(dateString)"
+            cell.dateLabel.text = "\(dateString)"
         }
-        cell.postTitle.text = categoryItem?.title
+        cell.titleLabel.text = categoryItem.title
 
-        cell.postLikeOrProgress.text = "좋아요 수"
-        if let participantNum = categoryItem?.participantNum {
-            cell.postLikeOrProgressCount.text = "\(participantNum)"
+        cell.likeOrProgressLabel.text = "좋아요 수"
+        if let participantNum = categoryItem.participantNum {
+            cell.likeOrProgressCountLabel.text = "\(participantNum)"
         }
 
-        cell.postImage.image = #imageLiteral(resourceName: "person-1207641")
+        cell.itemImageView.image = #imageLiteral(resourceName: "person-1207641")
 
         return cell
     }

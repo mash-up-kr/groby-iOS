@@ -60,12 +60,16 @@ class MakeTab1FourthViewController: UIViewController {
 
                 print(params)
                 let requestData = RequestData(path: path, method: .post, params: params)
-                ItemForPostAPI(requestData).execute(onSuccess: { [weak self] _ in
+
+                CommonAPIManager.execute(requestData, onSuccess: { [weak self] _ in
                     guard let `self` = self else {
                         return
                     }
+
+                   NotificationCenter.default.post(name: CommonTabViewController.addPostNotificationName, object: nil)
                     self.dismiss(animated: true, completion: nil)
-                }) { _ in
+
+                }) { error in
                     assertionFailure("ItemAPI Error")
                 }
             }
