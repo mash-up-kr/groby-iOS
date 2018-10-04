@@ -121,7 +121,83 @@ class MakeTab1SecondViewController: UIViewController {
         CommonDataManager.share.itemForPost?.itemTitle = titleTextField.text
         CommonDataManager.share.itemForPost?.tabOne = TabOne()
         CommonDataManager.share.itemForPost?.tabOne?.contents = contentTextView.text
+        uploadImageFile()
         navigationController?.pushViewController(makeTab1ThirdTableTableViewController, animated: true)
+    }
+
+    func buildBody(_ fileURL: URL) -> Data? {
+        guard let filedata = try? Data(contentsOf: fileURL) else {
+            return nil
+        }
+
+        //--header 'Content-Type: multipart/form-data' --header 'Accept: application/json' -F file=    Array[file]
+        let boundary = "header"
+        let headerLines = ["--\(boundary)",
+            "Content-Type: multipart/form-data; Accept: application/json",
+            "\r\n"]
+        var data = headerLines.joined(separator: "\r\n").data(using: .utf8)
+        if let file = "files=".data(using: .utf8) {
+            data?.append(contentsOf: file)
+        }
+        data?.append(contentsOf: filedata)
+        if let appendData = "\r\n--\(boundary)".data(using: .utf8) {
+            data?.append(contentsOf: appendData)
+            return data
+        }
+        return nil
+    }
+
+    func uploadImageFile(_ completionHandler: @escaping((Data?, URLResponse?) -> Void) = { _, _ in }) {
+        guard !imageUrls.isEmpty, let url = URL(string: "http://ec2-13-125-62-50.ap-northeast-2.compute.amazonaws.com/item/uploadFile"),
+            let data = try? Data(contentsOf: imageUrls[0]),
+            let image = UIImage(data: data) else {
+                return
+        }
+
+        let boundary = "Boundary-\(UUID().uuidString)"
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+        request.httpBody = createBody(boundary: boundary,
+                                      data: UIImageJPEGRepresentation(image, 0.7)!,
+                                      mimeType: "image/jpg")
+        let task = URLSession.shared.dataTask(with: request) { data, res, _ in
+
+            do {
+                if let data = data, let result = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+
+                    if let imageUrl = result["returnJson"] as? [String] {
+                        print(imageUrl)
+                    }
+                    print(result)
+
+                } else {
+                    print("error!!!!!!!!!")
+                }
+            } catch {
+                print("error!!!!")
+            }
+            completionHandler(data, res)
+        }
+        task.resume()
+    }
+
+    func createBody(boundary: String,
+                    data: Data,
+                    mimeType: String) -> Data {
+
+        let body = NSMutableData()
+
+        let boundaryPrefix = "--\(boundary)\r\n"
+
+        body.appendString(boundaryPrefix)
+        body.appendString("Content-Disposition: form-data; name=\"files\"; filename=\".jpeg\"\r\n")
+        body.appendString("Content-Type: \(mimeType)\r\n\r\n")
+        body.append(data)
+        body.appendString("\r\n")
+        body.appendString("--".appending(boundary.appending("--")))
+
+        return body as Data
     }
 }
 
@@ -186,4 +262,12 @@ extension MakeTab1SecondViewController: UIImagePickerControllerDelegate, UINavig
 //    func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
 //        // handle denied camera permissions case
 //    }
+}
+
+extension NSMutableData {
+    func appendString(_ string: String) {
+        if let data = string.data(using: String.Encoding.utf8, allowLossyConversion: false) {
+            append(data)
+        }
+    }
 }
