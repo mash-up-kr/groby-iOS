@@ -86,6 +86,7 @@ class MakeTab1FourthViewController: UIViewController {
                     }
 
                    NotificationCenter.default.post(name: CommonTabViewController.addPostNotificationName, object: nil)
+                    CommonDataManager.share.imageURLs = nil
                     self.dismiss(animated: true, completion: nil)
 
                 }) { _ in

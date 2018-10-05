@@ -90,6 +90,12 @@ class MakeTab1SecondViewController: UIViewController {
         initializeView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        CommonDataManager.share.imageURLs = nil
+    }
+    
     private func initializeView() {
         imageAddButton.layer.borderWidth = 1
         imageAddButton.layer.borderColor = UIColor.whiteTwo.cgColor
