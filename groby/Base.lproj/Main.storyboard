@@ -160,6 +160,7 @@
                                                                         <constraint firstAttribute="trailing" secondItem="Pii-bL-Yxi" secondAttribute="trailing" id="rVS-A2-fBU"/>
                                                                     </constraints>
                                                                     <connections>
+                                                                        <outlet property="itemImageView" destination="Pii-bL-Yxi" id="8XS-gl-JJh"/>
                                                                         <outlet property="titleLabel" destination="S9m-ke-KpP" id="AwL-e5-D7d"/>
                                                                     </connections>
                                                                 </collectionViewCell>
@@ -288,7 +289,7 @@
         <image name="hamburgerButton" width="44" height="44"/>
         <image name="hamburgerIcon" width="20" height="20"/>
         <image name="searchIcon" width="44" height="44"/>
-        <image name="soap-bubble-1959327" width="7952" height="5304"/>
+        <image name="soap-bubble-1959327" width="1908.47998046875" height="1273"/>
         <namedColor name="black">
             <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

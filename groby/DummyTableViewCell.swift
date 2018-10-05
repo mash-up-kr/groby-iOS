@@ -63,19 +63,9 @@ extension DummyTableViewCell: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
 
-        var image: UIImage?
         if let url = URL(string: item.thumnailURL) {
-            let task = URLSession.shared.dataTask(with: url) { data, _, _ in
-                guard let data = data else {
-                    return
-                }
-
-                DispatchQueue.main.async {
-                    image = UIImage(data: data)
-                    cell.configure(item.title, image: image)
-                }
-            }
-            task.resume()
+            cell.configure(item.title)
+            cell.itemImageView?.kf.setImage(with: url)
         }
 
         return cell

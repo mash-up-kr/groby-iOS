@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryItemListTableViewController: UIViewController {
 
@@ -100,7 +101,9 @@ extension CategoryItemListTableViewController: UITableViewDataSource {
             cell.likeOrProgressCountLabel.text = "\(participantNum)"
         }
 
-        cell.itemImageView.image = #imageLiteral(resourceName: "person-1207641")
+        if let url = URL(string: categoryItem.thumnailURL) {
+        cell.itemImageView.kf.setImage(with: url)
+        }
 
         return cell
     }
