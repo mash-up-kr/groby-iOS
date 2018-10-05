@@ -52,6 +52,7 @@ class CommonTabViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var favoriteButtonView: UIView!
     @IBOutlet weak var titleImageView: UIImageView!
+    @IBOutlet weak var nextButton: BlueButton!
 
     var pageViewController: UIPageViewController?
     var tabNumber: Int = 1
@@ -68,35 +69,32 @@ class CommonTabViewController: UIViewController {
         navigationController?.navigationItem.backBarButtonItem = backButtonItem
         navigationController?.isNavigationBarHidden = false
 
-        titleLabel.text = item?.itemTitle
-        nicknameLabel.text = item?.writerUserName
-        minimumCountLabel.text = "\(item?.numOfLike ?? 0)"
-
-        let imageURLs = item?.imgPathList?.filter({ $0.tab == tabNumber })
-        if let imageURLs = imageURLs, !imageURLs.isEmpty,
-            let imageURL = imageURLs.first,
-            let url = URL(string: imageURL.img_path),
-            let data = try? Data(contentsOf: url) {
-
-            titleImageView.image = UIImage(data: data)
-
-//            let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-//                guard let self = self, let data = data else {
-//                    return
-//                }
-//
-//                DispatchQueue.main.async {
-//                    self.titleImageView.image = UIImage(data: data)
-//                }
-//            }
-//            task.resume()
-        }
-
         if let date = item?.tabOne?.endDate?.split(separator: " ").first?.description {
             endDateLabel.text = date
         }
 
-//        CommonDataManager.share.item?.imgPathList = ["String"]
+        if let item = item {
+            if item.writerId == CommonDataManager.share.userInfo?.userId {
+                ownItem = true
+            }
+
+            titleLabel.text = item.itemTitle
+            nicknameLabel.text = item.writerUserName
+            minimumCountLabel.text = "\(item.numOfLike ?? 0)"
+
+            let imageURLs = item.imgPathList?.filter({ $0.tab == tabNumber })
+            if let imageURLs = imageURLs, !imageURLs.isEmpty,
+                let imageURL = imageURLs.first,
+                let url = URL(string: imageURL.img_path),
+                let data = try? Data(contentsOf: url) {
+
+                titleImageView.image = UIImage(data: data)
+            }
+        }
+
+        if ownItem {
+            nextButton.setTitle("옵션 폼 작성하기", for: .normal)
+        }
 
         tabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
         //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
@@ -169,7 +167,10 @@ class CommonTabViewController: UIViewController {
     }
 
     @IBAction private func actionNext(_ sender: UIButton) {
-
+        if ownItem {
+        } else {
+            // 좋아요
+        }
     }
 }
 

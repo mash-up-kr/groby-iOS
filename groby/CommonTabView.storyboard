@@ -517,6 +517,7 @@
                         <outlet property="favoriteButtonView" destination="fff-8P-Ne0" id="d8C-tB-cvk"/>
                         <outlet property="likeCountLabel" destination="XE0-Kq-0pC" id="GrQ-f2-INW"/>
                         <outlet property="minimumCountLabel" destination="7Ha-Gi-DFj" id="dpT-RT-gzf"/>
+                        <outlet property="nextButton" destination="9lQ-zw-iTz" id="aiX-uK-IFk"/>
                         <outlet property="nicknameLabel" destination="i0W-Np-Ppn" id="aod-aC-AJB"/>
                         <outlet property="tabMenuView" destination="hhC-bk-yy3" id="Mt0-v8-G5H"/>
                         <outlet property="titleImageView" destination="OP5-aB-57G" id="wL8-yG-tR3"/>
