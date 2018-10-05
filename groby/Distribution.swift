@@ -23,6 +23,6 @@ struct Distribution: Codable {
 struct DistributionJSON: Codable {
     let status: String
     let message: String
-    
+
     let returnJson: [Distribution]
 }

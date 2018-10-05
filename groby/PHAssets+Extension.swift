@@ -14,7 +14,7 @@ extension PHAsset {
         if self.mediaType == .image {
             let options: PHContentEditingInputRequestOptions = PHContentEditingInputRequestOptions()
             options.canHandleAdjustmentData = {(adjustmeta: PHAdjustmentData) -> Bool in
-                return true
+                true
             }
             self.requestContentEditingInput(with: options, completionHandler: {(contentEditingInput: PHContentEditingInput?, _: [AnyHashable: Any]) -> Void in
                 completionHandler(contentEditingInput!.fullSizeImageURL as URL?)

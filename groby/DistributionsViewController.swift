@@ -12,7 +12,7 @@ class DistributionsViewController: UIViewController {
 
     private var distributions: [Distribution] = []
     private let cellIdentifier = "distribution_cell"
-    
+
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class DistributionsViewController: UIViewController {
 
         fetchDistributions(itemId: "1")
     }
-    
+
     private func fetchDistributions(itemId: String) {
         let path: String = "\(GrobyURL.base)\(GrobyURL.item.rawValue)\(itemId)/userlist"
         let requestData = RequestData(path: path, method: .get)
@@ -29,9 +29,9 @@ class DistributionsViewController: UIViewController {
             guard let `self` = self else {
                 return
             }
-            
+
             self.distributions = distribution.returnJson
-            
+
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -50,13 +50,13 @@ extension DistributionsViewController: UITableViewDataSource, UITableViewDelegat
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? DistributionsTableViewCell else {
             return UITableViewCell()
         }
-        
+
         let distribution = distributions[indexPath.row]
-        
+
         cell.userId.text = distribution.userName
         cell.itemCount.text = String(distribution.amount)
         cell.itemSum.text = String(distribution.price)
-        
+
         return cell
     }
 

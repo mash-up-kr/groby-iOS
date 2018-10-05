@@ -69,7 +69,7 @@ class MakeTab1FourthViewController: UIViewController {
                    NotificationCenter.default.post(name: CommonTabViewController.addPostNotificationName, object: nil)
                     self.dismiss(animated: true, completion: nil)
 
-                }) { error in
+                }) { _ in
                     assertionFailure("ItemAPI Error")
                 }
             }

@@ -10,12 +10,12 @@ import Foundation
 
 struct DistributionsApi: RequestType {
     typealias ResponseType = DistributionJSON
-    
+
     var requestData: RequestData
     var data: RequestData {
         return requestData
     }
-    
+
     init(_ requestData: RequestData) {
         self.requestData = requestData
     }
