@@ -39,17 +39,22 @@ class JoinSecondViewController: UIViewController, AlertShowable {
                                           "userToken": "string"]
 
             let requestData = RequestData(path: path, method: .post, params: params)
-            CommonAPIManager.execute(requestData, onSuccess: { [weak self] data in
+            CommonAPIManager.execute(requestData, onSuccess: { [weak self] _ in
                 guard let `self` = self else {
                     return
                 }
 
-                if let status = data?["status"] as? String, status == "OK" {
+                DispatchQueue.main.async {
                     self.navigationController?.popToRootViewController(animated: true)
-                } else {
-                    self.popUpAlert("You couldn't join", message: "You should check password or token.")
                 }
-            }) { _ in
+
+//                if let status = data?["status"] as? String, status == "OK" {
+//                    self.navigationController?.popToRootViewController(animated: true)
+//                } else {
+//                    self.popUpAlert("You couldn't join", message: "You should check password or token.")
+//                }
+            }) { error in
+                print("Join \(error)")
             }
         }
     }

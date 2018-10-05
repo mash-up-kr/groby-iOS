@@ -22,7 +22,7 @@ struct ItemForPostJSON: Codable {
     let status: String
     let message: String
 
-//    let acceptJson: ItemForPost
+    let acceptJson: ItemForPost
 }
 
 struct ItemJSON: Codable {
@@ -33,25 +33,30 @@ struct ItemJSON: Codable {
 }
 
 struct Item: Codable {
-//    var imgPathList: [String]?
-//    var itemAmountLimit: String?
-//    var itemCategoryId: String? // category
     var category: String?
     var itemTitle: String?
-//    var userId: String?         // writerId
     var writerId: String?
+    var writerUserName: String?
 
     var itemId: String? = "-1"
     var nowTab: Int? = 0
     var numOfLike: Int? = 0
     var numOfParticipant: Int? = 0
-    var participantPercent: Int? = 0 // itemAmountLimit
+    var participantPercent: Int? = 0
 
     var tabOne: TabOne?
     var tabTwo: TabTwo?
     var tabThree: TabThree?
     var tabFour: TabFour?
     var tabFive: TabFive?
+
+    var imgPathList: [ImagePath]?
+}
+
+struct ImagePath: Codable {
+    var itemImgPathId: Int
+    var tab: Int
+    var img_path: String
 }
 
 struct TabOne: Codable {

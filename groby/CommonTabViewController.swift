@@ -51,12 +51,14 @@ class CommonTabViewController: UIViewController {
     @IBOutlet var headerTabButtonSelectedViews: [UIView]!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var favoriteButtonView: UIView!
+    @IBOutlet weak var titleImageView: UIImageView!
 
     var pageViewController: UIPageViewController?
-    var tabNumber: Int? = 0
+    var tabNumber: Int = 1
     var item: Item?
     var selectedTabType: TabType = .tabOne
     var nextTabType: TabType = .tabOne
+    var ownItem: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,8 +69,28 @@ class CommonTabViewController: UIViewController {
         navigationController?.isNavigationBarHidden = false
 
         titleLabel.text = item?.itemTitle
-        nicknameLabel.text = item?.writerId
+        nicknameLabel.text = item?.writerUserName
         minimumCountLabel.text = "\(item?.numOfLike ?? 0)"
+
+        let imageURLs = item?.imgPathList?.filter({ $0.tab == tabNumber })
+        if let imageURLs = imageURLs, !imageURLs.isEmpty,
+            let imageURL = imageURLs.first,
+            let url = URL(string: imageURL.img_path),
+            let data = try? Data(contentsOf: url) {
+
+            titleImageView.image = UIImage(data: data)
+
+//            let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+//                guard let self = self, let data = data else {
+//                    return
+//                }
+//
+//                DispatchQueue.main.async {
+//                    self.titleImageView.image = UIImage(data: data)
+//                }
+//            }
+//            task.resume()
+        }
 
         if let date = item?.tabOne?.endDate?.split(separator: " ").first?.description {
             endDateLabel.text = date
@@ -76,13 +98,12 @@ class CommonTabViewController: UIViewController {
 
 //        CommonDataManager.share.item?.imgPathList = ["String"]
 
-        if let tabNumber = tabNumber {
-            tabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
-            //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
-            tabButtonSelectedViews[tabNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
-            headerTabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1) //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
-            headerTabButtonSelectedViews[tabNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
-        }
+        tabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
+        //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
+        tabButtonSelectedViews[tabNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
+        headerTabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1) //.setTitleColor(#colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1), for: .normal)
+        headerTabButtonSelectedViews[tabNumber].backgroundColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)
+
         setViewController(type: .tabOne, animated: false)
     }
 

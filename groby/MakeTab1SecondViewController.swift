@@ -10,7 +10,11 @@ import UIKit
 
 class MakeTab1SecondViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var contentTextView: UITextView! {
+        didSet {
+            contentTextView.delegate = self
+        }
+    }
 
     @IBAction func tappedImgaeFetch(_ sender: UIButton) {
         let alertController: UIAlertController = UIAlertController()
@@ -121,7 +125,20 @@ class MakeTab1SecondViewController: UIViewController {
         CommonDataManager.share.itemForPost?.itemTitle = titleTextField.text
         CommonDataManager.share.itemForPost?.tabOne = TabOne()
         CommonDataManager.share.itemForPost?.tabOne?.contents = contentTextView.text
-        uploadImageFile()
+
+        for imageURL in imageUrls {
+            if let data = try? Data(contentsOf: imageURL),
+                let image = UIImage(data: data) {
+                uploadImageFile(image) { urlString, _ in
+                    DispatchQueue.main.async {
+                        if CommonDataManager.share.imageURLs == nil {
+                            CommonDataManager.share.imageURLs = []
+                        }
+                        CommonDataManager.share.imageURLs?.append(urlString)
+                    }
+                }
+            }
+        }
         navigationController?.pushViewController(makeTab1ThirdTableTableViewController, animated: true)
     }
 
@@ -147,10 +164,9 @@ class MakeTab1SecondViewController: UIViewController {
         return nil
     }
 
-    func uploadImageFile(_ completionHandler: @escaping((Data?, URLResponse?) -> Void) = { _, _ in }) {
-        guard !imageUrls.isEmpty, let url = URL(string: "http://ec2-13-125-62-50.ap-northeast-2.compute.amazonaws.com/item/uploadFile"),
-            let data = try? Data(contentsOf: imageUrls[0]),
-            let image = UIImage(data: data) else {
+    func uploadImageFile(_ image: UIImage, completionHandler: @escaping((String, URLResponse?) -> Void) = { _, _ in }) {
+        guard let url = URL(string: "http://ec2-13-125-62-50.ap-northeast-2.compute.amazonaws.com/item/uploadFile"),
+            let imageData = UIImageJPEGRepresentation(image, 0.7) else {
                 return
         }
 
@@ -159,15 +175,17 @@ class MakeTab1SecondViewController: UIViewController {
         request.httpMethod = "POST"
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         request.httpBody = createBody(boundary: boundary,
-                                      data: UIImageJPEGRepresentation(image, 0.7)!,
+                                      data: imageData,
                                       mimeType: "image/jpg")
         let task = URLSession.shared.dataTask(with: request) { data, res, _ in
-
             do {
                 if let data = data, let result = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
 
-                    if let imageUrl = result["returnJson"] as? [String] {
+                    if let imageUrl = result["returnJson"] as? [String],
+                        !imageUrl.isEmpty,
+                        let urlString = imageUrl.first {
                         print(imageUrl)
+                        completionHandler(urlString, res)
                     }
                     print(result)
 
@@ -177,7 +195,6 @@ class MakeTab1SecondViewController: UIViewController {
             } catch {
                 print("error!!!!")
             }
-            completionHandler(data, res)
         }
         task.resume()
     }
@@ -191,13 +208,20 @@ class MakeTab1SecondViewController: UIViewController {
         let boundaryPrefix = "--\(boundary)\r\n"
 
         body.appendString(boundaryPrefix)
-        body.appendString("Content-Disposition: form-data; name=\"files\"; filename=\".jpeg\"\r\n")
+        body.appendString("Content-Disposition: form-data; name=\"files\"; filename=\"name.jpeg\"\r\n")
         body.appendString("Content-Type: \(mimeType)\r\n\r\n")
         body.append(data)
         body.appendString("\r\n")
         body.appendString("--".appending(boundary.appending("--")))
 
         return body as Data
+    }
+}
+
+extension MakeTab1SecondViewController: UITextViewDelegate {
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        textView.text = ""
+        return true
     }
 }
 

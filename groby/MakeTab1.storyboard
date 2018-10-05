@@ -807,6 +807,7 @@
                         <outlet property="minimumCountLabel" destination="MKW-hB-e2C" id="nk1-fj-zoS"/>
                         <outlet property="nicknameLabel" destination="TGf-qN-9ye" id="9fe-pf-krx"/>
                         <outlet property="tabMenuView" destination="wwM-sK-Pw2" id="H6s-vq-HJ1"/>
+                        <outlet property="titleImageView" destination="xKg-Sd-FcL" id="ThK-OH-UQ0"/>
                         <outlet property="titleLabel" destination="nDw-QC-ZMf" id="pjp-LE-euw"/>
                         <outletCollection property="tabButtons" destination="scM-hI-WDa" collectionClass="NSMutableArray" id="Oun-t1-45J"/>
                         <outletCollection property="tabButtons" destination="940-jd-8sn" collectionClass="NSMutableArray" id="wDa-Zl-Lme"/>

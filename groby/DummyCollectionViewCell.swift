@@ -15,5 +15,6 @@ class DummyCollectionViewCell: UICollectionViewCell {
 
     func configure(_ title: String, image: UIImage? = nil) {
         titleLabel.text = title
+        itemImageView?.image = image
     }
 }

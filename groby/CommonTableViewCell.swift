@@ -20,5 +20,18 @@ class CommonTableViewCell: UITableViewCell {
         dateLabel.text = data.dueDate
         likeOrProgressLabel.text = "좋아요 수"
         likeOrProgressCountLabel.text = data.likeNum
+
+        if let url = URL(string: data.thumnailURL) {
+            let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+                guard let data = data else {
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    self.itemImageView.image = UIImage(data: data)
+                }
+            }
+            task.resume()
+        }
     }
 }

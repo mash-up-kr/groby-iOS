@@ -19,4 +19,6 @@ class CommonDataManager {
     var userFavoritedItems: [ItemList]?
     var userOwnedItems: [ItemList]?
     var mainItems: MainItemList?
+
+    var imageURLs: [String]?
 }

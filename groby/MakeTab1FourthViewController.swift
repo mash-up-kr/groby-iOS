@@ -11,6 +11,7 @@ import UIKit
 class MakeTab1FourthViewController: UIViewController {
 
     @IBOutlet weak var tabMenuView: UIView!
+    @IBOutlet weak var titleImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var endDateLabel: UILabel!
@@ -31,6 +32,21 @@ class MakeTab1FourthViewController: UIViewController {
         //        CommonDataManager.share.item?.tabOne?.contents
         //        CommonDataManager.share.item?.tabOne?.location
 
+        if let imageURLs = CommonDataManager.share.imageURLs, !imageURLs.isEmpty,
+            let imageURL = imageURLs.first,
+            let url = URL(string: imageURL) {
+            let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, _ in
+                guard let self = self, let data = data else {
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    self.titleImageView.image = UIImage(data: data)
+                }
+            }
+            task.resume()
+        }
+
         titleLabel.text = CommonDataManager.share.itemForPost?.itemTitle
         nicknameLabel.text = CommonDataManager.share.userInfo?.userName
         minimumCountLabel.text = CommonDataManager.share.itemForPost?.itemAmountLimit
@@ -39,7 +55,10 @@ class MakeTab1FourthViewController: UIViewController {
         if let userId = CommonDataManager.share.userInfo?.userId {
             CommonDataManager.share.itemForPost?.userId = "\(userId)"
         }
-        CommonDataManager.share.itemForPost?.imgPathList = ["String"]
+
+        if let imageURLs = CommonDataManager.share.imageURLs {
+            CommonDataManager.share.itemForPost?.imgPathList = imageURLs //["String"]
+        }
 
         if let tabNumber = tabNumber {
             tabButtons[tabNumber].titleLabel?.textColor = #colorLiteral(red: 0.3176470588, green: 0.4274509804, blue: 0.768627451, alpha: 1)

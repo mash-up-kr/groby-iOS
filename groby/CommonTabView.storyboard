@@ -519,6 +519,7 @@
                         <outlet property="minimumCountLabel" destination="7Ha-Gi-DFj" id="dpT-RT-gzf"/>
                         <outlet property="nicknameLabel" destination="i0W-Np-Ppn" id="aod-aC-AJB"/>
                         <outlet property="tabMenuView" destination="hhC-bk-yy3" id="Mt0-v8-G5H"/>
+                        <outlet property="titleImageView" destination="OP5-aB-57G" id="wL8-yG-tR3"/>
                         <outlet property="titleLabel" destination="tDI-Be-cxz" id="UJ9-Z2-ePp"/>
                         <outletCollection property="headerTabButtons" destination="4m3-Zs-CSf" collectionClass="NSMutableArray" id="Owc-9C-nHp"/>
                         <outletCollection property="headerTabButtons" destination="lDU-cj-fCt" collectionClass="NSMutableArray" id="aBD-ug-vf8"/>

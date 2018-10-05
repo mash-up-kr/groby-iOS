@@ -62,7 +62,21 @@ extension DummyTableViewCell: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DummyCollectionViewCell", for: indexPath) as? DummyCollectionViewCell, let item = CommonDataManager.share.mainItems?.recentItemList[indexPath.row] else {
             return UICollectionViewCell()
         }
-        cell.configure(item.title)
+
+        var image: UIImage?
+        if let url = URL(string: item.thumnailURL) {
+            let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+                guard let data = data else {
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    image = UIImage(data: data)
+                    cell.configure(item.title, image: image)
+                }
+            }
+            task.resume()
+        }
 
         return cell
     }
