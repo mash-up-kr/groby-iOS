@@ -14,6 +14,7 @@ class TabOneContainerViewController: UIViewController, TabContainerSettable {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
 
+    var item: Item?
     var tabOneData: TabOne?
     var tabType: CommonTabViewController.TabType = .tabOne
 
@@ -26,8 +27,8 @@ class TabOneContainerViewController: UIViewController, TabContainerSettable {
             location = tabOne.location
             content = tabOne.contents
         } else {
-            location = CommonDataManager.share.item?.tabOne?.location
-            content = CommonDataManager.share.item?.tabOne?.contents
+            location = tabOneData?.location
+            content = tabOneData?.contents
         }
         locationLabel.text = location
         contentLabel.text = content
@@ -38,7 +39,10 @@ extension TabOneContainerViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let imageURLs = CommonDataManager.share.imageURLs {
             return imageURLs.count
+        } else if let imageURL = item?.imgPathList?.filter({ $0.tab == 1 }) {
+            return imageURL.count
         }
+
         return 0
     }
 
@@ -51,16 +55,11 @@ extension TabOneContainerViewController: UICollectionViewDataSource {
             let imageURL = imageURLs[indexPath.row]
 
             if let url = URL(string: imageURL) {
-                let task = URLSession.shared.dataTask(with: url) { data, _, _ in
-                    guard let data = data else {
-                        return
-                    }
-
-                    DispatchQueue.main.async {
-                        cell.configure(UIImage(data: data))
-                    }
-                }
-                task.resume()
+                cell.imageView?.kf.setImage(with: url)
+            }
+        } else if let imageURL = item?.imgPathList?.filter({ $0.tab == 1 }) {
+            if let url = URL(string: imageURL[indexPath.row].img_path) {
+                cell.imageView?.kf.setImage(with: url)
             }
         }
 

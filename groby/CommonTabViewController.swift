@@ -115,6 +115,14 @@ class CommonTabViewController: UIViewController {
 
     func viewController(at index: Int) -> UIViewController? {
         if let tab = TabType(rawValue: index), let viewController = UIStoryboard(name: tab.storyboard, bundle: nil).instantiateInitialViewController() {
+
+            if let controller = viewController as? TabOneContainerViewController {
+                controller.item = item
+                controller.tabOneData = item?.tabOne
+            } else {
+
+            }
+
             return viewController
         }
         return nil
