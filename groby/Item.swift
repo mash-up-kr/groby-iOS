@@ -43,6 +43,7 @@ struct Item: Codable {
     var numOfLike: Int? = 0
     var numOfParticipant: Int? = 0
     var participantPercent: Int? = 0
+    var amountLimit: Int? = 0
 
     var tabOne: TabOne?
     var tabTwo: TabTwo?
@@ -53,6 +54,21 @@ struct Item: Codable {
     var imgPathList: [ImagePath]?
 }
 
+/*
+ {
+ "category": "string",
+ "editTab": false,
+ "imgPathList": [
+ "string"
+ ],
+ "itemAmountLimit": 0,
+ "itemId": "string",
+ "itemTitle": "string",
+ 
+ "targetTab": 0,
+ "writerId": "string"
+ }
+ */
 struct ImagePath: Codable {
     var itemImgPathId: Int
     var tab: Int
@@ -66,17 +82,22 @@ struct TabOne: Codable {
 }
 
 struct TabTwo: Codable {
-
+    var contents: String
+    var endDate: String
+    var optionString: String
+    var price: String
 }
 
 struct TabThree: Codable {
-
+    var contents: String
 }
 
 struct TabFour: Codable {
-
+    var arrivedTime: String
+    var contents: String
 }
 
 struct TabFive: Codable {
-
+    var contents: String
+    var locationDetail: String
 }

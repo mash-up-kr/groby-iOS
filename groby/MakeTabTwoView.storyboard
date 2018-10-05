@@ -14,7 +14,7 @@
         <!--폼 내용 작성-->
         <scene sceneID="OIp-nV-59L">
             <objects>
-                <tableViewController id="QoM-50-0NT" customClass="MakeTabTwoFirstViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MakeTabTwoFirstViewController" id="QoM-50-0NT" customClass="MakeTabTwoFirstViewController" customModule="groby" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7h2-fg-fNR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

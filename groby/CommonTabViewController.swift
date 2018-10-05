@@ -60,6 +60,7 @@ class CommonTabViewController: UIViewController {
     var selectedTabType: TabType = .tabOne
     var nextTabType: TabType = .tabOne
     var ownItem: Bool = false
+    var active: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +81,8 @@ class CommonTabViewController: UIViewController {
 
             titleLabel.text = item.itemTitle
             nicknameLabel.text = item.writerUserName
-            minimumCountLabel.text = "\(item.numOfLike ?? 0)"
+            minimumCountLabel.text = "\(item.amountLimit ?? 0)"
+            likeCountLabel.text = "\(item.numOfLike ?? 0)"
 
             let imageURLs = item.imgPathList?.filter({ $0.tab == tabNumber })
             if let imageURLs = imageURLs, !imageURLs.isEmpty,
@@ -176,8 +178,33 @@ class CommonTabViewController: UIViewController {
 
     @IBAction private func actionNext(_ sender: UIButton) {
         if ownItem {
+            let storyboard = UIStoryboard(name: "MakeTabTwoView", bundle: nil)
+            if let viewController = storyboard.instantiateInitialViewController() {
+                present(viewController, animated: true, completion: nil)
+            }
         } else {
             // 좋아요
+            if let itemId = item?.itemId, let userEmail = CommonDataManager.share.userInfo?.userEmail {
+                let paramData = ["itemId": itemId,
+                                 "userEmail": userEmail]
+                let request = RequestData(path: "\(GrobyURL.base)\(GrobyURL.item.rawValue)like", method: .post, params: paramData)
+                nextButton.isUserInteractionEnabled = false
+                CommonAPIManager.execute(request, onSuccess: { [weak self] _ in
+                    guard let self = self else {
+                        return
+                    }
+
+                    DispatchQueue.main.async {
+                        self.active = !self.active
+                        self.nextButton.activeButton(self.active)
+                        self.nextButton.isUserInteractionEnabled = true
+
+                        NotificationCenter.default.post(name: CommonTabViewController.addPostNotificationName, object: nil)
+                    }
+                }) { _ in
+                    assertionFailure("Tab One Error")
+                }
+            }
         }
     }
 }

@@ -30,9 +30,13 @@ class ViewController: UIViewController {
         presentLoginView()
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(actionMenu))
         viewForDimed?.addGestureRecognizer(tapGestureRecognizer)
-        requestItemList()
 
         NotificationCenter.default.addObserver(self, selector: #selector(update), name: CommonTabViewController.addPostNotificationName, object: nil)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        requestItemList()
     }
 
     deinit {

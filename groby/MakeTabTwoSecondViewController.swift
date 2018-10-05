@@ -50,6 +50,10 @@ class MakeTabTwoSecondViewController: UIViewController, AlertShowable {
 
 extension MakeTabTwoSecondViewController: UITableViewDelegate {
 
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 47
+    }
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 //        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "OptionHeaderView") as? OptionHeaderView else {
 //            return nil
