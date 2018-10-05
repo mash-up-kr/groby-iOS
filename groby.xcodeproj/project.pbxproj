@@ -35,6 +35,8 @@
 		C2E05AE5216508D000F1ADC0 /* tap5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E05AE4216508D000F1ADC0 /* tap5.storyboard */; };
 		C2FCA54F2165181500CEDB2D /* DistributionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA54E2165181500CEDB2D /* DistributionsViewController.swift */; };
 		C2FCA5512165186900CEDB2D /* DistributionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA5502165186900CEDB2D /* DistributionsTableViewCell.swift */; };
+		C2FCA5532167595F00CEDB2D /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA5522167595F00CEDB2D /* Distribution.swift */; };
+		C2FCA55621675ACF00CEDB2D /* DistributionsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FCA55521675ACF00CEDB2D /* DistributionsAPI.swift */; };
 		CE120AAF2164AD0F00DCAEF7 /* CommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE120AAE2164AD0F00DCAEF7 /* CommonTableViewCell.xib */; };
 		CE120AB22164BCC300DCAEF7 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE120AB12164BCC300DCAEF7 /* MainHeaderView.swift */; };
 		CE120AB42164BCDA00DCAEF7 /* MainHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE120AB32164BCDA00DCAEF7 /* MainHeaderView.xib */; };
@@ -143,6 +145,8 @@
 		C2E05AE4216508D000F1ADC0 /* tap5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tap5.storyboard; sourceTree = "<group>"; };
 		C2FCA54E2165181500CEDB2D /* DistributionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionsViewController.swift; sourceTree = "<group>"; };
 		C2FCA5502165186900CEDB2D /* DistributionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionsTableViewCell.swift; sourceTree = "<group>"; };
+		C2FCA5522167595F00CEDB2D /* Distribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distribution.swift; sourceTree = "<group>"; };
+		C2FCA55521675ACF00CEDB2D /* DistributionsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributionsAPI.swift; sourceTree = "<group>"; };
 		CE120AAE2164AD0F00DCAEF7 /* CommonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTableViewCell.xib; sourceTree = "<group>"; };
 		CE120AB12164BCC300DCAEF7 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		CE120AB32164BCDA00DCAEF7 /* MainHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHeaderView.xib; sourceTree = "<group>"; };
@@ -340,6 +344,15 @@
 			name = Search;
 			sourceTree = "<group>";
 		};
+		C2FCA5542167596600CEDB2D /* Distribution */ = {
+			isa = PBXGroup;
+			children = (
+				C2FCA5522167595F00CEDB2D /* Distribution.swift */,
+				C2FCA55521675ACF00CEDB2D /* DistributionsAPI.swift */,
+			);
+			name = Distribution;
+			sourceTree = "<group>";
+		};
 		CE120AB02164BC8B00DCAEF7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +475,7 @@
 			isa = PBXGroup;
 			children = (
 				CE70AA142142FDF50086A23A /* CommonAPIManager.swift */,
+				C2FCA5542167596600CEDB2D /* Distribution */,
 				CE45C0D421402C2200CDD952 /* User */,
 				CE45C0D721402C5500CDD952 /* Item */,
 				CE45C0D621402C3B00CDD952 /* Category */,
@@ -834,6 +848,7 @@
 				CE4A88AF215AA19300FFC7DD /* DepositConfirmHeaderFooterView.swift in Sources */,
 				CEF710F1213BBC03007BF3E2 /* User.swift in Sources */,
 				CED7D8B0215A637400A3D645 /* MakeTabTwoSecondViewController.swift in Sources */,
+				C2FCA55621675ACF00CEDB2D /* DistributionsAPI.swift in Sources */,
 				EFAAA9D4211486E50013F360 /* groby.xcdatamodeld in Sources */,
 				CE4A88BC215AA2B900FFC7DD /* TabTwoCheckDepositViewController.swift in Sources */,
 				C239E066213EAD8C009D3545 /* CategoryAPI.swift in Sources */,
@@ -851,6 +866,7 @@
 				CEE745CB214D7D9C002FD454 /* ItemListAPI.swift in Sources */,
 				EFE7D366211F3E3F00C909FD /* CategoryTableViewCell.swift in Sources */,
 				EFAAA9EE211548800013F360 /* JoinFirstViewController.swift in Sources */,
+				C2FCA5532167595F00CEDB2D /* Distribution.swift in Sources */,
 				EFCCDAC82131D8720007C394 /* NetworkEnums.swift in Sources */,
 				8382CAE021280FBD0051ECCE /* 미리보기ViewController.swift in Sources */,
 				CEE745CF214DA30B002FD454 /* ItemAPI.swift in Sources */,
