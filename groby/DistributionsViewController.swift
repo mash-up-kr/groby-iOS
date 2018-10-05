@@ -14,7 +14,7 @@ class DistributionsViewController: UIViewController {
     private let cellIdentifier = "distribution_cell"
     
     @IBOutlet weak var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,4 +61,3 @@ extension DistributionsViewController: UITableViewDataSource, UITableViewDelegat
     }
 
 }
-
